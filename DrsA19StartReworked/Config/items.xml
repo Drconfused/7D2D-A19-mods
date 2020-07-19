@@ -1,0 +1,871 @@
+<DrsA19StartReworked>
+	<!-- Drs Starter Bundles -->
+	<append xpath="/items">
+
+		<item name="DrsStarterKit">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntSuitcase"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="recipe_unlocked"/>
+				<property name="Create_item" value="ammoGasCan,ammo9mmBulletBall,medicalFirstAidBandage,meleeToolTorch,drinkJarBoiledWater,foodCanChili,modGunScopeSmall,meleeWpnBladeT1HuntingKnife,modMeleeSerratedBlade,vehicleBicyclePlaceable"/>
+				<property name="Create_item_count" value="1000,500,10,2,5,5,1,1,1,1"/>
+			</property>	
+		</item>
+
+		<item name="DrsStarterClothes">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelFlannelShirt,armorLeatherPants,apparelOveralls,armorLeatherGloves,armorLeatherBoots"/>
+				<property name="Create_item_count" value="1,1,1,1,1"/>
+			</property>
+		</item>
+
+		<item name="DrsStarterMaterials">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedIron,resourceIronFragment,resourceWood,resourceRockSmall,resourceClayLump"/>
+				<property name="Create_item_count" value="100,500,500,500,500"/>
+			</property>
+		</item>
+
+		<item name="DrsTraderToolKit">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="meleeToolRepairT1ClawHammer,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe,meleeToolSalvageT1Wrench,ammoGasCan"/>
+				<property name="Create_item_count" value="1,1,1,1,1,1000"/>
+			</property>
+		</item>
+
+	</append>
+
+	<!-- 	ZOMBIE KILLER -->
+	<append xpath="/items" >
+		<!-- Milestone quests paper if adding to existing game -->	
+		<item name="Paper_Milestone_Zombie_Kill_100">
+			<property name="Extends" value="questMaster" />
+			<property name="Description" value="Zombie Kill Milestone" />
+			<property class="Action0">
+				<property name="QuestGiven" value="100_Zombies_Killed" />
+			</property>
+		</item>
+
+		<!-- QuestChit Items -->
+		<item name="Quest_Chit">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIcon" value="Drs_QuestChit"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="30000"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Resources"/>
+		</item>
+
+		<item name="QuestChit1">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="Equivalent to 100 zombie kills" />
+			<property name="CustomIcon" value="Chit1"/>
+			<property name="Stacknumber" value="30000"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Quest_Chit1" />
+			</property>
+		</item>
+
+		<item name="QuestChit5">
+			<property name="Extends" value="QuestChit1" />
+			<property name="Description" value="Equivalent to 500 zombie kills" />
+			<property name="CustomIcon" value="Chit5"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Quest_Chit5" />
+			</property>
+		</item>
+
+		<item name="QuestChit10">
+			<property name="Extends" value="QuestChit1" />
+			<property name="Description" value="Equivalent to 1000 zombie kills" />
+			<property name="CustomIcon" value="Chit10"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Quest_Chit10" />
+			</property>
+		</item>
+
+		<item name="QuestChit50">
+			<property name="Extends" value="QuestChit1" />
+			<property name="Description" value="Equivalent to 5000 zombie kills" />
+			<property name="CustomIcon" value="Chit50"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Quest_Chit50" />
+			</property>
+		</item>
+
+		<item name="QuestChit100">
+			<property name="Extends" value="QuestChit1" />
+			<property name="Description" value="Equivalent to 10000 zombie kills" />
+			<property name="CustomIcon" value="Chit100"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Quest_Chit100" />
+			</property>
+		</item>
+
+		<!-- 500, 1000, 5000 Unused at this time
+	<item name="QuestChit500">
+		<property name="Extends" value="QuestChit1" />
+		<property name="Description" value="Equivalent to 50000 zombie kills" />
+		<property name="CustomIcon" value="Chit500"/>
+		<property class="Action0">
+			<property name="QuestGiven" value="Quest_Chit500" />
+		</property>
+	</item>
+
+	<item name="QuestChit1000">
+		<property name="Extends" value="QuestChit1" />
+		<property name="Description" value="Equivalent to 100000 zombie kills" />
+		<property name="CustomIcon" value="Chit1000"/>
+		<property class="Action0">
+			<property name="QuestGiven" value="Quest_Chit1000" />
+		</property>
+	</item>
+
+	<item name="QuestChit5000">
+		<property name="Extends" value="QuestChit1" />
+		<property name="Description" value="Equivalent to 500000 zombie kills" />
+		<property name="CustomIcon" value="Chit5000"/>
+		<property class="Action0">
+			<property name="QuestGiven" value="Quest_Chit5000" />
+		</property>
+	</item>
+-->
+	</append>
+
+	<!-- 	LOOT BOX SYSTEM -->
+	<append xpath="/items" >
+		<!--	Trader Reward Loot	-->
+		<item name="lootBoxTraderReward">
+			<property name="Extends" value="questMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="ffb300"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_Loot"/>
+			</property>
+		</item>
+
+		<!--	Construction Grade A	-->
+		<item name="lootBoxConstructionA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box1"/>
+			</property>
+		</item>
+
+		<!--	Construction Grade B	-->
+		<item name="lootBoxConstructionB">
+			<property name="Extends" value="lootBoxConstructionA"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box2"/>
+			</property>
+		</item>
+
+		<!--	Construction Grade C	-->
+		<item name="lootBoxConstructionC">
+			<property name="Extends" value="lootBoxConstructionA"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box3"/>
+			</property>
+		</item>
+
+		<!--	Ammo Grade A	-->
+		<item name="lootBoxAmmoA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_CombatLoot_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box1"/>
+			</property>
+		</item>
+
+		<!--	Ammo Grade B	-->
+		<item name="lootBoxAmmoB">
+			<property name="Extends" value="lootBoxAmmoA"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box2"/>
+			</property>
+		</item>
+
+		<!--	Ammo Grade C	-->
+		<item name="lootBoxAmmoC">
+			<property name="Extends" value="lootBoxAmmoA"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box3"/>
+			</property>
+		</item>
+
+		<!--	Medicine Loot	-->
+		<item name="lootBoxMedicine">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_FirstAid_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_FirstAid_Kit"/>
+			</property>
+		</item>
+		<item name="lootBoxBlood">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_BloodCase_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BloodCase"/>
+			</property>
+		</item>
+
+		<!--	Food Loot	-->
+		<item name="lootBoxFood">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_Construction_Crate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Food_Box1"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- 	WHITE BAG LOOT SYSTEM	-->
+	<append xpath="/items" >
+		<item name="CementLootCrateA">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix"/>
+				<property name="Create_item_count" value="900"/>
+			</property>	
+		</item>
+		<item name="CementLootCrateB">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix,resourceCement,resourceCrushedSand,resourceRockSmall"/>
+				<property name="Create_item_count" value="600,100,100,100"/>
+			</property>
+		</item>	
+		<item name="CementLootCrateC">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCement,resourceCrushedSand,resourceRockSmall"/>
+				<property name="Create_item_count" value="300,300,300"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- 	BLUE TARP LOOT SYSTEM 	-->
+	<append xpath="/items" >
+		<item name="BlueTarpLootA">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones"/>
+				<property name="Create_item_count" value="900"/>
+			</property>
+		</item>
+		<item name="BlueTarpLootB">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones,resourceClayLump,resourceRockSmall"/>
+				<property name="Create_item_count" value="900,150,150"/>
+			</property>
+		</item>
+		<item name="BlueTarpLootC">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceClayLump,resourceRockSmall"/>
+				<property name="Create_item_count" value="350,350"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- 	BRICK PALLET LOOT SYSTEM 	-->
+	<append xpath="/items" >
+		<item name="palletBrickLootA">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="pouredConcreteBlockVariantHelper"/>
+				<property name="Create_item_count" value="100"/>
+			</property>
+		</item>
+		<item name="palletBrickLootB">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="brickBlockVariantHelper"/>
+				<property name="Create_item_count" value="100"/>
+			</property>
+		</item>
+		<item name="palletBrickLootC">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="flagstoneBlockVariantHelper"/>
+				<property name="Create_item_count" value="100"/>
+			</property>
+		</item>
+	</append>	
+	<!-- Schematic -->
+	<append xpath="/items" >
+		<item name="WorkOrderQuestSchematic1">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="Description" value="Enables you to write work orders for various resources and blocks in the amount of 25"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="CustomIcon" value="Work_order_25"/>
+			<property name="Unlocks" value="MT1_Cobblestone,MT1_ConcreteMix,MT1_Cement,MT1_resourceForgedIron,MT1_resourceForgedIron,MT1_resourceForgedSteel,MT1_FlagstoneBlock,MT1_rebarFrameBlock"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_Cobblestone" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_ConcreteMix" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_Cement" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_resourceForgedIron" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_resourceForgedSteel" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_FlagstoneBlock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT1_rebarFrameBlock" operation="set" value="1"/>
+			</effect_group>
+		</item>
+		<item name="WorkOrderQuestSchematic2">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="Description" value="Enables you to write work orders for various resources and blocks in the amount of 100"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="CustomIcon" value="Work_order_100"/>
+			<property name="Unlocks" value="MT2_Cobblestone,MT2_ConcreteMix,MT2_Cement,MT2_resourceForgedIron,MT2_resourceForgedIron,MT2_resourceForgedSteel,MT2_FlagstoneBlock,MT2_rebarFrameBlock"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_Cobblestone" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_ConcreteMix" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_Cement" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_resourceForgedIron" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_resourceForgedSteel" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_FlagstoneBlock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT2_rebarFrameBlock" operation="set" value="1"/>
+			</effect_group>
+		</item>	
+		<item name="WorkOrderQuestSchematic3">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="Description" value="Enables you to write work orders for various resources and blocks in the amount of 500"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="CustomIcon" value="Work_order_500"/>
+			<property name="Unlocks" value="MT3_Cobblestone,MT3_ConcreteMix,MT3_Cement,MT3_resourceForgedIron,MT3_resourceForgedIron,MT3_resourceForgedSteel,MT3_FlagstoneBlock,MT3_rebarFrameBlock"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_Cobblestone" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_ConcreteMix" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_Cement" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_resourceForgedIron" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_resourceForgedSteel" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_FlagstoneBlock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT3_rebarFrameBlock" operation="set" value="1"/>
+			</effect_group>
+		</item>	
+		<item name="WorkOrderQuestSchematic4">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="Description" value="Enables you to write work orders for various resources and blocks in the amount of 1000"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="CustomIcon" value="Work_order_1000"/>
+			<property name="Unlocks" value="MT4_Cobblestone,MT4_ConcreteMix,MT4_Cement,MT4_resourceForgedIron,MT4_resourceForgedIron,MT4_resourceForgedSteel,MT4_FlagstoneBlock,MT4_rebarFrameBlock"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_Cobblestone" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_ConcreteMix" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_Cement" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_resourceForgedIron" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_resourceForgedSteel" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_FlagstoneBlock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_rebarFrameBlock" operation="set" value="1"/>
+			</effect_group>
+		</item>
+	</append>
+
+	<!-- 	MATERIAL TRADER	-->
+	<!-- 	Materials -->
+	<append xpath="/items" >
+		<item name="MT1_Cobblestone">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_CobblestoneDesc" />
+			<property name="CustomIcon" value="MT_Cobblestone25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_Cobblestone" />
+			</property>
+		</item>
+		<item name="MT2_Cobblestone">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_CobblestoneDesc" />
+			<property name="CustomIcon" value="MT_Cobblestone100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_Cobblestone" />
+			</property>
+		</item>
+		<item name="MT3_Cobblestone">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_CobblestoneDesc" />
+			<property name="CustomIcon" value="MT_Cobblestone500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_Cobblestone" />
+			</property>
+		</item>
+		<item name="MT4_Cobblestone">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_CobblestoneDesc" />
+			<property name="CustomIcon" value="MT_Cobblestone1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_Cobblestone" />
+			</property>
+		</item>
+
+		<item name="MT1_ConcreteMix">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_ConcreteMixDesc" />
+			<property name="CustomIcon" value="MT_ConcreteMix25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_ConcreteMix" />
+			</property>
+		</item>
+		<item name="MT2_ConcreteMix">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_ConcreteMixDesc" />
+			<property name="CustomIcon" value="MT_ConcreteMix100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_ConcreteMix" />
+			</property>
+		</item>
+		<item name="MT3_ConcreteMix">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_ConcreteMixDesc" />
+			<property name="CustomIcon" value="MT_ConcreteMix500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_ConcreteMix" />
+			</property>
+		</item>
+		<item name="MT4_ConcreteMix">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_ConcreteMixDesc" />
+			<property name="CustomIcon" value="MT_ConcreteMix1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_ConcreteMix" />
+			</property>
+		</item>
+
+		<item name="MT1_Cement">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_CementDesc" />
+			<property name="CustomIcon" value="MT_Cement25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_Cement" />
+			</property>
+		</item>
+		<item name="MT2_Cement">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_CementDesc" />
+			<property name="CustomIcon" value="MT_Cement100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_Cement" />
+			</property>
+		</item>
+		<item name="MT3_Cement">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_CementDesc" />
+			<property name="CustomIcon" value="MT_Cement500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_Cement" />
+			</property>
+		</item>
+		<item name="MT4_Cement">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_CementDesc" />
+			<property name="CustomIcon" value="MT_Cement1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_Cement" />
+			</property>
+		</item>
+
+		<item name="MT1_resourceForgedIron">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_resourceForgedIronDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedIron25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_resourceForgedIron" />
+			</property>
+		</item>
+		<item name="MT2_resourceForgedIron">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_resourceForgedIronDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedIron100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_resourceForgedIron" />
+			</property>
+		</item>
+		<item name="MT3_resourceForgedIron">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_resourceForgedIronDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedIron500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_resourceForgedIron" />
+			</property>
+		</item>
+		<item name="MT4_resourceForgedIron">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_resourceForgedIronDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedIron1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_resourceForgedIron" />
+			</property>
+		</item>
+
+		<item name="MT1_resourceForgedSteel">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_resourceForgedSteelDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedSteel25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_resourceForgedSteel" />
+			</property>
+		</item>
+		<item name="MT2_resourceForgedSteel">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_resourceForgedSteelDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedSteel100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_resourceForgedSteel" />
+			</property>
+		</item>
+		<item name="MT3_resourceForgedSteel">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_resourceForgedSteelDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedSteel500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_resourceForgedSteel" />
+			</property>
+		</item>
+		<item name="MT4_resourceForgedSteel">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_resourceForgedSteelDesc" />
+			<property name="CustomIcon" value="MT_resourceForgedSteel1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_resourceForgedSteel" />
+			</property>
+		</item>
+	</append>
+
+	<!-- 	Blocks -->
+	<append xpath="/items" >
+		<item name="MT1_FlagstoneBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_FlagstoneBlockDesc" />
+			<property name="CustomIcon" value="MT_FlagstoneBlock25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_FlagstoneBlock" />
+			</property>
+		</item>
+		<item name="MT2_FlagstoneBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_FlagstoneBlockDesc" />
+			<property name="CustomIcon" value="MT_FlagstoneBlock100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_FlagstoneBlock" />
+			</property>
+		</item>
+		<item name="MT3_FlagstoneBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_FlagstoneBlockDesc" />
+			<property name="CustomIcon" value="MT_FlagstoneBlock500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_FlagstoneBlock" />
+			</property>
+		</item>
+		<item name="MT4_FlagstoneBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_FlagstoneBlockDesc" />
+			<property name="CustomIcon" value="MT_FlagstoneBlock1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_FlagstoneBlock" />
+			</property>
+		</item>
+
+		<item name="MT1_rebarFrameBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT1_rebarFrameBlockDesc" />
+			<property name="CustomIcon" value="MT_rebarFrameBlock25"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader1_rebarFrameBlock" />
+			</property>
+		</item>
+		<item name="MT2_rebarFrameBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT2_rebarFrameBlockDesc" />
+			<property name="CustomIcon" value="MT_rebarFrameBlock100"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic2"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader2_rebarFrameBlock" />
+			</property>
+		</item>
+		<item name="MT3_rebarFrameBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT3_rebarFrameBlockDesc" />
+			<property name="CustomIcon" value="MT_rebarFrameBlock500"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic3"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader3_rebarFrameBlock" />
+			</property>
+		</item>
+		<item name="MT4_rebarFrameBlock">
+			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Description" value="MT4_rebarFrameBlockDesc" />
+			<property name="CustomIcon" value="MT_rebarFrameBlock1000"/>
+			<property name="UnlockedBy" value="WorkOrderQuestSchematic4"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_MaterialTrader4_rebarFrameBlock" />
+			</property>
+		</item>
+	</append>
+
+	<!--	Skill Book Loot	-->
+	<!-- 
+<append xpath="/items" >
+	<item name="SkillBook_Advanced_Engineering">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkAdvancedEngineering"/>
+		</property>
+	</item>	
+	<item name="SkillBook_Better_Barter">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkBetterBarter"/>
+		</property>
+	</item>
+	<item name="SkillBook_Daring_Adventurer">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkDaringAdventurer"/>
+		</property>
+	</item>
+	<item name="SkillBook_Grease_Monkey">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkGreaseMonkey"/>
+		</property>
+	</item>
+	<item name="SkillBook_Hammer_Forge">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkHammerForge"/>
+		</property>	
+	</item>	
+	<item name="SkillBook_Loving_Off_The_Land">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkLivingOffTheLand"/>
+		</property>
+	</item>
+	<item name="SkillBook_Lucky_Looter">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkLuckyLooter"/>
+		</property>
+	</item>
+	<item name="SkillBook_Master_Chef">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkMasterChef"/>
+		</property>
+	</item>
+	<item name="SkillBook_Miner_69r">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkMiner69r"/>
+		</property>
+	</item>
+	<item name="SkillBook_Mother_Lode">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkMotherLode"/>
+		</property>
+	</item>
+	<item name="SkillBook_Pack_Mule">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkPackMule"/>
+		</property>
+	</item>	
+	<item name="SkillBook_Physician">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkPhysician"/>
+		</property>
+	</item>
+	<item name="SkillBook_Salvage_Operation">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkSalvageOperations"/>
+		</property>
+	</item>	
+	<item name="SkillBook_Sexual_Trex">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkSexualTrex"/>
+		</property>
+	</item>
+	<item name="SkillBook_Yeah_Science">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="Drs_Book1"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="Description" value="shit just got real"/>
+		<property class="Action0">
+			<property name="Class" value="GainSkill"/>
+			<property name="Skills_to_gain" value="perkYeahScience"/>
+		</property>
+	</item>
+</append>
+-->
+</DrsA19StartReworked>

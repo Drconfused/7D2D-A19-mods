@@ -1,0 +1,27 @@
+Key,English
+BLOCKS
+Drs_spawnTrader,Drs Trader Spawn Block
+Drs_spawnTraderDesc,"Here is a Trader to place at your base, keep them safe and utilize them for your trades. Lets rebuild this world!"
+ITEMS
+WorkOrderQuestSchematic1,Work Order 25
+WorkOrderQuestSchematic1Desc,"Write work orders for various resources and blocks in the amount of 25."
+WorkOrderQuestSchematic2,Work Order 100
+WorkOrderQuestSchematic2Desc,"Write work orders for various resources and blocks in the amount of 100."
+WorkOrderQuestSchematic3,Work Order 500
+WorkOrderQuestSchematic3Desc,"Write work orders for various resources and blocks in the amount of 500."
+WorkOrderQuestSchematic4,Work Order 1000
+WorkOrderQuestSchematic4Desc,"Write work orders for various resources and blocks in the amount of 1000."
+lootBoxTraderReward,Trader Loot Box
+lootBoxConstructionA,Construction Loot Box A
+lootBoxConstructionADesc,"Open for construction related loot.\nThe A version is the most likely to contain the best loot."
+lootBoxConstructionB,Construction Loot Box B
+lootBoxConstructionBDesc,"Open for construction related loot.\nThe B version contains better loot than the C version."
+lootBoxConstructionC,Construction Loot Box C
+lootBoxConstructionCDesc,"Open for construction related loot.\nThe C version contains early game quality loot."
+lootBoxAmmoA,Ammo Loot Box A
+lootBoxAmmoADesc,"Loot box A is the most likely to contain the best quality and quantity of ammo."
+lootBoxAmmoB,Ammo Lood Box B
+lootBoxAmmoBDesc,"Loot box B has a good variety of ammo and a descent quantity."
+lootBoxAmmoC,Ammo Lood Box C
+lootBoxAmmoCDesc,"Getting set for the apocolypse!\nStock up and defend those bases!These loot boxes will save you in a pinch."
+
