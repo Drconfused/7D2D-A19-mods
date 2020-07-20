@@ -1,13 +1,47 @@
 DrsA19StartReworked
-Blocks
-	BarbedWireSheet 
-		- attempting to make it disassemble into itself. Using the wrench or similiar.
-		- upgrade into a reinforced barbed wire
+Need to add
+	palletCompressedCardboard 
+	balance loot boxes
+		Instead of the Loot Box creating one of 2 different loot boxes as items, make it call to the loot tables instead.
+	Tier1-6 quests need the appropriate loot box added.
 	
-Recipes
-	BarbedWireSheet
+Thoughts
+	Add loot boxes to Trader inventory.
+	Trader quest
+		Base Building
+			go to location with spawnchest containing blocks, bars, doors, hatches, ladders
+			place blocks, bars, doors, hatches, ladders
+			spawn zombies, defend area
+			return to Trader
 
+----------------------------------------------------------
+002
+	Rebalanced Trader Loot Boxes
+		added Mixed Loot table in loot.xml
+	Adding Ammo loot boxes as a variant for cardboard box loot so it's not only construction loot.
+		Loot Box A
+			<item name="lootBoxConstructionA"/>			
+			<item name="lootBoxAmmoA"/>
+		
+		Loot Box B
+			<item name="lootBoxConstructionB"/>			
+			<item name="lootBoxAmmoB"/>
+		
+		Loot Box C
+			<item name="lootBoxConstructionC"/>			
+			<item name="lootBoxAmmoC"/>
+	Rebalanced the pallet loot boxes so it wasn't so drasticly a monty haul.	
+		
 001
+	Blocks
+		BarbedWireSheet 
+			- attempting to make it disassemble into itself. Using the wrench or similiar.
+			- upgrade into a reinforced barbed wire
+		
+	Recipes
+		BarbedWireSheet
+
+
 	-Start with more gear.
 		Items on enter game
 			gunPistol,
@@ -181,12 +215,7 @@ Recipes
 
 WISHLIST	
 		
-Trader quest
-	Base Building
-		go to location with spawnchest containing blocks, bars, doors, hatches, ladders
-		place blocks, bars, doors, hatches, ladders
-		spawn zombies, defend area
-		return to Trader
+
 
 
 

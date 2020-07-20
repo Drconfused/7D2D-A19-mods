@@ -4,7 +4,7 @@
 		<Name value="DrsA19StartReworked" />
 		<Description value="Changes the start to skip the survival series and get right to searching for the Trader, new start items and rewards for finding Trader." />
 		<Author value="Drconfused" />
-		<Version value="a19-Dr001" />
+		<Version value="a19-Dr002" />
 		<Website value="" />
 	</ModInfo>
 </xml>

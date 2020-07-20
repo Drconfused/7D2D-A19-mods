@@ -41,7 +41,7 @@
 			<item name="resourceRockSmall" count="100,300"/>
 			<item name="resourceWood" count="100,300"/>
 		</lootgroup>
-
+		
 		<!-- 		Doors Hatches 	-->
 		<lootgroup name="constructionLootC_doors" count="1,2">
 			<item name="secureDoorWooden" count="1,2" prob=".3"/>
@@ -113,7 +113,6 @@
 			<item group="constructionLootB_materials"/>
 			<item group="empty"/>
 		</lootgroup>
-		<!-- this can't be used unless using a mod that adds the steelBars in-->
 		<lootgroup name="constructionLootA_bars">
 			<item name="steelBars" count="50,100"/>
 			<item name="steelBarsCentered" count="50,100"/>
@@ -254,10 +253,31 @@
 			<item group="constructionLoot_light" count="1,3"/>
 			<item group="constructionLootA_materials"/>
 		</lootgroup>
+
+<!-- INcomplete -->
+		<lootgroup name="constructionLootA">
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB">
+			<item group="constructionLootC_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLootC">
+			<item group="constructionLootC_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLoot">
+			<item name="lootBoxConstructionC" prob=".6"/>
+			<item name="lootBoxConstructionB" prob=".3"/>
+			<item name="lootBoxConstructionA" prob=".1"/>
+		</lootgroup>
 	</append>
 
 	<!--	AMMO LOOT	-->
 	<append xpath="/lootcontainers">
+		<lootgroup name="ammoLootBase" count="all">
+			<item name="resourceBulletCasing" count="10,30"/>
+			<item name="resourceGunPowder" count="10,30"/>
+			<item name="resourceBulletTip" count="10,30"/>
+		</lootgroup>
 		<lootgroup name="ammoLootC" count="1,3">
 			<item name="resourceBulletCasing" count="10,30"/>
 			<item name="resourceGunPowder" count="10,30"/>
@@ -265,6 +285,7 @@
 			<item name="resourceBuckshot" count="10,30"/>
 			<item name="ammoArrowStone" count="10,30"/>
 			<item name="ammoArrowIron" count="10,30"/>
+			<item group="ammoLootBase"/>
 		</lootgroup>
 		<lootgroup name="ammoLootB" count="1,3">
 			<item name="ammo9mmBulletBall" count="10,30"/>
@@ -283,6 +304,7 @@
 			<item name="ammoBundleShotgunBreachingSlug" count="1,2"/>
 			<item name="ammoBundleJunkTurretAP" count="1,2"/>
 			<item group="ammoLootB" count="3,5"/>
+			<item group="ammoLootC" count="5,15"/>
 		</lootgroup>
 		<lootgroup name="ammoLoot">
 			<item name="lootBoxAmmoC" prob=".6"/>
@@ -291,41 +313,9 @@
 		</lootgroup>
 	</append>
 
-	<!--	TRADER REWARD LOOT	-->
-	<append xpath="/lootcontainers">
-		<lootgroup name="traderRewardLootcont" count="1,2">
-			<item name="lootBoxMedicine" prob=".06"/>
-			<item name="lootBoxFood" prob=".06"/>
-			<item name="lootBoxConstructionC" prob=".06"/>
-			<item name="lootBoxConstructionB" prob=".03"/>
-			<item name="lootBoxConstructionA" prob=".01"/>
-			<item name="lootBoxAmmoC" prob=".06"/>
-			<item name="lootBoxAmmoB" prob=".03"/>
-			<item name="lootBoxAmmoA" prob=".01"/>
-		</lootgroup>
-		<lootgroup name="traderRewardLootA" count="all">
-			<item group="traderRewardLootcont" count="1,4"/>
-			<item name="resourceRepairKit" count="1,4"/>
-			<item name="casinoCoin" count="10,300"/>
-		</lootgroup>
-		<lootgroup name="traderRewardLootB" count="1,2">
-			<item group="traderRewardLootA" prob=".01"/>
-			<item group="traderRewardLootcont" prob=".6"/>
-			<item name="casinoCoin" count="50,1000"/>
-			<item name="resourceRepairKit" count="2,4" prob=".75"/>
-		</lootgroup>
-		<lootgroup name="traderRewardLootC" count="1,2">
-			<item group="traderRewardLootA" prob=".001"/>
-			<item group="traderRewardLootB" prob=".01"/>
-			<item group="traderRewardLootcont" prob=".1"/>
-			<item name="casinoCoin" count="10,300"/>
-			<item name="oldCash" count="10,300"/>
-		</lootgroup>
-	</append>
-
 	<!--	MEDICAL LOOT	-->
 	<append xpath="/lootcontainers" >
-		<lootgroup name="questMedicDrugs">
+		<lootgroup name="questMedicDrugs" count="1,3">
 			<item name="drugAntibiotics" count="1,3" prob="0.5"/>
 			<item name="drugFortBites" count="1,3"/>
 			<item name="drugHealthBar"/>
@@ -335,9 +325,9 @@
 			<item name="drugSteroids" count="1,3"/>
 			<item name="drugVitamins" count="1,2" prob="0.5"/>
 			<item name="medicalAloeCream" count="4,10" prob="0.5"/>
-			<item group="empty"/>
+			<item group="empty" prob="0.01"/>
 		</lootgroup>
-		<lootgroup name="questMedicItems">
+		<lootgroup name="questMedicItems" count="1,3">
 			<item name="toolBeaker" count="1" prob="0.01"/>
 			<item name="candle" count="1,4"/>
 			<item name="modArmorCoolingMesh" count="1"/>
@@ -349,9 +339,9 @@
 			<item name="bookWasteTreasuresHoney"/>
 			<item name="bookWasteTreasuresWater"/>
 			<item name="bookBarBrawling5AdrenalineHealing"/>
-			<item group="empty"/>
+			<item group="empty" prob="0.01"/>
 		</lootgroup>
-		<lootgroup name="questMedicHollistic">
+		<lootgroup name="questMedicHollistic" count="1,3">
 			<item name="drinkJarGoldenRodTea" count="1,4"/>
 			<item name="drinkJarGrainAlcohol" count="1,4"/>
 			<item name="drinkJarRedTea" count="1,4"/>
@@ -361,19 +351,20 @@
 			<item name="resourceCropChrysanthemumPlant" count="10,30" prob="0.5"/>
 			<item name="resourceCropGoldenrodPlant" count="10,30" prob="0.5"/>
 			<item group="questMedicItems"/>
-			<item group="empty"/>
+			<item group="empty" prob="0.01"/>
 		</lootgroup>
-		<lootgroup name="questBandageCast">
+		<lootgroup name="questBandageCast" count="1,3">
 			<item name="medicalBandage" count="2,10"/>
 			<item name="medicalFirstAidBandage" count="2,5"/>
 			<item name="medicalFirstAidKit" count="2,3" prob="1.0" />
 			<item name="medicalPlasterCast" count="1,3" prob="0.1"/>	
-			<item name="medicalSplint" prob="0.1"/>
+			<item name="medicalSplint" count="1,3" prob="0.1"/>
 		</lootgroup>
 		<lootgroup name="questMedicKit" count="all">
 			<item group="questBandageCast"/>
 			<item group="questMedicHollistic"/>
 			<item group="questMedicDrugs"/>
+			<item group="questMedicItems" prob="0.1"/>
 		</lootgroup>
 	</append>
 
@@ -388,5 +379,73 @@
 			<item group="farmCrops" count="1,6"/>
 			<item group="seeds" count="1,6"/>
 		</lootgroup>
-	</append>	
+	</append>
+
+	<!--	MIXED LOOT	-->
+	<append xpath="/lootcontainers" >
+		<lootgroup name="mixedLootC">
+			<item name="lootBoxMedicine"/>
+			<item name="lootBoxFood"/>
+			<item group="foodCandy"/>
+			<item name="oldCash" count="10,100"/>
+		</lootgroup>
+		<lootgroup name="mixedLootB" count="2,3">
+			<item group="mixedLootC" count="1,3"/>
+			<item group="workingStiffsBox"/>
+		</lootgroup>
+		<lootgroup name="mixedLootA" count="all">
+			<item group="mixedLootC" count="2,6"/>
+			<item group="mixedLootB" count="1,3"/>
+		</lootgroup>
+		<lootgroup name="mixedLoot">
+			<item group="mixedLootC" count="1,3" prob=".06"/>
+			<item group="mixedLootB" count="1,3" prob=".03"/>
+			<item group="mixedLootA" count="1,3" prob=".01"/>
+		</lootgroup>
+	</append>
+	
+	<!--	TRADER REWARD LOOT	-->
+	<append xpath="/lootcontainers">
+		<lootgroup name="traderRewardLootcont" count="1,2">
+			<item name="lootBoxMedicine" prob=".06"/>
+			<item name="lootBoxFood" prob=".06"/>
+			<item group="constructionLoot"/>
+			<item group="ammoLoot"/>
+			<item group="perkBooks"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootA" count="all">
+			<item group="traderRewardLootcont" count="2,4"/>
+			<item name="resourceRepairKit" count="2,4"/>
+			<item group="perkBooks"/>
+			<item name="casinoCoin" count="100,1000"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootB" count="1,2">
+			<item group="traderRewardLootA" prob=".01"/>
+			<item group="traderRewardLootcont" prob=".6"/>
+			<item name="casinoCoin" count="30,500"/>
+			<item name="resourceRepairKit" count="2,4" prob=".75"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootC" count="1,2">
+			<item group="traderRewardLootA" prob=".001"/>
+			<item group="traderRewardLootB" prob=".01"/>
+			<item group="traderRewardLootcont" prob=".1"/>
+			<item name="casinoCoin" count="10,300"/>
+		</lootgroup>
+	</append>
+	
+	<!--	LOOT BOXES	-->
+	<append xpath="/lootcontainers">
+		<lootgroup name="lootBoxA" count="1,2">
+			<item name="lootBoxConstructionA"/>			
+			<item name="ammoLootA"/>
+		</lootgroup>
+		<lootgroup name="lootBoxB" count="1,2">
+			<item name="lootBoxConstructionB"/>			
+			<item name="ammoLootB"/>
+		</lootgroup>
+		<lootgroup name="lootBoxC" count="1,2">
+			<item name="lootBoxConstructionC"/>			
+			<item name="ammoLootC"/>
+		</lootgroup>
+	</append>
 </DrsA19StartReworked>

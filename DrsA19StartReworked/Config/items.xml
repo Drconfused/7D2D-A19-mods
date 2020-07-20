@@ -58,6 +58,7 @@
 		<!-- Milestone quests paper if adding to existing game -->	
 		<item name="Paper_Milestone_Zombie_Kill_100">
 			<property name="Extends" value="questMaster" />
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Description" value="Zombie Kill Milestone" />
 			<property class="Action0">
 				<property name="QuestGiven" value="100_Zombies_Killed" />
@@ -172,6 +173,22 @@
 				<property name="QuestGiven" value="Drs_Reward_Loot"/>
 			</property>
 		</item>
+		<item name="lootBoxTraderRewardB">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="00ff2b"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_LootB"/>
+			</property>
+		</item>
+		<item name="lootBoxTraderRewardC">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="b032ea"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_LootC"/>
+			</property>
+		</item>
 
 		<!--	Construction Grade A	-->
 		<item name="lootBoxConstructionA">
@@ -185,6 +202,8 @@
 		<!--	Construction Grade B	-->
 		<item name="lootBoxConstructionB">
 			<property name="Extends" value="lootBoxConstructionA"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property name="CustomIconTint" value="00ff2b"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="loot_BaseConstructor_Box2"/>
 			</property>
@@ -193,6 +212,8 @@
 		<!--	Construction Grade C	-->
 		<item name="lootBoxConstructionC">
 			<property name="Extends" value="lootBoxConstructionA"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property name="CustomIconTint" value="b032ea"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="loot_BaseConstructor_Box3"/>
 			</property>
@@ -247,6 +268,32 @@
 				<property name="QuestGiven" value="loot_Food_Box1"/>
 			</property>
 		</item>
+
+		<!--		Loot Box A	-->
+		<item name="lootBox_A">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxA"/>
+			</property>
+		</item>
+		<!--		Loot Box B	-->
+		<item name="lootBox_B">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxB"/>
+			</property>
+		</item>
+		<!--		Loot Box C	-->
+		<item name="lootBox_C">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxC"/>
+			</property>
+		</item>
+
 	</append>
 
 	<!-- 	WHITE BAG LOOT SYSTEM	-->
@@ -256,7 +303,7 @@
 			<property name="CustomIcon" value="palletWhiteBagsBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceConcreteMix"/>
-				<property name="Create_item_count" value="900"/>
+				<property name="Create_item_count" value="300"/>
 			</property>	
 		</item>
 		<item name="CementLootCrateB">
@@ -264,7 +311,7 @@
 			<property name="CustomIcon" value="palletWhiteBagsBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceConcreteMix,resourceCement,resourceCrushedSand,resourceRockSmall"/>
-				<property name="Create_item_count" value="600,100,100,100"/>
+				<property name="Create_item_count" value="75,100,100,100"/>
 			</property>
 		</item>	
 		<item name="CementLootCrateC">
@@ -272,7 +319,7 @@
 			<property name="CustomIcon" value="palletWhiteBagsBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCement,resourceCrushedSand,resourceRockSmall"/>
-				<property name="Create_item_count" value="300,300,300"/>
+				<property name="Create_item_count" value="75,75,75"/>
 			</property>
 		</item>
 	</append>
@@ -284,7 +331,7 @@
 			<property name="CustomIcon" value="palletBlueTarpBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCobblestones"/>
-				<property name="Create_item_count" value="900"/>
+				<property name="Create_item_count" value="300"/>
 			</property>
 		</item>
 		<item name="BlueTarpLootB">
@@ -292,7 +339,7 @@
 			<property name="CustomIcon" value="palletBlueTarpBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCobblestones,resourceClayLump,resourceRockSmall"/>
-				<property name="Create_item_count" value="900,150,150"/>
+				<property name="Create_item_count" value="100,100,100"/>
 			</property>
 		</item>
 		<item name="BlueTarpLootC">
@@ -300,7 +347,7 @@
 			<property name="CustomIcon" value="palletBlueTarpBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceClayLump,resourceRockSmall"/>
-				<property name="Create_item_count" value="350,350"/>
+				<property name="Create_item_count" value="100,100"/>
 			</property>
 		</item>
 	</append>
@@ -312,7 +359,7 @@
 			<property name="CustomIcon" value="palletBricksBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="pouredConcreteBlockVariantHelper"/>
-				<property name="Create_item_count" value="100"/>
+				<property name="Create_item_count" value="75"/>
 			</property>
 		</item>
 		<item name="palletBrickLootB">
@@ -320,7 +367,7 @@
 			<property name="CustomIcon" value="palletBricksBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="brickBlockVariantHelper"/>
-				<property name="Create_item_count" value="100"/>
+				<property name="Create_item_count" value="50"/>
 			</property>
 		</item>
 		<item name="palletBrickLootC">
@@ -328,12 +375,13 @@
 			<property name="CustomIcon" value="palletBricksBase"/>
 			<property class="Action0">
 				<property name="Create_item" value="flagstoneBlockVariantHelper"/>
-				<property name="Create_item_count" value="100"/>
+				<property name="Create_item_count" value="50"/>
 			</property>
 		</item>
-	</append>	
-	<!-- Schematic -->
+	</append>
+	<!-- 	MATERIAL TRADER	-->
 	<append xpath="/items" >
+		<!-- Schematic -->
 		<item name="WorkOrderQuestSchematic1">
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Description" value="Enables you to write work orders for various resources and blocks in the amount of 25"/>
@@ -402,11 +450,8 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MT4_rebarFrameBlock" operation="set" value="1"/>
 			</effect_group>
 		</item>
-	</append>
 
-	<!-- 	MATERIAL TRADER	-->
-	<!-- 	Materials -->
-	<append xpath="/items" >
+		<!-- 		MT Materials -->
 		<item name="MT1_Cobblestone">
 			<property name="Extends" value="questMaster" />
 			<property name="CreativeMode" value="Player"/>
@@ -611,10 +656,8 @@
 				<property name="QuestGiven" value="quest_MaterialTrader4_resourceForgedSteel" />
 			</property>
 		</item>
-	</append>
 
-	<!-- 	Blocks -->
-	<append xpath="/items" >
+		<!-- 		MT Blocks -->
 		<item name="MT1_FlagstoneBlock">
 			<property name="Extends" value="questMaster" />
 			<property name="CreativeMode" value="Player"/>
@@ -698,174 +741,6 @@
 		</item>
 	</append>
 
-	<!--	Skill Book Loot	-->
-	<!-- 
-<append xpath="/items" >
-	<item name="SkillBook_Advanced_Engineering">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkAdvancedEngineering"/>
-		</property>
-	</item>	
-	<item name="SkillBook_Better_Barter">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkBetterBarter"/>
-		</property>
-	</item>
-	<item name="SkillBook_Daring_Adventurer">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkDaringAdventurer"/>
-		</property>
-	</item>
-	<item name="SkillBook_Grease_Monkey">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkGreaseMonkey"/>
-		</property>
-	</item>
-	<item name="SkillBook_Hammer_Forge">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkHammerForge"/>
-		</property>	
-	</item>	
-	<item name="SkillBook_Loving_Off_The_Land">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkLivingOffTheLand"/>
-		</property>
-	</item>
-	<item name="SkillBook_Lucky_Looter">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkLuckyLooter"/>
-		</property>
-	</item>
-	<item name="SkillBook_Master_Chef">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkMasterChef"/>
-		</property>
-	</item>
-	<item name="SkillBook_Miner_69r">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkMiner69r"/>
-		</property>
-	</item>
-	<item name="SkillBook_Mother_Lode">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkMotherLode"/>
-		</property>
-	</item>
-	<item name="SkillBook_Pack_Mule">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkPackMule"/>
-		</property>
-	</item>	
-	<item name="SkillBook_Physician">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkPhysician"/>
-		</property>
-	</item>
-	<item name="SkillBook_Salvage_Operation">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkSalvageOperations"/>
-		</property>
-	</item>	
-	<item name="SkillBook_Sexual_Trex">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkSexualTrex"/>
-		</property>
-	</item>
-	<item name="SkillBook_Yeah_Science">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="Drs_Book1"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="Description" value="shit just got real"/>
-		<property class="Action0">
-			<property name="Class" value="GainSkill"/>
-			<property name="Skills_to_gain" value="perkYeahScience"/>
-		</property>
-	</item>
-</append>
--->
+	<!--	Barbed Wire Sheets	-->
+
 </DrsA19StartReworked>

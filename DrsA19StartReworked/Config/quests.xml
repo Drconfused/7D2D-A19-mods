@@ -248,8 +248,36 @@
 			<property name="shareable" value="false" />
 
 			<reward type="LootItem" id="traderRewardLootC,traderRewardLootB,traderRewardLootA" value="1" />
-			<reward type="Item" id="lootBoxMedicine,lootBoxFood,foodCandy" value="1" />
-			<reward type="Item" id="resourceBulletCasing,resourceGunPowder,resourceBulletTip" value="10-30" />
+			<reward type="LootItem" id="ammoLootBase" value="1" />
+			<reward type="LootItem" id="mixedLootC" value="1" />
+		</quest>
+		<quest id="Drs_Reward_LootB" repeatable="true">
+			<property name="name" value="Trader Loot Box B" />
+			<property name="subtitle" value="Trader Loot Box B" />
+			<property name="description" value="Loot box reward from the Trader." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for various rewards from the Trader.\nSecond tier trader loot box." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="traderRewardLootB" value="3" />
+			<reward type="LootItem" id="mixedLootB" value="3" />
+			<reward type="LootItem" id="ammoLootBase" value="3" />
+		</quest>
+		<quest id="Drs_Reward_LootA" repeatable="true">
+			<property name="name" value="Trader Loot Box A" />
+			<property name="subtitle" value="Trader Loot Box A" />
+			<property name="description" value="Loot box reward from the Trader." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for various rewards from the Trader.\nHighest tier trader loot box." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="traderRewardLootA" value="6" />
+			<reward type="LootItem" id="mixedLootA" value="6" />
+			<reward type="LootItem" id="ammoLootBase" value="6" />
 		</quest>
 	</append>
 
@@ -364,7 +392,47 @@
 			<reward type="Item" id="resourceBulletTip,resourceBuckshot,resourcePaper" value="5-30" />
 		</quest>
 	</append>
+	
+		<!--	LOOT BOXES	-->
+	<append xpath="/quests">
+		<quest id="loot_BoxA" repeatable="true">
+			<property name="name" value="Loot Box A" />
+			<property name="subtitle" value="Loot Box A" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items." />
+			<property name="shareable" value="false" />
 
+			<reward type="LootItem" id="lootBoxA" value="6" />
+		</quest>
+		<quest id="loot_BoxB" repeatable="true">
+			<property name="name" value="Loot Box B" />
+			<property name="subtitle" value="Loot Box B" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items.." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="lootBoxB" value="6" />
+		</quest>
+		<quest id="loot_BoxC" repeatable="true">
+			<property name="name" value="Loot Box C" />
+			<property name="subtitle" value="Loot Box C" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="lootBoxC" value="6" />
+		</quest>
+	</append>
+	
 	<!--	MEDICINE LOOT	-->
 	<append xpath="/quests">
 		<quest id="loot_FirstAid_Kit" repeatable="true">
@@ -377,7 +445,9 @@
 			<property name="offer" value="Open the loot box for medical related items." />
 			<property name="shareable" value="false" />
 
-			<reward type="LootItem" id="questMedicKit" value="13" />
+			<reward type="LootItem" id="questBandageCast" value="3" />
+			<reward type="LootItem" id="questMedicHollistic,questMedicItems" value="3" />
+			<reward type="LootItem" id="questMedicDrugs" value="3" />
 		</quest>
 		<quest id="loot_BloodCase" repeatable="true">
 			<property name="name_key" value="loot_BloodCase" />
@@ -411,8 +481,8 @@
 	</append>
 
 	<!-- 	MATERIAL TRADER-->
-	<!-- 		Materials -->
 	<append xpath="/quests">
+		<!-- 		Materials -->
 		<quest id="quest_MaterialTrader1_Cobblestone">
 			<property name="name" value="Cobblestone 25" />
 			<property name="subtitle" value="Collect 100 Clay and 100 Stone" />
@@ -912,12 +982,12 @@
 		</quest>
 		<quest id="quest_MaterialTrader2_resourceForgedSteel">
 			<property name="name" value="Forged Steel 100" />
-			<property name="subtitle" value="Collect 2000 Scrap Iron and 250 Clay to trade for 100 Forged Steel" />
-			<property name="description" value="Collect 2000 Scrap Iron and 250 Clay to trade for 100 Forged Steel" />
+			<property name="subtitle" value="Collect 2000 Scrap Iron and 1000 Clay to trade for 100 Forged Steel" />
+			<property name="description" value="Collect 2000 Scrap Iron and 1000 Clay to trade for 100 Forged Steel" />
 			<property name="icon" value="ui_game_symbol_map_house" />
 			<property name="repeatable" value="true" />
 			<property name="category" value="treasure" />
-			<property name="offer" value="Collect 2000 Scrap Iron and 250 Clay to trade for 100 Forged Steel" />
+			<property name="offer" value="Collect 2000 Scrap Iron and 1000 Clay to trade for 100 Forged Steel" />
 			<property name="group_name" value="Material Trades Forged Steel" />
 			<property name="difficulty" value="veryeasy" />
 			<property name="completiontype" value="TurnIn" />
@@ -941,12 +1011,12 @@
 		</quest>
 		<quest id="quest_MaterialTrader3_resourceForgedSteel">
 			<property name="name" value="Forged Steel 500" />
-			<property name="subtitle" value="Collect 10000 Scrap Iron and 250 Clay to trade for 500 Forged Steel" />
-			<property name="description" value="Collect 10000 Scrap Iron and 250 Clay to trade for 500 Forged Steel" />
+			<property name="subtitle" value="Collect 10000 Scrap Iron and 5000 Clay to trade for 500 Forged Steel" />
+			<property name="description" value="Collect 10000 Scrap Iron and 5000 Clay to trade for 500 Forged Steel" />
 			<property name="icon" value="ui_game_symbol_map_house" />
 			<property name="repeatable" value="true" />
 			<property name="category" value="treasure" />
-			<property name="offer" value="Collect 10000 Scrap Iron and 250 Clay to trade for 500 Forged Steel" />
+			<property name="offer" value="Collect 10000 Scrap Iron and 5000 Clay to trade for 500 Forged Steel" />
 			<property name="group_name" value="Material Trades Forged Steel" />
 			<property name="difficulty" value="veryeasy" />
 			<property name="completiontype" value="TurnIn" />
@@ -969,15 +1039,16 @@
 		</quest>	
 		<quest id="quest_MaterialTrader4_resourceForgedSteel">
 			<property name="name" value="Forged Steel 1000" />
-			<property name="subtitle" value="Collect 20000 Scrap Iron and 250 Clay to trade for 1000 Forged Steel" />
-			<property name="description" value="Collect 20000 Scrap Iron and 250 Clay to trade for 1000 Forged Steel" />
+			<property name="subtitle" value="Collect 20000 Scrap Iron and 10000 Clay to trade for 1000 Forged Steel" />
+			<property name="description" value="Collect 20000 Scrap Iron and 10000 Clay to trade for 1000 Forged Steel" />
 			<property name="icon" value="ui_game_symbol_map_house" />
 			<property name="repeatable" value="true" />
 			<property name="category" value="treasure" />
-			<property name="offer" value="Collect 20000 Scrap Iron and 250 Clay to trade for 1000 Forged Steel" />
+			<property name="offer" value="Collect 20000 Scrap Iron and 10000 Clay to trade for 1000 Forged Steel" />
 			<property name="group_name" value="Material Trades Forged Steel" />
 			<property name="difficulty" value="veryeasy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceScrapIron" value="20000" phase="1" />
 			<objective type="Fetch" id="resourceClayLump" value="10000" phase="1" />		
 
@@ -985,7 +1056,6 @@
 				<property name="phase" value="2" />
 				<property name="nav_object" value="return_to_trader" />
 			</objective>
-
 			<objective type="InteractWithNPC">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="return_to_trader" />
@@ -995,10 +1065,8 @@
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="resourceForgedSteel" value="1000" />
 		</quest>	
-	</append>
 
-	<!-- 		Blocks -->
-	<append xpath="/quests">
+		<!-- 		Blocks -->
 		<quest id="quest_MaterialTrader1_FlagstoneBlock">
 			<property name="name" value="FlagstoneBlock 25" />
 			<property name="subtitle" value="Collect 100 Cobblestones" />
@@ -1009,11 +1077,19 @@
 			<property name="offer" value="Trade 100 Cobblestones for 25 Flagstone Blocks." />
 			<property name="group_name" value="Material Trades Flagstone" />
 			<property name="difficulty" value="veryeasy" />
-			<property name="completiontype" value="TurnIn" />		
-			<objective type="Fetch" id="resourceCobblestones" value="100" phase="1" />		
+			<property name="completiontype" value="TurnIn" />
+			
+			<objective type="Fetch" id="resourceCobblestones" value="100" phase="1" />
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="flagstoneBlockVariantHelper" value="25" />
@@ -1028,11 +1104,19 @@
 			<property name="offer" value="Trade 400 Cobblestones for 100 Flagstone Blocks." />
 			<property name="group_name" value="Material Trades Flagstone" />
 			<property name="difficulty" value="veryeasy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceCobblestones" value="400" phase="1" />	
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="flagstoneBlockVariantHelper" value="100" />
@@ -1047,11 +1131,19 @@
 			<property name="offer" value="Trade 2000 Cobblestones for 500 Flagstone Blocks." />
 			<property name="group_name" value="Material Trades Flagstone" />
 			<property name="difficulty" value="veryeasy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceCobblestones" value="2000" phase="1" />		
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="flagstoneBlockVariantHelper" value="500" />
@@ -1066,11 +1158,19 @@
 			<property name="offer" value="Trade 4000 Cobblestones for 1000 Flagstone Blocks." />
 			<property name="group_name" value="Material Trades Flagstone" />
 			<property name="difficulty" value="veryeasy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceCobblestones" value="4000" phase="1" />	
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="flagstoneBlockVariantHelper" value="1000" />
@@ -1086,12 +1186,20 @@
 			<property name="offer" value="Trade 25 small stones and 125 scrap iron for 1 rebar frame block." />
 			<property name="group_name" value="Material Trades Rebar" />
 			<property name="difficulty" value="easy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceClayLump" value="25" phase="1" />
 			<objective type="Fetch" id="resourceScrapIron" value="125" phase="1" />		
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="rebarFrameBlockVariantHelper" value="25" />
@@ -1106,12 +1214,20 @@
 			<property name="offer" value="Trade 100 small stones and 500 scrap iron for 1 rebar frame block." />
 			<property name="group_name" value="Material Trades Rebar" />
 			<property name="difficulty" value="easy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />	
+			
 			<objective type="Fetch" id="resourceClayLump" value="100" phase="1" />
 			<objective type="Fetch" id="resourceScrapIron" value="500" phase="1" />		
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="rebarFrameBlockVariantHelper" value="100" />
@@ -1126,12 +1242,20 @@
 			<property name="offer" value="Trade 500 small stones and 2500 scrap iron for 1 rebar frame block." />
 			<property name="group_name" value="Material Trades Rebar" />
 			<property name="difficulty" value="easy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceClayLump" value="500" phase="1" />
 			<objective type="Fetch" id="resourceScrapIron" value="2500" phase="1" />		
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="rebarFrameBlockVariantHelper" value="500" />
@@ -1146,12 +1270,20 @@
 			<property name="offer" value="Trade 1000 small stones and 5000 scrap iron for 1 rebar frame block." />
 			<property name="group_name" value="Material Trades Rebar" />
 			<property name="difficulty" value="easy" />
-			<property name="completiontype" value="TurnIn" />		
+			<property name="completiontype" value="TurnIn" />
+			
 			<objective type="Fetch" id="resourceClayLump" value="1000" phase="1" />
 			<objective type="Fetch" id="resourceScrapIron" value="5000" phase="1" />		
+
 			<objective type="ReturnToNPC">
 				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
 			<reward type="Exp" value="100" />
 			<reward type="Item" id="casinoCoin" value="100" />
 			<reward type="Item" id="rebarFrameBlockVariantHelper" value="1000" />
@@ -1353,7 +1485,7 @@
 
 			<objective type="BlockUpgrade" id="ironBars_Armoured" value="8" phase="2" />
 			<objective type="BlockUpgrade" id="ironBarsCentered_Armoured" value="8" phase="2" />
-			<objective type="BlockUpgrade" id="pouredConcreteBlock" value="50" phase="2" />
+			<objective type="BlockUpgrade" id="concreteBlock" value="50" phase="2" />
 			<objective type="BlockUpgrade" id="ironDoor1_v1" value="2" phase="2" />
 			<objective type="BlockUpgrade" id="scrapHatch_v1" value="2" phase="2" />
 
@@ -1431,7 +1563,7 @@
 
 			<objective type="BlockUpgrade" id="steelBars_Armoured" value="8" phase="2" />
 			<objective type="BlockUpgrade" id="steelBarsCentered_Armoured" value="8" phase="2" />
-			<objective type="BlockUpgrade" id="pouredRConcreteBlock" value="100" phase="2" />
+			<objective type="BlockUpgrade" id="rConcreteBlock" value="100" phase="2" />
 			<objective type="BlockUpgrade" id="ironDoor1_v3" value="2" phase="2" />
 			<objective type="BlockUpgrade" id="scrapHatch_v3" value="2" phase="2" />
 

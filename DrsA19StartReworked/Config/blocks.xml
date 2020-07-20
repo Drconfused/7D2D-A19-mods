@@ -91,18 +91,18 @@
 		<!-- 	brown boxes base, full 	-->
 		<block name="palletBrownBoxesBaseA">
 			<property name="Extends" value="palletBrownBoxesBase"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionA"/>
-			<drop event="Destroy" name="lootBoxConstructionA" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
 		</block>
 		<block name="palletBrownBoxesBaseB">
 			<property name="Extends" value="palletBrownBoxesBase"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionB"/>
-			<drop event="Destroy" name="lootBoxConstructionB" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
 		</block>
 		<block name="palletBrownBoxesBaseC">
 			<property name="Extends" value="palletBrownBoxesBase"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionC"/>
-			<drop event="Destroy" name="lootBoxConstructionC" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
 		</block>
 		<block name="palletBrownBoxesBaseLooted">
 			<property name="Extends" value="palletBrownBoxesBase"/>
@@ -111,18 +111,18 @@
 		<!-- 	brown boxes tile, full 	-->
 		<block name="palletBrownBoxesTileA">
 			<property name="Extends" value="palletBrownBoxesTile"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionA"/>
-			<drop event="Destroy" name="lootBoxConstructionA" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTileB">
 			<property name="Extends" value="palletBrownBoxesTile"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionB"/>
-			<drop event="Destroy" name="lootBoxConstructionB" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTileC">
 			<property name="Extends" value="palletBrownBoxesTile"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionC"/>
-			<drop event="Destroy" name="lootBoxConstructionC" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTileLooted">
 			<property name="Extends" value="palletBrownBoxesTile"/>
@@ -131,18 +131,18 @@
 		<!-- 	brown boxes top, 1/3 	-->	
 		<block name="palletBrownBoxesTopA">
 			<property name="Extends" value="palletBrownBoxesTop"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionA"/>
-			<drop event="Destroy" name="lootBoxConstructionA" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTopB">
 			<property name="Extends" value="palletBrownBoxesTop"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionB"/>
-			<drop event="Destroy" name="lootBoxConstructionB" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTopC">
 			<property name="Extends" value="palletBrownBoxesTop"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionC"/>
-			<drop event="Destroy" name="lootBoxConstructionC" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
 		</block>
 		<block name="palletBrownBoxesTopLooted">
 			<property name="Extends" value="palletBrownBoxesTop"/>
@@ -151,18 +151,18 @@
 		<!-- 	brown boxes loose, full 	-->		
 		<block name="palletBrownBoxesLooseA">
 			<property name="Extends" value="palletBrownBoxesLoose"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionA"/>
-			<drop event="Destroy" name="lootBoxConstructionA" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
 		</block>
 		<block name="palletBrownBoxesLooseB">
 			<property name="Extends" value="palletBrownBoxesLoose"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionB"/>
-			<drop event="Destroy" name="lootBoxConstructionB" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
 		</block>
 		<block name="palletBrownBoxesLooseC">
 			<property name="Extends" value="palletBrownBoxesLoose"/>
-			<property name="CanPickup" value="true" param1="lootBoxConstructionC"/>
-			<drop event="Destroy" name="lootBoxConstructionC" count="1"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
 		</block>
 		<block name="palletBrownBoxesLooseLooted">
 			<property name="Extends" value="palletBrownBoxesLoose"/>
