@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19Lights" />
+		<Description value="Lights in POI can now be picked up." />
+		<Author value="Drconfused" />
+		<Version value="a19-Dr001" />
+		<Website value="" />
+	</ModInfo>
+</xml>
