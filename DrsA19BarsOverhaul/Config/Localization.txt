@@ -1,0 +1,19 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,
+woodBarsDesc,blocks,Block,,,You can see and shoot through wood bars and they offer some protection.\nCan be upgraded to Armoured Wood Bars.
+woodBarsCentered,blocks,Block,,,Centered Wood Bars
+woodBars_Armoured,blocks,Block,,,Armoured Wood Bars
+woodBars_ArmouredDesc,blocks,Block,,,You can see and shoot through armoured wood bars and they offer some protection.\nCan be upgraded to Iron Bars.
+woodBarsCentered_Armoured,blocks,Block,,,Centered Armoured Wood Bars
+ironBarsDesc,blocks,Block,,,You can see and shoot through iron bars and they offer decent protection.\nCan be upgraded to Armoured Iron Bars.
+ironBars_Armoured,blocks,Block,,,Armoured Iron Bars
+ironBars_ArmouredDesc,blocks,Block,,,You can see and shoot through armoured iron bars and they offer decent protection.\nCan be upgraded to Steel Bars.
+ironBarsCentered_Armoured,blocks,Block,,,Centered Armoured Iron Bars
+steelBars,blocks,Block,,,Steel Bars
+steelBarsDesc,blocks,Block,,,You can see and shoot through steel bars and they offer great protection.\nCan be upgraded to Armoured Steel Bars.
+steelBarsCentered,blocks,Block,,,Centered Steel Bars
+steelBars_Armoured,blocks,Block,,,Armoured Steel Bars
+steelBars_ArmouredDesc,blocks,Block,,,You can see and shoot through armoured steel bars and they offer phenomenal protection.\nCan be upgraded to Stainless Steel Bars.
+steelBarsCentered_Armoured,blocks,Block,,,Centered Armoured Steel Bars
+stainlessSteelBars,blocks,Block,,,Stainless Steel Bars
+steelBarsDesc,blocks,Block,,,You can see and shoot through stainless steel bars and they offer godly protection.
+stainlessSteelBarsCentered,blocks,Block,,,Centered Stainless Steel Bars
