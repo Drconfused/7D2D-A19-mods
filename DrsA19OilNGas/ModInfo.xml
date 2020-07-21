@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19OilNGas" />
+		<Description value="A control panel that will manifest a lootable burning barrel ontop that contains oil and gas related loot." />
+		<Author value="Drconfused" />
+		<Version value="a19.dr001" />
+		<Website value="" />
+	</ModInfo>
+</xml>
