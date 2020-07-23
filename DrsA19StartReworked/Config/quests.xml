@@ -393,7 +393,7 @@
 		</quest>
 	</append>
 	
-		<!--	LOOT BOXES	-->
+		<!--	MIXED LOOT BOXES	-->
 	<append xpath="/quests">
 		<quest id="loot_BoxA" repeatable="true">
 			<property name="name" value="Loot Box A" />

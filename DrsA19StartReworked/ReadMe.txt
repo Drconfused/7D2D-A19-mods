@@ -1,20 +1,413 @@
+----------------------------------------------------------
 DrsA19StartReworked
-Need to add
-	palletCompressedCardboard 
-	balance loot boxes
-		Instead of the Loot Box creating one of 2 different loot boxes as items, make it call to the loot tables instead.
-	Tier1-6 quests need the appropriate loot box added.
+----------------------------------------------------------
+INDEX
+	Thoughts
+	XML changes
+	Changelog
+	Thanks & Credits
 	
+----------------------------------------------------------
 Thoughts
-	Add loot boxes to Trader inventory.
+----------------------------------------------------------
+	Loot boxes
+		add to	
+			Trader inventory
+			relevant loot tables/containers
 	Trader quest
 		Base Building
 			go to location with spawnchest containing blocks, bars, doors, hatches, ladders
 			place blocks, bars, doors, hatches, ladders
 			spawn zombies, defend area
 			return to Trader
+		Base Fine Tuning
 
+	Need to add
+		palletCompressedCardboard 
+		balance loot boxes
+			Instead of the Loot Box creating one of 2 different loot boxes as items, make it call to the loot tables instead.
+		Tier1-6 quests need the appropriate loot box added.
+	AUGER
+		make the burning mod work again with auger
+	Lights
+		need to be scrappable
+
+	
 ----------------------------------------------------------
+XML changes
+----------------------------------------------------------
+	BLOCKS
+		ADDED
+			Drs_spawnTrader
+			Drs_spawnTraderRekt
+			Drs_spawnTraderHugh
+			Drs_spawnTraderBob
+			Drs_spawnTraderJen				-currently the reward for finding the trader so that a Trader can be placed at the base. will be attempting to make these traders more unique so they are independant from the vanilla traders in stock and quests if possible. At the very least I want the player to be able to choose which Trader they want.
+			palletBrownBoxesBaseA
+			palletBrownBoxesBaseB
+			palletBrownBoxesBaseC
+			palletBrownBoxesBaseLooted
+			palletBrownBoxesTileA
+			palletBrownBoxesTileB
+			palletBrownBoxesTileC
+			palletBrownBoxesTileLooted
+			palletBrownBoxesTopA
+			palletBrownBoxesTopB
+			palletBrownBoxesTopC
+			palletBrownBoxesTopLooted
+			palletBrownBoxesLooseA
+			palletBrownBoxesLooseB
+			palletBrownBoxesLooseC
+			palletBrownBoxesLooseLooted
+			palletWhiteBagsBaseB
+			palletWhiteBagsBaseC
+			palletWhiteBagsTileA
+			palletWhiteBagsTileeB
+			palletWhiteBagsTileC
+			palletWhiteBagsTopB
+			palletWhiteBagsTopC
+			palletWhiteBagsPartial1A
+			palletWhiteBagsPartial1B
+			palletWhiteBagsPartial1C
+			palletWhiteBagsPartial2A
+			palletWhiteBagsPartial2B
+			palletWhiteBagsPartial2C
+			palletWhiteBagsLooseA
+			palletWhiteBagsLooseB
+			palletWhiteBagsLooseC
+			palletBlueTarpBaseA
+			palletBlueTarpBaseB
+			palletBlueTarpBaseC
+			palletBlueTarpTileA
+			palletBlueTarpTileB
+			palletBlueTarpTileC
+			palletBricksBaseA
+			palletBricksBaseB
+			palletBricksBaseC
+			palletBricksTileA
+			palletBricksTileB
+			palletBricksTileC
+			palletBricksTopA
+			palletBricksTopB
+			palletBricksTopC
+			palletBricksPartial1A
+			palletBricksPartial1B
+			palletBricksPartial1C
+			palletBricksPartial2A
+			palletBricksPartial2B
+			palletBricksPartial2C
+			palletBricksLooseA
+			palletBricksLooseB
+			palletBricksLooseC
+			barbedWireSheet01
+			woodBarsCentered_Armoured
+			woodBars_Armoured
+			ironBarsCentered_Armoured
+			ironBars_Armoured
+			steelBarsCentered
+			steelBars
+			steelBarsCentered_Armoured
+			steelBars_Armoured
+			stainlessSteelBarsCentered
+			stainlessSteelBars
+			Oil_Extractor
+			Oil_Loot_Here	
+		CHANGED
+			barbedWireSheet		-disassemble harvest into itself using the savage tool. - upgrades into barbedWireSheet01
+			burningBarrel		-CanPickup turned on
+			burningBarrelPlayer -added the buffBurningElement whith BuffsWhenWalkedOn
+			woodBars			-added UpgradeBlock path.
+			woodBarsCentered	-added UpgradeBlock path.
+			ironBars			-added UpgradeBlock path.
+			ironBarsCentered	-added UpgradeBlock path.
+			Wild Plants 				-changed to class CropsGrown so they can be picked up with E
+			Player Plants				-have to make the extends function exclude the class CropsGrown so they don't get picked up.
+
+	BLOCKPLACEHOLDERS
+		ADDED
+			
+		CHANGED
+			Brown Boxes
+				palletBrownBoxesBase
+				palletBrownBoxesTile
+				palletBrownBoxesTop
+				palletBrownBoxesLoose
+			White Bags
+				palletWhiteBagsBase
+				palletWhiteBagsTile
+				palletWhiteBagsTop
+				palletWhiteBagsPartial1
+				palletWhiteBagsPartial2
+				palletWhiteBagsLoose
+			Blue Tarps
+				palletBlueTarpBase
+				palletBlueTarpTile
+			Brick Piles
+				palletBricksBase
+				palletBricksTile
+				palletBricksTop
+				palletBricksPartial1
+				palletBricksPartial2
+				palletBricksLoose
+
+	ITEMS
+		ADDED
+			DrsStarterKit
+			DrsStarterClothes
+			DrsStarterMaterials
+			DrsTraderToolKit
+			
+			Paper_Milestone_Zombie_Kill_100
+			Quest_Chit
+			QuestChit1
+			QuestChit5
+			QuestChit10
+			QuestChit50
+			QuestChit100
+			
+			lootBoxTraderReward
+			lootBoxTraderRewardB
+			lootBoxTraderRewardC
+			
+			lootBoxConstructionA
+			lootBoxConstructionB
+			lootBoxConstructionC
+			
+			lootBoxAmmoA
+			lootBoxAmmoB
+			lootBoxAmmoC
+			
+			lootBoxMedicine
+			lootBoxBlood
+			
+			lootBoxFood
+			
+			lootBox_A
+			lootBox_B
+			lootBox_C
+			
+			CementLootCrateA
+			CementLootCrateB
+			CementLootCrateC
+			
+			BlueTarpLootA
+			BlueTarpLootB
+			BlueTarpLootC
+			
+			palletBrickLootA
+			palletBrickLootB
+			palletBrickLootC
+			
+			WorkOrderQuestSchematic1
+			WorkOrderQuestSchematic2
+			WorkOrderQuestSchematic3
+			WorkOrderQuestSchematic4
+			
+			MT1_Cobblestone
+			MT2_Cobblestone
+			MT3_Cobblestone
+			MT4_Cobblestone
+			
+			MT1_ConcreteMix
+			MT2_ConcreteMix
+			MT3_ConcreteMix
+			MT4_ConcreteMix
+			
+			MT1_Cement
+			MT2_Cement
+			MT3_Cement
+			MT4_Cement
+			
+			MT1_resourceForgedIron
+			MT2_resourceForgedIron
+			MT3_resourceForgedIron
+			MT4_resourceForgedIron
+			
+			MT1_resourceForgedSteel
+			MT2_resourceForgedSteel
+			MT3_resourceForgedSteel
+			MT4_resourceForgedSteel
+			
+			MT1_FlagstoneBlock
+			MT2_FlagstoneBlock
+			MT3_FlagstoneBlock
+			MT4_FlagstoneBlock
+			
+			MT1_rebarFrameBlock
+			MT2_rebarFrameBlock
+			MT3_rebarFrameBlock
+			MT4_rebarFrameBlock
+			
+		CHANGED
+			meleeToolPickT3Auger 		-modslot amounts changed to 3,4,5,6,7,8
+			ModSlots					-all current items with ModSlots value of 1,1,2,2,3,4 changed to 1,2,3,4,5,6
+	LOOT
+		ADDED
+			
+		CHANGED			
+			Grills					-added resourceCoal
+
+	PROGRESSION
+		ADDED
+			
+		CHANGED			
+			max_level				-999
+			skill_points_per_level	-2
+			perkAdvancedEngineering
+				toolBeaker			-level='2,5'
+				Oil_Extractor		-level='3,5'
+				solarCell,solarbank	-level='5'
+			CraftingTier 			-all tiers can be crafted again
+			
+	RECIPES
+		ADDED
+			QuestChit1
+			QuestChit5
+			QuestChit10
+			QuestChit50
+			QuestChit100
+			MT1_Cobblestone	
+			MT2_Cobblestone
+			MT3_Cobblestone
+			MT4_Cobblestone
+			MT1_ConcreteMix
+			MT2_ConcreteMix
+			MT3_ConcreteMix
+			MT4_ConcreteMix
+			MT1_Cement
+			MT2_Cement
+			MT3_Cement
+			MT4_Cement
+			MT1_resourceForgedIron
+			MT2_resourceForgedIron
+			MT3_resourceForgedIron
+			MT4_resourceForgedIron
+			MT1_resourceForgedSteel
+			MT2_resourceForgedSteel
+			MT3_resourceForgedSteel
+			MT4_resourceForgedSteel
+			MT1_FlagstoneBlock
+			MT2_FlagstoneBlock
+			MT3_FlagstoneBlock
+			MT4_FlagstoneBlock
+			MT1_rebarFrameBlock
+			MT2_rebarFrameBlock
+			MT3_rebarFrameBlock
+			MT4_rebarFrameBlock
+			WorkOrderQuestSchematic1
+			WorkOrderQuestSchematic2
+			WorkOrderQuestSchematic3
+			WorkOrderQuestSchematic4
+			barbedWireSheet
+			Oil_Extractor
+			toolBeaker
+			solarCell
+			solarbank
+		
+		CHANGED
+			foodBaconAndEggs			-reduced meat cost
+			foodBoiledMeat				-reduced meat cost
+			foodCharredMeat				-reduced meat cost -removed need for cooking skill
+			foodChiliDog				-reduced meat cost
+			foodGrilledMeat				-reduced meat cost
+			foodMeatStew				-reduced meat cost
+			foodSteakAndPotato			-reduced meat cost
+			foodEggBoiled				-removed need for cooking skill
+			
+			
+	QUESTS
+		ADDED
+			100_Zombies_Killed			-cyclic quest that rewards with every 100 zombie kills and swtiches to 100_Zombies_Killed_
+			100_Zombies_Killed_			-cyclic quest that rewards with every 100 zombie kills and swtiches to 100_Zombies_Killed
+			Quest_Chit1					-reward when handing in 1 quest chit from the Zombie kill quests
+			Quest_Chit5					-reward when handing in 5 quest chit from the Zombie kill quests
+			Quest_Chit10				-reward when handing in 10 quest chit from the Zombie kill quests
+			Quest_Chit50				-reward when handing in 50 quest chit from the Zombie kill quests
+			Quest_Chit100				-reward when handing in 100 quest chit from the Zombie kill quests
+			Drs_Reward_Loot
+			Drs_Reward_LootB
+			Drs_Reward_LootA
+			loot_BaseConstructor_Box1
+			loot_BaseConstructor_Box2
+			loot_BaseConstructor_Box3
+			loot_Killer_Box1
+			loot_Killer_Box2
+			loot_Killer_Box3
+			loot_BoxA
+			loot_BoxB
+			loot_BoxC
+			loot_FirstAid_Kit
+			loot_BloodCase
+			loot_Food_Box1
+			quest_MaterialTrader1_Cobblestone
+			quest_MaterialTrader2_Cobblestone
+			quest_MaterialTrader3_Cobblestone
+			quest_MaterialTrader4_Cobblestone
+			quest_MaterialTrader1_ConcreteMix
+			quest_MaterialTrader2_ConcreteMix
+			quest_MaterialTrader3_ConcreteMix
+			quest_MaterialTrader4_ConcreteMix
+			quest_MaterialTrader1_Cement
+			quest_MaterialTrader2_Cement
+			quest_MaterialTrader3_Cement
+			quest_MaterialTrader4_Cement
+			quest_MaterialTrader1_resourceForgedIron
+			quest_MaterialTrader2_resourceForgedIron
+			quest_MaterialTrader3_resourceForgedIron
+			quest_MaterialTrader4_resourceForgedIron
+			quest_MaterialTrader1_resourceForgedSteel
+			quest_MaterialTrader2_resourceForgedSteel
+			quest_MaterialTrader3_resourceForgedSteel
+			quest_MaterialTrader4_resourceForgedSteel
+			quest_MaterialTrader1_FlagstoneBlock
+			quest_MaterialTrader2_FlagstoneBlock
+			quest_MaterialTrader3_FlagstoneBlock
+			quest_MaterialTrader4_FlagstoneBlock
+			quest_MaterialTrader1_rebarFrameBlock
+			quest_MaterialTrader2_rebarFrameBlock
+			quest_MaterialTrader3_rebarFrameBlock
+			quest_MaterialTrader4_rebarFrameBlock
+			BaseConstructor1
+			BaseConstructor2
+			BaseConstructor3
+			BaseConstructor4
+			BaseConstructor5
+			BaseConstructor6
+			BaseConstructor7
+			BaseConstructor8
+			
+		CHANGED
+			quest_BasicSurvival1		-removed and readded, removed objectives, auto completes, gives start gear.
+			quest_BasicSurvival2		-removed and readded, replaces the quest_whiteRiverCitizen1 objectives
+			quest_whiteRiverCitizen1	-removed and as note in quest_BasicSurvival2
+			all quests containing @id with 'tier' in id name.	-adds lootBoxTraderReward as reward.
+		
+		XUi
+			WINDOWS
+				modslots				-possible to have 8 mod slots on items.
+				
+----------------------------------------------------------
+Changelog
+----------------------------------------------------------
+003
+	Added 
+		contents of 
+			DrsBarsOverhaul		-
+			DrsA19OilNGas		-also locked recipe in progression perkAdvancedEngineering at level='3,5'
+			DrsBurningBarrel	-
+		recipes
+			solar cell
+			solarbank
+			beaker
+	Changed
+		meat amount in relevant recipes from 5 to 2.
+		charredmeat no longer needs cooking skill
+		boiled eggs no longer needs cooking skill
+		mod slots can now be up to 8 per item
+		meleeToolPickT3Auger 		-modslot amounts changed to 3,4,5,6,7,8
+		ModSlots					-all current items with ModSlots value of 1,1,2,2,3,4 changed to 1,2,3,4,5,6	
+		Wild Plants can be picked up with E
+		Crafting items now works for all tier levels.
 002
 	Rebalanced Trader Loot Boxes
 		added Mixed Loot table in loot.xml
@@ -33,15 +426,6 @@ Thoughts
 	Rebalanced the pallet loot boxes so it wasn't so drasticly a monty haul.	
 		
 001
-	Blocks
-		BarbedWireSheet 
-			- attempting to make it disassemble into itself. Using the wrench or similiar.
-			- upgrade into a reinforced barbed wire
-		
-	Recipes
-		BarbedWireSheet
-
-
 	-Start with more gear.
 		Items on enter game
 			gunPistol,
@@ -194,28 +578,17 @@ Thoughts
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-WISHLIST	
-		
-
+	
+----------------------------------------------------------
+Thanks & Credits
+----------------------------------------------------------
+	From the time I started playing 7 days to die in a17 I started to use mods to slowly adapt the game towards a style I wanted. This lept me into looking at making changes to the xml myself. 
+		-Jrbarrio was the first person that got me into the xml and after that I was hooked.
+		-Stallionsdens had the greatest impact on my games in regards to the mining and raincatcher as well as all the pallet and shelving becoming lootable. The mining machine became the basis of my oil and gas mod.
+		-Mayic/Jayic had the single most impact in actually formulating correct xml and for giving me a home on discord. It always amazed me the wizardry that would ensue when putting a query to him that he didn't know, within hours a full investigation of the xml would have happened on his end and he would end up returning with a certain answer about the query.
+		-Stasis was a tremendous wealth of knowledge when it came to xml and ideas. Discussing ideas and xml with him was always fruitful.
+		-Xyth's tutorials were indespensable for my power series 1 mod and without those that mod never would have happened. Having a chance to create the upgrade path and damage amounts for his lootable steel bars mod was an honour.
+	
 
 
 

@@ -7,35 +7,30 @@
 		Loot Box C = 12%
 	-->
 
-	<!--	brown boxes base	-->
+	<!--	BROWN BOXES	-->
 	<append xpath="/blockplaceholders">
+		<!--	brown boxes base	-->
 		<placeholder name="palletBrownBoxesBase">
 			<block name="palletBrownBoxesBaseLooted" prob=".8"/>
 			<block name="palletBrownBoxesBaseA" prob=".01"/>
 			<block name="palletBrownBoxesBaseB" prob=".07"/>
 			<block name="palletBrownBoxesBaseC" prob=".12"/>
 		</placeholder>
-	</append>
-	<!--	brown boxes tile	-->
-	<append xpath="/blockplaceholders">
+		<!--	brown boxes tile	-->
 		<placeholder name="palletBrownBoxesTile">
 			<block name="palletBrownBoxesTileLooted" prob=".8"/>
 			<block name="palletBrownBoxesTileA" prob=".01"/>
 			<block name="palletBrownBoxesTileB" prob=".07"/>
 			<block name="palletBrownBoxesTileC" prob=".12"/>
 		</placeholder>
-	</append>
-	<!--	brown boxes top	-->
-	<append xpath="/blockplaceholders">
+		<!--	brown boxes top	-->
 		<placeholder name="palletBrownBoxesTop">
 			<block name="palletBrownBoxesTopLooted" prob=".8"/>
 			<block name="palletBrownBoxesTopA" prob=".01"/>
 			<block name="palletBrownBoxesTopB" prob=".07"/>
 			<block name="palletBrownBoxesTopC" prob=".12"/>
 		</placeholder>
-	</append>
-	<!--	brown boxes loose	-->
-	<append xpath="/blockplaceholders">
+		<!--	brown boxes loose	-->
 		<placeholder name="palletBrownBoxesLoose">
 			<block name="palletBrownBoxesLooseLooted" prob=".8"/>
 			<block name="palletBrownBoxesLooseA" prob=".01"/>
@@ -44,48 +39,39 @@
 		</placeholder>
 	</append>
 
-	<!--	white Bags base	-->
+	<!--	WHITE BAGS	-->
 	<append xpath="/blockplaceholders">
+		<!--	white Bags base	-->
 		<placeholder name="palletWhiteBagsBase">
 			<block name="palletWhiteBagsBaseA" prob=".15"/>
 			<block name="palletWhiteBagsBaseB" prob=".30"/>
 			<block name="palletWhiteBagsBaseC" prob=".55"/>
 		</placeholder>
-	</append>
-	<!--	white sacks tile	-->
-	<append xpath="/blockplaceholders">
+		<!--	white sacks tile	-->
 		<placeholder name="palletWhiteBagsTile">
 			<block name="palletWhiteBagsTileA" prob=".15"/>
 			<block name="palletWhiteBagsTileeB" prob=".30"/>
 			<block name="palletWhiteBagsTileC" prob=".55"/>
 		</placeholder>
-	</append>	
-	<!--	white sacks top	-->
-	<append xpath="/blockplaceholders">
+		<!--	white sacks top	-->
 		<placeholder name="palletWhiteBagsTop">
 			<block name="palletWhiteBagsTopA" prob=".15"/>
 			<block name="palletWhiteBagsTopB" prob=".30"/>
 			<block name="palletWhiteBagsTopC" prob=".55"/>
 		</placeholder>
-	</append>	
-	<!--	white sacks partial 1	-->
-	<append xpath="/blockplaceholders">
+		<!--	white sacks partial 1	-->
 		<placeholder name="palletWhiteBagsPartial1">
 			<block name="palletWhiteBagsPartial1A" prob=".15"/>
 			<block name="palletWhiteBagsPartial1B" prob=".30"/>
 			<block name="palletWhiteBagsPartial1C" prob=".55"/>
 		</placeholder>
-	</append>	
-	<!--	white sacks partial 2	-->
-	<append xpath="/blockplaceholders">
+		<!--	white sacks partial 2	-->
 		<placeholder name="palletWhiteBagsPartial2">
 			<block name="palletWhiteBagsPartial2A" prob=".15"/>
 			<block name="palletWhiteBagsPartial2B" prob=".30"/>
 			<block name="palletWhiteBagsPartial2C" prob=".55"/>
 		</placeholder>
-	</append>	
-	<!--	white sacks loose	-->
-	<append xpath="/blockplaceholders">
+		<!--	white sacks loose	-->
 		<placeholder name="palletWhiteBagsLoose">
 			<block name="palletWhiteBagsLooseA" prob=".15"/>
 			<block name="palletWhiteBagsLooseB" prob=".30"/>
@@ -93,16 +79,15 @@
 		</placeholder>
 	</append>
 
-	<!-- 	blue tarp base 	-->
+	<!-- 	BLUE TARP 	-->
 	<append xpath="/blockplaceholders">
+		<!-- 	blue tarp base 	-->
 		<placeholder name="palletBlueTarpBase">
 			<block name="palletBlueTarpBaseA" prob=".15"/>
 			<block name="palletBlueTarpBaseB" prob=".30"/>
 			<block name="palletBlueTarpBaseC" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	blue tarp tile 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	blue tarp tile 	-->
 		<placeholder name="palletBlueTarpTile">
 			<block name="palletBlueTarpTileA" prob=".15"/>
 			<block name="palletBlueTarpTileB" prob=".30"/>
@@ -110,48 +95,39 @@
 		</placeholder>
 	</append>
 
-	<!-- 	brick base 	-->
+	<!-- 	BRICK 	-->
 	<append xpath="/blockplaceholders">
+		<!-- 	brick base 	-->
 		<placeholder name="palletBricksBase">
 			<block name="palletBricksBaseA" prob=".15"/>
 			<block name="palletBricksBaseB" prob=".30"/>
 			<block name="palletBricksBaseC" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	brick tile 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	brick tile 	-->
 		<placeholder name="palletBricksTile">
 			<block name="palletBricksTileA" prob=".15"/>
 			<block name="palletBricksTileB" prob=".30"/>
 			<block name="palletBricksTileC" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	brick top 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	brick top 	-->
 		<placeholder name="palletBricksTop">
 			<block name="palletBricksTopA" prob=".15"/>
 			<block name="palletBricksTopB" prob=".30"/>
 			<block name="palletBricksTopC" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	brick partial1 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	brick partial1 	-->
 		<placeholder name="palletBricksPartial1">
 			<block name="palletBricksPartial1A" prob=".15"/>
 			<block name="palletBricksPartial1B" prob=".30"/>
 			<block name="palletBricksPartial1C" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	brick partial2 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	brick partial2 	-->
 		<placeholder name="palletBricksPartial2">
 			<block name="palletBricksPartial2A" prob=".15"/>
 			<block name="palletBricksPartial2B" prob=".30"/>
 			<block name="palletBricksPartial2C" prob=".55"/>
 		</placeholder>
-	</append>
-	<!-- 	brick loose 	-->
-	<append xpath="/blockplaceholders">
+		<!-- 	brick loose 	-->
 		<placeholder name="palletBricksLoose">
 			<block name="palletBricksLooseA" prob=".15"/>
 			<block name="palletBricksLooseB" prob=".30"/>

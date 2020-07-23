@@ -2,6 +2,26 @@ Key,English
 BLOCKS
 Drs_spawnTrader,Drs Trader Spawn Block
 Drs_spawnTraderDesc,"Here is a Trader to place at your base, keep them safe and utilize them for your trades. Lets rebuild this world!"
+woodBarsDesc,You can see and shoot through wood bars and they offer some protection.\nCan be upgraded to Armoured Wood Bars.
+woodBarsCentered,Centered Wood Bars
+woodBars_Armoured,Armoured Wood Bars
+woodBars_ArmouredDesc,You can see and shoot through armoured wood bars and they offer some protection.\nCan be upgraded to Iron Bars.
+woodBarsCentered_Armoured,Centered Armoured Wood Bars
+ironBarsDesc,You can see and shoot through iron bars and they offer decent protection.\nCan be upgraded to Armoured Iron Bars.
+ironBars_Armoured,Armoured Iron Bars
+ironBars_ArmouredDesc,You can see and shoot through armoured iron bars and they offer decent protection.\nCan be upgraded to Steel Bars.
+ironBarsCentered_Armoured,Centered Armoured Iron Bars
+steelBars,Steel Bars
+steelBarsDesc,You can see and shoot through steel bars and they offer great protection.\nCan be upgraded to Armoured Steel Bars.
+steelBarsCentered,Centered Steel Bars
+steelBars_Armoured,Armoured Steel Bars
+steelBars_ArmouredDesc,You can see and shoot through armoured steel bars and they offer phenomenal protection.\nCan be upgraded to Stainless Steel Bars.
+steelBarsCentered_Armoured,Centered Armoured Steel Bars
+stainlessSteelBars,Stainless Steel Bars
+steelBarsDesc,You can see and shoot through stainless steel bars and they offer godly protection.
+stainlessSteelBarsCentered,Centered Stainless Steel Bars
+Oil_Extractor,Oil Extractor
+Oil_ExtractorDesc,"Place in a location that has an open 2 block high area, a burning barrel will appear on top when it is ready to loot which takes around 30 minutes to an hour."
 ITEMS
 WorkOrderQuestSchematic1,Work Order 25
 WorkOrderQuestSchematic1Desc,"Write work orders for various resources and blocks in the amount of 25."

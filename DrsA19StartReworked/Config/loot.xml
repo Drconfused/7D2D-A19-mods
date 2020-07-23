@@ -41,7 +41,7 @@
 			<item name="resourceRockSmall" count="100,300"/>
 			<item name="resourceWood" count="100,300"/>
 		</lootgroup>
-		
+
 		<!-- 		Doors Hatches 	-->
 		<lootgroup name="constructionLootC_doors" count="1,2">
 			<item name="secureDoorWooden" count="1,2" prob=".3"/>
@@ -254,7 +254,7 @@
 			<item group="constructionLootA_materials"/>
 		</lootgroup>
 
-<!-- INcomplete -->
+		<!-- INcomplete -->
 		<lootgroup name="constructionLootA">
 			<item group="constructionLootA_materials"/>
 		</lootgroup>
@@ -271,7 +271,7 @@
 		</lootgroup>
 	</append>
 
-	<!--	AMMO LOOT	-->
+	<!--	AMMO LOOT			-->
 	<append xpath="/lootcontainers">
 		<lootgroup name="ammoLootBase" count="all">
 			<item name="resourceBulletCasing" count="10,30"/>
@@ -288,10 +288,10 @@
 			<item group="ammoLootBase"/>
 		</lootgroup>
 		<lootgroup name="ammoLootB" count="1,3">
-			<item name="ammo9mmBulletBall" count="10,30"/>
-			<item name="ammo762mmBulletBall" count="10,30"/>
-			<item name="ammoShotgunShell" count="10,30"/>
-			<item name="ammo44MagnumBulletBall" count="10,30"/>
+			<item name="ammo9mmBulletBall" count="50,100"/>
+			<item name="ammo762mmBulletBall" count="50,100"/>
+			<item name="ammoShotgunShell" count="50,100"/>
+			<item name="ammo44MagnumBulletBall" count="50,100"/>
 			<item group="ammoLootC" count="3,8"/>
 		</lootgroup>
 		<lootgroup name="ammoLootA" count="2,5">
@@ -311,9 +311,17 @@
 			<item name="lootBoxAmmoB" prob=".3"/>
 			<item name="lootBoxAmmoA" prob=".1"/>
 		</lootgroup>
+<!--
+		<lootgroup name="ammoLoot">
+			<item name="lootBoxAmmoC" loot_prob_template="QuestT1Prob"/>
+			<item name="lootBoxAmmoB" loot_prob_template="QuestT2Prob/>
+			<item name="lootBoxAmmoA" loot_prob_template="QuestT3Prob"/>
+		</lootgroup>
+-->		
+
 	</append>
 
-	<!--	MEDICAL LOOT	-->
+	<!--	MEDICAL LOOT		-->
 	<append xpath="/lootcontainers" >
 		<lootgroup name="questMedicDrugs" count="1,3">
 			<item name="drugAntibiotics" count="1,3" prob="0.5"/>
@@ -368,20 +376,20 @@
 		</lootgroup>
 	</append>
 
-	<!--	FOOD LOOT	-->
+	<!--	FOOD LOOT			-->
 	<append xpath="/lootcontainers" >
-		<lootgroup name="questFoodLoot" count="1,3">
+		<lootgroup name="questFoodLoot" count="3,6">
 			<item group="cannedfood" count="1,6"/>
 			<item group="rottenFood"/>
-			<item group="rareFoodDrink" prob=".01"/>
+			<item group="rareFoodDrink" prob=".1"/>
 			<item group="farmingCookingRecipesCommon"/>
-			<item group="farmingCookingRecipesRare" prob=".01"/>
+			<item group="farmingCookingRecipesRare" prob=".1"/>
 			<item group="farmCrops" count="1,6"/>
 			<item group="seeds" count="1,6"/>
 		</lootgroup>
 	</append>
 
-	<!--	MIXED LOOT	-->
+	<!--	MIXED LOOT			-->
 	<append xpath="/lootcontainers" >
 		<lootgroup name="mixedLootC">
 			<item name="lootBoxMedicine"/>
@@ -403,7 +411,7 @@
 			<item group="mixedLootA" count="1,3" prob=".01"/>
 		</lootgroup>
 	</append>
-	
+
 	<!--	TRADER REWARD LOOT	-->
 	<append xpath="/lootcontainers">
 		<lootgroup name="traderRewardLootcont" count="1,2">
@@ -432,20 +440,37 @@
 			<item name="casinoCoin" count="10,300"/>
 		</lootgroup>
 	</append>
-	
-	<!--	LOOT BOXES	-->
+
+	<!--	LOOT BOXES			-->
 	<append xpath="/lootcontainers">
 		<lootgroup name="lootBoxA" count="1,2">
 			<item name="lootBoxConstructionA"/>			
-			<item name="ammoLootA"/>
+			<item group="ammoLootA"/>
 		</lootgroup>
 		<lootgroup name="lootBoxB" count="1,2">
 			<item name="lootBoxConstructionB"/>			
-			<item name="ammoLootB"/>
+			<item group="ammoLootB"/>
 		</lootgroup>
 		<lootgroup name="lootBoxC" count="1,2">
 			<item name="lootBoxConstructionC"/>			
-			<item name="ammoLootC"/>
+			<item group="ammoLootC"/>
 		</lootgroup>
+	</append>
+
+	<!-- 	OIL EXTRACTOR		-->
+	<append xpath="/lootcontainers" >
+		<lootcontainer id="225" count="1,50" size="8,9" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualBaseTemplate" >
+			<item name="resourceOilShale" count="1,50" prob="0.4"/>
+			<item name="ammoGasCan" count="1,100" prob="0.6"/>
+			<item name="resourceOil" count="0,3" prob="0.2"/>
+			<item name="terrOreOilDeposit" count="0,25" prob="0.2"/>
+			<item name="terrAsphalt" count="0,25" prob="0.2"/>
+			<item name="terrOreLead" count="0,25" prob="0.1"/>
+		</lootcontainer>
+	</append>
+
+	<!-- Grills now can contain coal -->
+	<append xpath="/lootcontainers/lootgroup[@name='grills']">
+		<item name="resourceCoal" count="3,15" prob="1"/>
 	</append>
 </DrsA19StartReworked>
