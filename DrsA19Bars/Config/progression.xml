@@ -1,0 +1,13 @@
+<DrsA19Bars>
+	<!-- In case we want to change bars to recipes locked in a progression
+		resourceWoodBarArmour - wood upgrade will not require a progression.
+		resourceIronBarArmour
+		resourceSteelBarArmour
+		resourceStainlessBar
+	-->
+	<!-- 		perkAdvancedEngineering		-->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='1,5']/@tags">,resourceIronBarArmour</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@tags">,resourceSteelBarArmour</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,resourceStainlessBar</append>
+
+</DrsA19Bars>

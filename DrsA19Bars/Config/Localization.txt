@@ -1,0 +1,29 @@
+Key,English
+BLOCKS
+woodBarsDesc,You can see and shoot through wood bars and they offer some protection.\nCan be upgraded to Armoured Wood Bars.
+woodBarsCentered,Centered Wood Bars
+woodBars_Armoured,Armoured Wood Bars
+woodBars_ArmouredDesc,You can see and shoot through armoured wood bars and they offer some protection.\nCan be upgraded to Iron Bars.
+woodBarsCentered_Armoured,Centered Armoured Wood Bars
+ironBarsDesc,You can see and shoot through iron bars and they offer decent protection.\nCan be upgraded to Armoured Iron Bars.
+ironBars_Armoured,Armoured Iron Bars
+ironBars_ArmouredDesc,You can see and shoot through armoured iron bars and they offer decent protection.\nCan be upgraded to Steel Bars.
+ironBarsCentered_Armoured,Centered Armoured Iron Bars
+steelBars,Steel Bars
+steelBarsDesc,You can see and shoot through steel bars and they offer great protection.\nCan be upgraded to Armoured Steel Bars.
+steelBarsCentered,Centered Steel Bars
+steelBars_Armoured,Armoured Steel Bars
+steelBars_ArmouredDesc,You can see and shoot through armoured steel bars and they offer phenomenal protection.\nCan be upgraded to Stainless Steel Bars.
+steelBarsCentered_Armoured,Centered Armoured Steel Bars
+stainlessSteelBars,Stainless Steel Bars
+steelBarsDesc,You can see and shoot through stainless steel bars and they offer godly protection.
+stainlessSteelBarsCentered,Centered Stainless Steel Bars
+ITEMS
+resourceWoodBarArmour,Wood Bar Armour
+resourceWoodBarArmourDesc,Wood armour used to upgrade wood bars.
+resourceIronBarArmour,Iron Bar Armour
+resourceIronBarArmourDesc,Iron armour used to upgrade Iron bars.
+resourceSteelBarArmour,Steel Bar Armour
+resourceSteelBarArmourDesc,Steel armour used to upgrade Steel bars.
+resourceStainlessBar,Stainless Steel Bar Armour
+resourceStainlessBarDesc,Stainless armour used to upgrade Armoured Steel Bars bars.

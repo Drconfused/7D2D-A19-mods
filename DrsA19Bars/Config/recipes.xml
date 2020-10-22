@@ -1,0 +1,29 @@
+<DrsA19Bars>
+
+	<!-- In case we want to change bars to recipes 
+		resourceWoodBarArmour
+		resourceIronBarArmour
+		resourceSteelBarArmour
+		resourceStainlessBar
+	-->
+
+	<append xpath="/recipes">
+		<recipe name="resourceWoodBarArmour" count="2" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="4"/>
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+		<recipe name="resourceIronBarArmour" count="2" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="resourceSteelBarArmour" count="2" material_based="true" craft_area="forge" tags="perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="10"/>
+		</recipe>
+		<recipe name="resourceStainlessBar" count="2" material_based="true" craft_area="forge" tags="perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="50"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+	</append>
+
+</DrsA19Bars>
