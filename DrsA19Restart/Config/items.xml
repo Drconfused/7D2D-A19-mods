@@ -1,0 +1,87 @@
+<DrsA19Restart>
+	<!--	Starter Bundles
+				Bundles are able to be made so that when the item is opened it has a specific set amount of items, in the property class Action0 we have the Create_item and Create_item_count properties which directly correspond with each other in the lists they contain, that is the first item and the first number correspond, and so on. 
+				Bundles cannot be randomized at this time.
+		DrsStarterKit
+			ammo9mmBulletBall,
+			medicalFirstAidBandage,
+			meleeToolTorch,
+			drinkJarBoiledWater,
+			foodCanChili,
+			modGunScopeSmall,
+			meleeWpnBladeT1HuntingKnife,
+			modMeleeSerratedBlade,
+		DrsStarterClothes
+			apparelFlannelShirt,
+			armorLeatherPants,
+			apparelOveralls,
+			armorLeatherGloves,
+			armorLeatherBoots
+		DrsStarterMaterials
+			resourceForgedIron,
+			resourceIronFragment,
+			resourceWood,
+			resourceRockSmall,
+			resourceClayLump
+		DrsTraderToolKit
+			meleeToolRepairT1ClawHammer,
+			meleeToolPickT1IronPickaxe,
+			meleeToolShovelT1IronShovel,
+			meleeToolAxeT1IronFireaxe,
+			meleeToolSalvageT1Wrench,
+	-->
+	<!-- Drs Starter Bundles -->
+	<append xpath="/items">
+
+		<item name="DrsStarterKit">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntSuitcase"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="recipe_unlocked"/>
+				<property name="Create_item" value="ammo9mmBulletBall,medicalFirstAidBandage,meleeToolTorch,drinkJarBoiledWater,foodCanChili,modGunScopeSmall,modMeleeSerratedBlade"/>
+				<property name="Create_item_count" value="500,10,2,5,5,1,1"/>
+			</property>	
+		</item>
+
+		<item name="DrsStarterClothes">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelFlannelShirt,armorLeatherPants,apparelOveralls,armorLeatherGloves,armorLeatherBoots"/>
+				<property name="Create_item_count" value="1,1,1,1,1"/>
+			</property>
+		</item>
+
+		<item name="DrsStarterMaterials">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedIron,resourceIronFragment,resourceWood,resourceRockSmall,resourceClayLump"/>
+				<property name="Create_item_count" value="100,500,500,500,500"/>
+			</property>
+		</item>
+
+		<item name="DrsTraderToolKit">
+			<property name="Extends" value="DrsStarterKit"/>
+			<property name="CustomIcon" value="cntLuggageMediumClosed"/>
+			<property class="Action0">
+				<property name="Create_item" value="meleeToolRepairT1ClawHammer,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe,meleeToolSalvageT1Wrench"/>
+				<property name="Create_item_count" value="1,1,1,1,1"/>
+			</property>
+		</item>
+
+	</append>
+
+</DrsA19Restart>

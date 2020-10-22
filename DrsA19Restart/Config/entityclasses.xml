@@ -1,0 +1,16 @@
+<DrsA19Restart>
+	<!--	I believe that you cannot have more than 8 items listed in the start items, so I have opted to make some kits that when opened contain a further set amount of items, you can find these kits in items.xml. We could also add up to 8 quest rewards for the auto completed first quest to get more items.	-->
+	<!--	START GAME ITEMS 	
+		meleeWpnBladeT1HuntingKnife,
+		gunHandgunT1Pistol,
+		medicalFirstAidBandage,
+		DrsStarterClothes,
+		DrsStarterKit,
+		DrsStarterMaterials,
+		vehicleBicyclePlaceable
+	-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival' and @value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,noteDuke01']/@value">meleeWpnBladeT1HuntingKnife,gunHandgunT1Pistol,medicalFirstAidBandage,DrsStarterClothes,DrsStarterKit,DrsStarterMaterials,vehicleBicyclePlaceable</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP' and @value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock']/@value">gunHandgunT1Pistol,medicalFirstAidBandage,DrsStarterClothes,DrsStarterKit,DrsStarterMaterials</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP' and @value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock']/@value">gunHandgunT1Pistol,medicalFirstAidBandage,DrsStarterClothes,DrsStarterKit,DrsStarterMaterials</set>
+
+</DrsA19Restart>

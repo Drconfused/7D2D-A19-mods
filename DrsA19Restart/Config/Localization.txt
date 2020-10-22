@@ -1,0 +1,10 @@
+Key,English
+ITEMS
+DrsStarterKit, Starter Goods
+DrsStarterKitDesc,Some valuable items to ensure your survival in this living hell.\n Good thing the good Dr has our back and given us these goods.
+DrsStarterClothes,Starter Clothes
+DrsStarterClothesDesc,Don't want to be nude out in this waste of a land. Put this stuff on for our battle is not just against zeds but the elements too.
+DrsStarterMaterials,Starter Materials
+DrsStarterMaterialsDesc,Some reduction to that start of a grind! Thanks Doc!
+DrsTraderToolKit,Docs Tool Kit
+DrsTraderToolKitDesc,Some invaluable tools that the Dr left with the trader for you to get a base started!
