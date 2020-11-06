@@ -1,0 +1,61 @@
+<DrsA19Auger_Chainsaw>
+	<!--	MOTOR TOOL LOOT	-->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='dyes']" >
+		<lootgroup name="drsModsT1">
+			<item name="modEngineTurbo1"/>
+			<item name="modMotorToolExtension1"/>
+			<item name="modDiamondTip1"/>
+			<item name="modChainsawTemperedFrame1"/>
+		</lootgroup>
+		<lootgroup name="drsModsT2">
+			<item name="modEngineTurbo2"/>
+			<item name="modMotorToolExtension2"/>
+			<item name="modDiamondTip2"/>
+			<item name="modMotorToolSilencer"/>
+			<item name="modChainsawTemperedFrame2"/>
+		</lootgroup>
+		<lootgroup name="drsModsT3">
+			<item name="modEngineTurbo3"/>
+			<item name="modMotorToolExtension3"/>
+			<item name="modDiamondTip3"/>
+			<item name="modChainsawTemperedFrame3"/>
+			<item name="QuickerFixerUpper"/>
+		</lootgroup>
+
+		<lootgroup name="drsModsSchemT1">
+			<item name="modEngineTurbo1Schematic"/>
+			<item name="modMotorToolExtension1Schematic"/>
+			<item name="modDiamondTip1Schematic"/>
+			<item name="modChainsawTemperedFrame1Schematic"/>
+		</lootgroup>
+		<lootgroup name="drsModsSchemT2">
+			<item name="modEngineTurbo2Schematic"/>
+			<item name="modMotorToolExtension2Schematic"/>
+			<item name="modDiamondTip2Schematic"/>
+			<item name="modMotorToolSilencerSchematic"/>
+			<item name="modChainsawTemperedFrame2Schematic"/>
+		</lootgroup>
+		<lootgroup name="drsModsSchemT3">
+			<item name="modEngineTurbo3Schematic"/>
+			<item name="modMotorToolExtension3Schematic"/>
+			<item name="modDiamondTip3Schematic"/>
+			<item name="modChainsawTemperedFrame3Schematic"/>
+			<item name="QuickerFixerUpperSchematic"/>
+		</lootgroup>
+	</insertAfter>
+	<append xpath="lootcontainers/lootgroup[@name='schematicsToolsT2']">
+		<item group="drsModsSchemT1" prob="0.1"/>
+		<item group="drsModsSchemT2" prob="0.05"/>
+		<item group="drsModsSchemT3" prob="0.01"/>
+	</append>
+	<append xpath="lootcontainers/lootgroup[@name='groupModAllT1']">
+		<item group="drsModsT1"/>
+	</append>
+	<append xpath="lootcontainers/lootgroup[@name='groupModAllT2']">
+		<item group="drsModsT2"/>
+	</append>
+	<append xpath="lootcontainers/lootgroup[@name='groupModAllT3']">
+		<item group="drsModsT3"/>
+	</append>
+
+</DrsA19Auger_Chainsaw>

@@ -1,0 +1,11 @@
+<DrsA19Auger_Chainsaw>
+	<!-- 		perkAdvancedEngineering		-->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='2,5']/@tags">,modDiamondTip1,modMotorToolExtension1,toolBeaker</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@tags">,modDiamondTip2,modMotorToolExtension2,modEngineTurbo1,modChainsawTemperedFrame1</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='4,5']/@tags">,modEngineTurbo2,modChainsawTemperedFrame2</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">modMotorToolSilencer,modDiamondTip3,modMotorToolExtension3,modEngineTurbo3,modChainsawTemperedFrame3</append>
+
+	<!-- 		Crafting Tier allows all tiers to be crafted again 		-->
+	<set xpath="/progression/perks/perk/effect_group/passive_effect[contains(@name, 'CraftingTier')]/@value">1,2,3,4,5</set>
+
+</DrsA19Auger_Chainsaw>

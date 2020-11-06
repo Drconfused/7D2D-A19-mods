@@ -1,0 +1,457 @@
+<DrsA19Auger_Chainsaw>
+	<!-- MOTOR TOOL MODS -->
+	<append xpath="/item_modifiers">
+		<!-- ENGINE TURBO -->
+		<item_modifier name="modEngineTurbo1" installable_tags="motorTools1" modifier_tags="speed" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsTurboCharger"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modEngineTurbo2" installable_tags="motorTools1" modifier_tags="speed" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsTurboCharger"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modEngineTurbo3" installable_tags="motorTools1" modifier_tags="speed" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsTurboCharger"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".75"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<!-- BARREL EXTENDER -->
+		<item_modifier name="modMotorToolExtension1" installable_tags="motorToolReach" modifier_tags="shaft" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="MaxRange" operation="perc_add" value=".25"/>
+				<passive_effect name="BlockRange" operation="perc_add" value=".25"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modMotorToolExtension2" installable_tags="motorToolReach" modifier_tags="shaft" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="MaxRange" operation="perc_add" value=".5"/>
+				<passive_effect name="BlockRange" operation="perc_add" value=".5"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modMotorToolExtension3" installable_tags="motorToolReach" modifier_tags="shaft" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="MaxRange" operation="perc_add" value=".9"/>
+				<passive_effect name="BlockRange" operation="perc_add" value=".9"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+		<!-- DIAMOND TIP AUGER -->
+		<item_modifier name="modDiamondTip1" installable_tags="diamondBlade1" modifier_tags="diamondBlade1" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="CustomIconTint" value="5C797F"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<!-- <passive_effect name="EntityDamage" operation="perc_add" value="3.5"/> -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="wood"/>	
+				<!-- <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/> -->
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+		<item_modifier name="modDiamondTip2" installable_tags="diamondBlade1" modifier_tags="diamondBlade1" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="CustomIconTint" value="7C9398"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<!-- <passive_effect name="EntityDamage" operation="perc_add" value="3.5"/> -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".25"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="wood"/>	
+				<!-- <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/> -->
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+		<item_modifier name="modDiamondTip3" installable_tags="diamondBlade1" modifier_tags="diamondBlade1" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsAugerBlade1"/>
+			<property name="CustomIconTint" value="b9f2ff"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<!-- <passive_effect name="EntityDamage" operation="perc_add" value="3.5"/> -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-1" tags="wood"/>	
+				<!-- <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/> -->
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+		<!-- WIDE AUGER BLADE -->
+		<item_modifier name="modWideBlade1" installable_tags="wideBlade" modifier_tags="wideBlade" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsWideAuger"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<!-- ENGINE SILENCER -->
+
+		<item_modifier name="modMotorToolSilencer" installable_tags="motorTools1" modifier_tags="stealth" type="attachment">
+			<property name="CustomIcon" value="DrsSoundDampnerField1"/>
+			<property name="Stacknumber" value="1"/>
+			<item_property_overrides name="*">
+				<property name="Sound_start" value="silenced_fire"/>
+				<property name="Sound_end" value=""/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolPickT3Auger">
+				<property name="Sound_start" value="Auger_s_Fire"/>
+			</item_property_overrides>
+
+			<item_property_overrides name="meleeToolAxeT3Chainsaw">
+				<property name="Sound_start" value="Chainsaw_s_Fire"/>
+			</item_property_overrides>
+
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.2">
+					<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+				</passive_effect>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.25">
+					<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+				</passive_effect>
+				<passive_effect name="MaxRange" operation="perc_add" value="-.25">
+					<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+				</passive_effect>
+				<!-- Ideally we would have an attachment that would work and be viewable by the player and execute the following command =
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="Items/Mods/Barrels/SilencerPrefab" parent_transform="Attachments/Barrel"/> -->
+				<!-- stealth/noise stuff here -->
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+		<!-- CHAINSAW TEMPERED FRAME -->
+		<item_modifier name="modChainsawTemperedFrame1" installable_tags="Chainsaw" modifier_tags="frame" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsChainsawBody1"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value=".25"/>
+				<passive_effect name="DegradationPerUse" operation="base_subtract" value=".5"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modChainsawTemperedFrame2" installable_tags="Chainsaw" modifier_tags="frame" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsChainsawBody1"/>
+			<property name="CustomIconTint" value="e05141"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value=".5"/>
+				<passive_effect name="DegradationPerUse" operation="base_subtract" value=".75"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+
+		<item_modifier name="modChainsawTemperedFrame3" installable_tags="Chainsaw" modifier_tags="frame" type="attachment" rarity="0.5">
+			<property name="CustomIcon" value="DrsChainsawBody1"/>
+			<property name="CustomIconTint" value="f71d04"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<passive_effect name="DegradationMax" operation="perc_add" value=".75"/>
+				<passive_effect name="DegradationPerUse" operation="base_subtract" value="1"/>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>	
+
+	</append>
+
+	<!-- MINING BOOSTING MODS -->
+	<append xpath="/item_modifiers">
+		<item_modifier name="modGlovesOfMiningExp1" installable_tags="hands" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorLeatherGloves"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_gloves"/>
+				<property name="UMA.Overlay0" value="armor_leather_gloves"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".05" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modGlovesOfMiningExp2" installable_tags="hands" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorLeatherGloves"/>
+			<property name="CustomIconTint" value="0,0,255"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_gloves"/>
+				<property name="UMA.Overlay0" value="armor_leather_gloves"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".1" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modGlovesOfMiningExp3" installable_tags="hands" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorLeatherGloves"/>
+			<property name="CustomIconTint" value="128,0,128"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_gloves"/>
+				<property name="UMA.Overlay0" value="armor_leather_gloves"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".2" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="modHelmOfMiningExp1" installable_tags="head" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorMiningHelmet"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_mining_helmet"/>
+				<property name="UMA.Overlay0" value="gear_mining_helmet"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".05" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modHelmOfMiningExp2" installable_tags="head" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorMiningHelmet"/>
+			<property name="CustomIconTint" value="0,0,255"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_mining_helmet"/>
+				<property name="UMA.Overlay0" value="gear_mining_helmet"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".1" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modHelmOfMiningExp3" installable_tags="head" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="armorMiningHelmet"/>
+			<property name="CustomIconTint" value="128,0,128"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="armorLight"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_mining_helmet"/>
+				<property name="UMA.Overlay0" value="gear_mining_helmet"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="miningTool"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" level="1" value=".2" tags="Harvesting"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+
+	<!-- CLOTHING BOOSTING MODS -->
+	<append xpath="/item_modifiers">
+		<item_modifier name="modArmorRunningShoes" installable_tags="armorFeet" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothingRunningShoes"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="running_shoes"/>
+				<property name="UMA.Overlay0" value="running_shoes"/>
+				<property name="UMA.Overlay0Tint" value="86,255,109"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+				<display_value name="dRunSpeed" value=".1"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorRunningShoes_noAltar" installable_tags="armorFeet" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothingRunningShoes"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+				<display_value name="dRunSpeed" value=".1"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorRunningShoes2" installable_tags="armorFeet" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothingRunningShoes"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="running_shoes"/>
+				<property name="UMA.Overlay0" value="running_shoes"/>
+				<property name="UMA.Overlay0Tint" value="86,255,109"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<display_value name="dRunSpeed" value=".1"/>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorRunningShoes_noAltar2" installable_tags="armorFeet" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="CustomIconTint" value="86,255,109"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothingRunningShoes"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<display_value name="dRunSpeed" value=".1"/>
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="modArmorSportJacket" installable_tags="armorChest" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="letter_jacket"/>
+				<property name="UMA.Overlay0" value="letter_jacket"/>
+				<property name="UMA.Overlay0Tint" value="100,100,100,255"/>
+				<property name="UMA.Overlay1" value="letter_jacket_arms"/>
+				<property name="UMA.Overlay1Tint" value="243,241,238,255"/>
+				<property name="UMA.Overlay2" value="letterjacket_tshirt_overlay"/>
+				<property name="UMA.Overlay2Tint" value="250,245,250,255"/>
+				<property name="UMA.Overlay3" value="letterjacket_letter_overlay"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+				<display_value name="dRunSpeed" value=".1"/>
+				<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+					<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorSportJacket_noAltar" installable_tags="armorChest" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<effect_group tiered="false">
+				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+				<display_value name="dRunSpeed" value=".1"/>
+				<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+					<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorSportJacket2" installable_tags="armorChest" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="letter_jacket"/>
+				<property name="UMA.Overlay0" value="letter_jacket"/>
+				<property name="UMA.Overlay0Tint" value="100,100,100,255"/>
+				<property name="UMA.Overlay1" value="letter_jacket_arms"/>
+				<property name="UMA.Overlay1Tint" value="243,241,238,255"/>
+				<property name="UMA.Overlay2" value="letterjacket_tshirt_overlay"/>
+				<property name="UMA.Overlay2Tint" value="250,245,250,255"/>
+				<property name="UMA.Overlay3" value="letterjacket_letter_overlay"/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<display_value name="dRunSpeed" value=".15"/>
+				<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+					<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+		<item_modifier name="modArmorSportJacket_noAltar2" installable_tags="armorChest" blocked_tags="clothing" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<effect_group tiered="false">
+				<passive_effect name="WalkSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<display_value name="dRunSpeed" value=".15"/>
+				<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+					<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+	</append>
+
+</DrsA19Auger_Chainsaw>

@@ -1,0 +1,116 @@
+<DrsA19jail>
+
+<set xpath="/blocks/block[@name='jailBars']/property[@name='FilterTags']/@value">fdecor,fother,fwindows,fdoors</set>
+<append xpath="/blocks/block[@name='jailBars']">
+	<property name="MaxDamage" value="10000"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="10"/>
+	</property>
+	<property name="DowngradeBlock" value="jailBarsIron"/>
+</append>
+
+
+<append xpath="/blocks">
+<block name="jailBarsIron">
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Doors/jail_barsPrefab"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="DescriptionKey" value="jailBarsDesc"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jailBars"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0070"/> <!-- SortDoors -->
+</block>
+<block name="jailDoor">
+	<property name="CustomIcon" value="jailDoorStatic"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/jail_doorPrefab"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Place" value="Door"/>
+	<property name="ImposterExclude" value="true"/>
+	
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="Place" value="Door"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="open_door_jail"/>
+	<property name="CloseSound" value="close_door_jail"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="FilterTags" value="fdecor,fother,fwindows,fdoors"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelJailDoor"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0300"/> <!-- SortDoors -->
+</block>
+<block name="steelJailDoor">
+	<property name="CustomIcon" value="jailDoorStatic"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Msteel"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/jail_doorPrefab"/>
+	<property name="MaxDamage" value="10000"/>
+	<property name="Texture" value="446"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Place" value="Door"/>
+	<property name="ImposterExclude" value="true"/>
+	
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="Place" value="Door"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="open_door_jail"/>
+	<property name="CloseSound" value="close_door_jail"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="FilterTags" value="fdecor,fother,fwindows,fdoors"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="15"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="stainlessSteelJailDoor"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>-->
+	<property name="DowngradeBlock" value="jailDoor"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0300"/> <!-- SortDoors -->
+</block>
+</append>
+</DrsA19jail>

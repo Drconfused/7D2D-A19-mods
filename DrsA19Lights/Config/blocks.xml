@@ -10,6 +10,7 @@
 	<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Material" value="Mmetal_thin"/>
+	<property name="Weight" value="20"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Light" value="0.5"/>

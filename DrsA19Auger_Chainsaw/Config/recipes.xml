@@ -1,0 +1,175 @@
+<DrsA19Auger_Chainsaw>
+	<!-- MOTOR TOOL MODS -->
+	<append xpath="/recipes">
+		<!-- 	TURBO ENGINE -->
+		<recipe name="modEngineTurbo1" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modEngineTurbo1Schematic" count="1"/> -->
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceForgedSteel" count="2"/>		
+		</recipe>
+		<recipe name="modEngineTurbo2" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modEngineTurbo2Schematic" count="1"/> -->
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="6"/>
+			<ingredient name="resourceForgedSteel" count="5"/>		
+		</recipe>	
+		<recipe name="modEngineTurbo3" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modEngineTurbo3Schematic" count="1"/> -->
+			<ingredient name="smallEngine" count="3"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceForgedSteel" count="10"/>		
+		</recipe>
+
+		<!-- 	BARREL EXTENSION -->
+		<recipe name="modMotorToolExtension1" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>	
+		<recipe name="modMotorToolExtension2" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>	
+		<recipe name="modMotorToolExtension3" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceScrapPolymers" count="8"/>
+			<ingredient name="resourceForgedSteel" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+		</recipe>	
+
+		<!--	DIAMOND TIP FOR AUGER	-->
+		<recipe name="modDiamondTip1" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceRawDiamond" count="1"/>
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>	
+		<recipe name="modDiamondTip2" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="4"/>
+			<ingredient name="resourceRawDiamond" count="4"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
+		</recipe>	
+		<recipe name="modDiamondTip3" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolExtension1Schematic" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceRawDiamond" count="8"/>
+			<ingredient name="resourceForgedSteel" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+		</recipe>
+
+		<!-- 	MOTOR TOOL SILENCER 	-->
+		<recipe name="modMotorToolSilencer" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modMotorToolSilencer" count="1"/> -->
+			<ingredient name="resourceSpring" count="8"/>
+			<ingredient name="resourceForgedSteel" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceCropCottonPlant" count="20"/>
+		</recipe>	
+
+		<!-- 	CHAINSAW TEMPERED FRAME -->
+		<recipe name="modChainsawTemperedFrame1" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modChainsawTemperedFrame1" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceCoal" count="8"/>
+			<ingredient name="resourceForgedIron" count="8"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="modChainsawTemperedFrame2" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modChainsawTemperedFrame1" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="16"/>
+			<ingredient name="resourceCoal" count="16"/>
+			<ingredient name="resourceForgedIron" count="16"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+		<recipe name="modChainsawTemperedFrame3" counts="1" craft_area="workbench" tags="learnable">
+			<!-- <ingredient name="modChainsawTemperedFrame1" count="1"/> -->
+			<ingredient name="resourceMetalPipe" count="24"/>
+			<ingredient name="resourceCoal" count="24"/>
+			<ingredient name="resourceForgedIron" count="24"/>
+			<ingredient name="resourceScrapPolymers" count="30"/>
+		</recipe>
+		
+		<!-- 	WIDE AUGER BLADE -->
+		<recipe name="modWideBlade1" counts="1" craft_area="workbench">
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceScrapPolymers" count="8"/>
+			<ingredient name="resourceForgedSteel" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+		</recipe>	
+
+
+	</append>
+
+	<!-- MINING BOOSTING MODS -->
+	<append xpath="/recipes">
+		<recipe name="modGlovesOfMiningExp1" counts="1" craft_area="workbench">
+			<ingredient name="armorLeatherGloves" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceSilverNugget" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modGlovesOfMiningExp2" counts="1" craft_area="workbench">
+			<ingredient name="modGlovesOfMiningExp1" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceGoldNugget" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modGlovesOfMiningExp3" counts="1" craft_area="workbench">
+			<ingredient name="modGlovesOfMiningExp2" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceRawDiamond" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+
+		<recipe name="modHelmOfMiningExp1" counts="1" craft_area="workbench">
+			<ingredient name="armorMiningHelmet" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceSilverNugget" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modHelmOfMiningExp2" counts="1" craft_area="workbench">
+			<ingredient name="modHelmOfMiningExp1" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceGoldNugget" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modHelmOfMiningExp3" counts="1" craft_area="workbench">
+			<ingredient name="modHelmOfMiningExp2" count="1"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceRawDiamond" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+	</append>
+
+	<!-- 	BEAKER							-->
+	<append xpath="/recipes">
+		<recipe name="toolBeaker" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="unit_glass" count="10"/>
+			<ingredient name="unit_lead" count="2"/>
+			<ingredient name="unit_clay" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_glass,unit_lead"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+</DrsA19Auger_Chainsaw>

@@ -1,0 +1,15 @@
+<DrsA19jail>
+<append xpath="/recipes">
+	<recipe name="jailDoor" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
+		<ingredient name="ironBars" count="2" />
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceSpring" count="10" />
+		<ingredient name="resourceMechanicalParts" count="10" />
+    </recipe>
+
+	<recipe name="jailBarsIron" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
+		<ingredient name="ironBars" count="2" />
+		<ingredient name="resourceForgedIron" count="10" />
+	</recipe>
+</append>
+</DrsA19jail>

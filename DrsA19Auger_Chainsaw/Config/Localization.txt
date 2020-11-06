@@ -1,0 +1,74 @@
+Key,English
+ITEM_MODIFIERS
+modEngineTurbo1Schematic,Turbo Engine Mk.I Schematic
+modEngineTurbo2Schematic,Turbo Engine Mk.II Schematic
+modEngineTurbo3Schematic,Turbo Engine Mk.III Schematic
+modGasTank1Schematic,Gas Tank Mk.I Schematic
+modGasTank2Schematic,Gas Tank Mk.II Schematic
+modGasTank3Schematic,Gas Tank Mk.III Schematic
+modReserveGasTank1Schematic,Gas Tank Reserve Mk.I Schematic
+modReserveGasTank2Schematic,Gas Tank Reserve Mk.II Schematic
+modReserveGasTank3Schematic,Gas Tank Reserve Mk.III Schematic
+modMotorToolExtension1Schematic,Tool Extension Mk.I Schematic
+modMotorToolExtension2Schematic,Tool Extension Mk.II Schematic
+modMotorToolExtension3Schematic,Tool Extension Mk.III Schematic
+modDiamondTip1Schematic,Diamond Tip Mk.I Schematic
+modDiamondTip2Schematic,Diamond Tip Mk.II Schematic
+modDiamondTip3Schematic,Diamond Tip Mk.III Schematic
+modBetterHandlesSchematic,Better Handles Schematic
+modMotorToolSilencerSchematic,Motor Silencer Schematic
+modChainsawTemperedFrame1Schematic,Chainsaw Tempered Frame Mk.I Schematic
+modChainsawTemperedFrame2Schematic,Chainsaw Tempered Frame Mk.II Schematic
+modChainsawTemperedFrame3Schematic,Chainsaw Tempered Frame Mk.III Schematic
+modEngineTurbo1,Turbo Engine Mk.I
+modEngineTurbo2,Turbo Engine Mk.II
+modEngineTurbo3,Turbo Engine Mk.III
+modGasTank1,Gas Tank Mk.I
+modGasTank2,Gas Tank Mk.II
+modGasTank3,Gas Tank Mk.III
+modReserveGasTank1,Gas Tank Reserve Mk.I
+modReserveGasTank2,Gas Tank Reserve Mk.II
+modReserveGasTank3,Gas Tank Reserve Mk.III
+modMotorToolExtension1,Tool Extension Mk.I
+modMotorToolExtension2,Tool Extension Mk.II
+modMotorToolExtension3,Tool Extension Mk.III
+modDiamondTip1,Diamond Tip Mk.I
+modDiamondTip2,Diamond Tip Mk.II
+modDiamondTip3,Diamond Tip Mk.III
+modBetterHandles,Better Handles
+modMotorToolSilencer,Motor Silencer
+modChainsawTemperedFrame1,Chainsaw Tempered Frame Mk.I
+modChainsawTemperedFrame2,Chainsaw Tempered Frame Mk.II
+modChainsawTemperedFrame3,Chainsaw Tempered Frame Mk.III
+modEngineTurbo1Desc,"Increases speed of your Chainsaw and Auger by 10%"
+modEngineTurbo2Desc,"Increases speed of your Chainsaw and Auger by 25%"
+modEngineTurbo3Desc,"Increases speed of your Chainsaw and Auger by 50%"
+modGasTank1Desc,"Increases the size of your Gas Tank by 25%.\n\nStacks with the Reserved Gas Tanks"
+modGasTank2Desc,"Increases the size of your Gas Tank by 50%.\n\nStacks with the Reserved Gas Tanks"
+modGasTank3Desc,"Increases the size of your Gas Tank by 100%.\n\nStacks with the Reserved Gas Tanks"
+modReserveGasTank1Desc,"Increases the size of your Gas Tank by 25%.\n\nStacks with the Gas Tanks"
+modReserveGasTank2Desc,"Increases the size of your Gas Tank by 50%.\n\nStacks with the Gas Tanks"
+modReserveGasTank3Desc,"Increases the size of your Gas Tank by 100%.\n\nStacks with the Gas Tanks"
+modMotorToolExtension1Desc,"Increases the range of your Chainsaw and Auger by 10%"
+modMotorToolExtension2Desc,"Increases the range of your Chainsaw and Auger by 25%"
+modMotorToolExtension3Desc,"Increases the range of your Chainsaw and Auger by 50%"
+modDiamondTip1Desc,"Increases block damage of your Auger by 10%.\n\nReduces damage to Wood by 100%"
+modDiamondTip2Desc,"Increases block damage of your Auger by 25%.\n\nReduces damage to Wood by 100%"
+modDiamondTip3Desc,"Increases block damage of your Auger by 50%.\n\nReduces damage to Wood by 100%"
+modBetterHandlesDesc,"Reduces Kick from your Chainsaw and Auger by about 85%"
+modMotorToolSilencerDesc,"You can now mine in Peace"
+modChainsawTemperedFrame1Desc,"Increases Durability and reduces the Degradation per use by 25%"
+modChainsawTemperedFrame2Desc,"Increases Durability and reduces the Degradation per use by 50%"
+modChainsawTemperedFrame3Desc,"Increases Durability and reduces the Degradation per use by 75%"
+modGlovesOfMiningExp1,Gloves of Mining Mod
+modGlovesOfMiningExp1Desc,"Outfitting yourself with the best in mining handwear, grip your tools like never before, these make you more present in your experience! Gain 5% experience when using mining tools."
+modGlovesOfMiningExp2,Gloves of Mining Mod
+modGlovesOfMiningExp2Desc,"Outfitting yourself with the best in mining handwear, grip your tools like never before, these make you more present in your experience! Gain 10% experience when using mining tools."
+modGlovesOfMiningExp3,Gloves of Mining Mod
+modGlovesOfMiningExp3Desc,"Outfitting yourself with the best in mining handwear, grip your tools like never before, these make you more present in your experience! Gain 20% experience when using mining tools."
+modHelmOfMiningExp1,Mining Helm of Mining Mod
+modHelmOfMiningExp1Desc,"This helmet now fits so snug and well that you have no choice but to learn more as you mine! 5% experience when using minding tools."
+modHelmOfMiningExp2,Mining Helm of Mining Mod
+modHelmOfMiningExp2Desc,"This helmet now fits so snug and well that you have no choice but to learn more as you mine! 10% experience when using minding tools."
+modHelmOfMiningExp3,Mining Helm of Mining Mod
+modHelmOfMiningExp3Desc,"This helmet now fits so snug and well that you have no choice but to learn more as you mine! 20% experience when using minding tools."
