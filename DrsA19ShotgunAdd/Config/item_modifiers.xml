@@ -1,0 +1,17 @@
+<DrsA19ShotgunAdd>
+	<append xpath="/item_modifiers">
+		<item_modifier name="DrsBlockBreaker"  installable_tags="gun"  modifier_tags="barrelAttachment"  blocked_tags="noMods"  type="attachment" >
+			<property name="CustomIcon"  value="modGunBarrelExtender" />
+			<property name="CustomIconTint"  value="00ff2b" />
+			<property name="Stacknumber"  value="1" />
+			<property name="PickupJournalEntry"  value="augmentGunsTip" />
+			<effect_group tiered="false" >
+				<passive_effect name="BlockDamage"  operation="base_set"  value="20"/>
+				<passive_effect name="DamageModifier"  operation="perc_add"  value="3"  tags="earth"/>
+				<passive_effect name="DamageModifier"  operation="perc_add"  value="3"  tags="metal"/>
+				<passive_effect name="DamageModifier"  operation="perc_add"  value="3"  tags="stone"/>
+				<passive_effect name="DamageModifier"  operation="perc_add"  value="3"  tags="wood"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+</DrsA19ShotgunAdd>

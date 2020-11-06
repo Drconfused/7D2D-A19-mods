@@ -1,0 +1,48 @@
+----------------------------------------------------------
+DrsA19Trader1
+----------------------------------------------------------
+INDEX
+	Thoughts
+	XML changes
+	Changelog
+	Thanks & Credits
+	
+----------------------------------------------------------
+Thoughts
+----------------------------------------------------------
+
+	
+----------------------------------------------------------
+XML changes
+----------------------------------------------------------
+
+				
+----------------------------------------------------------
+Changelog
+----------------------------------------------------------
+
+		
+001
+	-add a placeable Trader spawn
+
+
+
+	
+----------------------------------------------------------
+Thanks & Credits
+----------------------------------------------------------
+	From the time I started playing 7 days to die in a17 I started to use mods to slowly adapt the game towards a style I wanted. This lept me into looking at making changes to the xml myself. 
+		-Jrbarrio was the first person that got me into the xml and after that I was hooked.
+		-Stallionsdens had the greatest impact on my games in regards to the mining and raincatcher as well as all the pallet and shelving becoming lootable. The mining machine became the basis of my oil and gas mod.
+		-Mayic/Jayic had the single most impact in actually formulating correct xml and for giving me a home on discord. It always amazed me the wizardry that would ensue when putting a query to him that he didn't know, within hours a full investigation of the xml would have happened on his end and he would end up returning with a certain answer about the query.
+		-Stasis was a tremendous wealth of knowledge when it came to xml and ideas. Discussing ideas and xml with him was always fruitful.
+		-Xyth's tutorials were indespensable for my power series 1 mod and without those that mod never would have happened. Having a chance to create the upgrade path and damage amounts for his lootable steel bars mod was an honour.
+	
+
+
+
+
+
+
+
+

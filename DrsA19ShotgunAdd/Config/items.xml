@@ -1,0 +1,34 @@
+<DrsA19ShotgunAdd>
+	<append xpath="/items">
+		<item name="ammoScattershot" >
+			<property name="Tags"  value="ammo,shotgun"/>
+			<property name="CustomIcon"  value="ammoShotgunShell" />
+			<property name="CustomIconTint"  value="00ff2b" />
+			<property name="DisplayType"  value="ammoShotgun"/>
+			<property name="HoldType"  value="45"/>
+			<property name="Meshfile"  value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="Material"  value="Mlead_scrap"/>
+			<property name="Stacknumber"  value="150"/>
+			<property name="EconomicValue"  value="11"/>
+			<property name="Group"  value="Ammo/Weapons"/>
+			<effect_group name="ammoScatter"  tiered="false" >
+				<passive_effect name="EntityDamage"  operation="base_set"  value="3"  tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage"  operation="base_set"  value=".1"  tags="perkBoomstick"/>
+				<passive_effect name="RoundRayCount"  operation="base_set"  value="100"  tags="perkBoomstick"/>
+				<passive_effect name="TargetArmor"  operation="perc_add"  value=".1"  tags="perkBoomstick"/>
+				<display_value name="dTargetArmor"  value=".1" />
+				<passive_effect name="MaxRange"  operation="base_set"  value="50"  tags="perkBoomstick"/>
+				<passive_effect name="DamageFalloffRange"  operation="base_set"  value="5"  tags="perkBoomstick"/>
+				<passive_effect name="EntityPenetrationCount"  operation="base_set"  value="1"  tags="perkBoomstick"/>
+				<passive_effect name="BlockPenetrationFactor"  operation="base_set"  value="51"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesVertical"  operation="base_set"  value="11"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesHorizontal"  operation="base_set"  value="11"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierAiming"  operation="perc_add"  value="-.14"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierCrouching"  operation="perc_add"  value="-.13"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierWalking"  operation="perc_add"  value=".2"  tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierRunning"  operation="perc_add"  value=".4"  tags="perkBoomstick"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoScattershot</append>
+</DrsA19ShotgunAdd>

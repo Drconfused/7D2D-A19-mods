@@ -1,0 +1,9 @@
+<DrsA19ShotgunAdd>
+	<append xpath="/recipes">
+		<recipe name="ammoScattershot"  count="1"  tags="workbenchCrafting"  craft_area="workbench" >
+			<ingredient name="resourceBuckshot"  count="3" />
+			<ingredient name="resourceGunPowder"  count="2" />
+			<ingredient name="resourcePaper"  count="1" />
+		</recipe>
+	</append>
+</DrsA19ShotgunAdd>

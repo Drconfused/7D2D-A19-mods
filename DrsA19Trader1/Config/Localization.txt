@@ -1,0 +1,6 @@
+Key,English
+ENTITY
+npcTraderDoc,Trader Doc
+BLOCKS
+Drs_spawnTrader,Trader Doc Spawn Block
+Drs_spawnTraderDesc,"Here is a Trader to place at your base, keep them safe and utilize them for your trades. Lets rebuild this world!"

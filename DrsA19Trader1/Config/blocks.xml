@@ -1,0 +1,90 @@
+<DrsA19Trader1>
+
+	<!--	DRS TRADER SPAWN BLOCK 	-->
+	<append xpath="/blocks">
+		<!-- 	Add the block for the Drs Trader that can be placed by the player -->
+		<!--	Drs Trader Notes
+	could make each different Trader it's own block so that the option exists for the player to select teh specific Trader type they want.
+	They would be listed as they item type they carry the most of
+		NAME			ID		CARRIES+/SPECIALIZES
+		Trader Bob, 	id=6, 	tools and vehicle parts
+		Trader Hugh, 	id=7, 	firearms, gun parts, and ammo
+		Trader Jen, 	id=2, 	medicine
+		Trader Joel 	id=1, 	armor
+		Trader Rekt, 	id=8, 	food, seeds farming stuff 
+
+-->
+		<block name="Drs_spawnTrader">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="metalTrussingRampOld"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen"/>
+			<property name="FilterTags" value="fdesign"/>
+			<property name="Collide" value="sight"/>
+		</block>
+		<block name="Drs_spawnTraderRekt">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="metalTrussingRampOld"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderRekt"/>
+			<property name="FilterTags" value="fdesign"/>
+			<property name="Collide" value="sight"/>
+		</block>
+		<block name="Drs_spawnTraderHugh">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="metalTrussingRampOld"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderHugh"/>
+			<property name="FilterTags" value="fdesign"/>
+			<property name="Collide" value="sight"/>
+		</block>
+		<block name="Drs_spawnTraderBob">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="metalTrussingRampOld"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderBob"/>
+			<property name="FilterTags" value="fdesign"/>
+			<property name="Collide" value="sight"/>
+		</block>
+		<block name="Drs_spawnTraderJen">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="DrsTraderJen"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderDoc"/>
+			<property name="FilterTags" value="fdesign"/>
+			<property name="Collide" value="sight"/>
+		</block>
+	</append>
+
+
+</DrsA19Trader1>

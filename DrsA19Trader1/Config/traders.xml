@@ -1,0 +1,172 @@
+<DrsA19Trader1>
+
+	<append xpath="/traders/trader_item_groups">
+		<trader_item_group name="consructVending">
+			<item name="resourceDuctTape" count="10,30"/>
+			<item name="resourceElectricParts" count="15,50" prob="0.7"/>
+			<item name="rebarFrameBlockVariantHelper" count="10,100"/>
+			<item name="resourceGlue" count="5,15"/>
+			<item name="resourceMechanicalParts" count="15,80" prob="0.8"/>
+			<item name="resourceMetalPipe" count="50,500"/>
+			<item name="resourceNail" count="10,100"/>
+			<item name="resourcePaint" count="1,12"/>
+			<item name="resourceSpring" count="5,30"/>
+		</trader_item_group>
+		<trader_item_group name="materialVending">
+			<item name="resourceAcid" count="1" prob="0.6"/>
+			<item name="resourceCement" count="50,500"/>
+			<item name="resourceClayLump" count="50,500"/>
+			<item name="resourceCloth" count="50,500"/>
+			<item name="resourceCoal" count="50,500"/>
+			<item name="resourceCobblestones" count="50,500"/>
+			<item name="resourceConcreteMix" count="100,500"/>
+			<item name="resourceCrushedSand" count="50,500"/>
+			<item name="resourceForgedIron" count="50,500"/>
+			<item name="resourceForgedSteel" count="50,500"/>
+			<item name="resourceGunPowder" count="3,30"/>
+			<item name="resourceLeather" count="50,500"/>
+			<item name="resourceOil" count="3,10"/>
+			<item name="resourceOilShale" count="50,500"/>
+			<item name="resourcePotassiumNitratePowder" count="50,500"/>
+			<item name="resourceScrapIron" count="50,500"/>
+			<item name="resourceScrapPolymers" count="50,500"/>
+			<item name="resourceScrapBrass" count="50,500"/>
+			<item name="resourceScrapLead" count="50,500"/>
+			<item name="resourceWood" count="50,500"/>
+			<item name="resourceYuccaFibers" count="50,500"/>
+		</trader_item_group>
+		<trader_item_group name="lootVending">
+			<item name="lootBoxConstructionA" count="1" prob="0.01"/>
+			<item name="lootBoxConstructionB" count="1" prob="0.1"/>
+			<item name="lootBoxConstructionC" count="1"/>
+			<item name="lootBoxAmmoA" count="1" prob="0.01"/>
+			<item name="lootBoxAmmoB" count="1" prob="0.1"/>
+			<item name="lootBoxAmmoC" count="1"/>
+			<item name="lootBox_A" count="1" prob="0.01"/>
+			<item name="lootBox_B" count="1" prob="0.1"/>
+			<item name="lootBoxAmmoC" count="1"/>
+		</trader_item_group>
+	</append>
+
+	<append xpath="/traders">
+		<trader_info id="22" full_reset="true" reset_interval="7" override_buy_markup="1.0" allow_sell="false" min_inventory="5" max_inventory="10" min_items_swapped="1" max_items_swapped="5">
+			<trader_items count="all">
+				<item group="consructVending"/>
+				<item group="materialVending"/>
+			</trader_items>
+		</trader_info>
+
+		<trader_info id="23" full_reset="true" reset_interval="7" override_buy_markup="1.0" allow_sell="false" min_inventory="1" max_inventory="5" min_items_swapped="1" max_items_swapped="1">
+			<trader_items count="all">
+				<item group="lootVending"/>
+			</trader_items>
+		</trader_info>
+
+		<trader_info id="24" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="10" max_items_swapped="20"
+		reset_interval="3" open_time="6:05" close_time="21:50">
+		<trader_items count="all">
+			<item group="rareMedicine" count="2" prob="1"/>
+			<item group="medicine" count="2,5" prob="1"/>
+			<item group="traderAlways"/>
+			<item group="traderGeneral" count="4,8"/>
+			<item group="generalResources" count="9,14"/>
+			<item group="constructionSupplies" count="2,8"/>
+			<item group="decorativeBlocks" count="2,7"/>
+			<item group="tools" count="1,2"/>
+			<item group="weaponsMeleeT0-1" count="1"/>
+			<item group="weaponsGunsT1" count="1"/>
+			<item group="weaponsGunParts" count="1"/>
+			<item group="clothes" count="1,4"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="traderElectrical" count="1,2"/>
+			<item group="modAllT1SecretStash" count="1,2"/>
+		</trader_items>
+
+		<tier_items level="1,499" count="all"> <!-- requires Perk 0 -->
+			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
+			<item group="tools" count="1"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
+			<item group="weaponsGunParts" count="1"/>
+			<item group="ammo" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1"/>
+			<item group="groupArmorHeavyMixed" count="1"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
+			<item group="modMeleeT1"/>
+			<item group="modAllT2SecretStash" count="1,2"/>
+			<item group="vehiclePartsT0" count="1"/>
+			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
+		</tier_items>
+
+		<tier_items level="3000,3999" count="all"> <!-- requires Perk 3 -->
+			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
+			<item group="traderElectrical" count="2,3"/>
+			<item name="cntVendingMachine" count="1"/>
+			<item group="tools" count="1"/>
+			<item group="rareTools" count="1"/>
+			<item group="weaponsMeleeMixed" count="1,2"/>
+			<item group="weaponsGunsMixed" count="1,2"/>
+			<item group="ammo" count="2,5"/>
+			<item group="groupArmorHeavyMixed" count="1,2"/>
+			<item group="groupArmorLightMixed" count="1,2"/>
+			<item group="commonBooks" count="2,3"/>
+			<item group="rareBooks" count="1,2"/>
+			<item group="perkBooks" count="1,2"/>
+			<item group="vehiclePartsMixed" count="1,2"/>
+			<item group="stashOnlyItemsLow" count="1,2"/>
+			<item group="modAllT3SecretStash" count="1,2"/>
+			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
+		</tier_items>
+
+		<tier_items level="4000,4999" count="all"> <!-- requires Perk 4 -->
+			<item group="traderElectrical" count="2,3"/>
+			<item name="cntVendingMachine" count="1"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="1,2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="ammo" count="3,6"/>
+			<item group="groupArmorHeavyT2" count="1,2"/>
+			<item group="groupArmorLightT2" count="1,2"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
+			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="1,3"/>
+			<item group="stashOnlyItemsHigh" count="2,3"/>
+			<item group="weaponsGunsT3" count="1,2"/>
+			<item group="modAllT4SecretStash" count="1,2"/>
+			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
+		</tier_items>
+
+		<tier_items level="5000,-1" count="all"> <!-- requires Perk 5 -->
+			<item group="traderElectrical" count="3,5"/>
+			<item group="tools" count="1,2"/>
+			<item group="rareTools" count="3,4"/>
+			<item name="cntVendingMachine" count="2"/>
+			<item group="weaponsMeleeMixed" count="2,3"/>
+			<item group="weaponsGunsMixed" count="2,3"/>
+			<item group="weaponsGunsT2" count="1"/>
+			<item group="ammo" count="5,8"/>
+			<item group="groupArmorHeavyT2" count="2,3"/>
+			<item group="groupArmorLightT2" count="2,3"/>
+			<item group="commonBooks" count="4,5"/>
+			<item group="rareBooks" count="2,3"/>
+			<item group="perkBooks" count="2,3"/>
+			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="2,3"/>
+			<item name="apparelNightvisionGoggles" count="1"/>
+			<item name="solarbank" count="1"/>
+			<item name="solarCell" count="1,3" quality="3,6"/>
+			<item group="stashOnlyItemsHigh" count="3,4"/>
+			<item group="weaponsGunsT3QL5" count="1,2"/>
+			<item group="modAllT5SecretStash" count="1,4"/>
+			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
+		</tier_items>
+	</trader_info>
+
+	</append>
+
+</DrsA19Trader1>

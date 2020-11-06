@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19Trader1" />
+		<Description value="Adding a placeable Trader into the game." />
+		<Author value="Drconfused1" />
+		<Version value="a19-Dr001" />
+		<Website value="" />
+	</ModInfo>
+</xml>

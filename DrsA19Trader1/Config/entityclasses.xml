@@ -1,0 +1,12 @@
+<DrsA19Trader1>
+
+	<!--	START GAME ITEMS 	-->
+	<append xpath="/entity_classes">
+		<entity_class name="npcTraderDoc" extends="npcTraderTemplate">
+			<property name="Tags" value="entity,npc,human"/>
+			<property name="Mesh" value="#Entities/Traders?JenLung2Ragdoll.prefab"/>
+			<property name="NPCID" value="traderDrconfused"/>
+		</entity_class>
+	</append>
+
+</DrsA19Trader1>
