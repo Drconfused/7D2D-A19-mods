@@ -908,7 +908,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader1_woodBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="response_key" value="trade_bars_woodBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -938,7 +938,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader2_woodBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="response_key" value="trade_bars_woodBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -968,7 +968,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader3_woodBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="response_key" value="trade_bars_woodBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -998,7 +998,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader4_woodBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="response_key" value="trade_bars_woodBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1029,7 +1029,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader1_woodBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="response_key" value="trade_bars_woodBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1059,7 +1059,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader2_woodBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="response_key" value="trade_bars_woodBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1089,7 +1089,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader3_woodBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="response_key" value="trade_bars_woodBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1119,7 +1119,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader4_woodBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="response_key" value="trade_bars_woodBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1150,7 +1150,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader1_ironBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="response_key" value="trade_bars_ironBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1181,7 +1181,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader2_ironBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="response_key" value="trade_bars_ironBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1212,7 +1212,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader3_ironBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="response_key" value="trade_bars_ironBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1243,7 +1243,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader4_ironBars_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="response_key" value="trade_bars_ironBars"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1275,7 +1275,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader1_ironBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="response_key" value="trade_bars_ironBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1306,7 +1306,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader2_ironBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="response_key" value="trade_bars_ironBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1337,7 +1337,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader3_ironBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="response_key" value="trade_bars_ironBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />
@@ -1368,7 +1368,7 @@
 			<property name="category_key" value="treasure" />
 			<property name="offer_key" value="quest_MaterialTrader4_ironBarsCentered_description" />
 			<property name="statement_key" value="trade_materials_statement"/>
-			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="response_key" value="trade_bars_ironBarsCentered"/>
 			<property name="group_name" value="material_trade_Bars" />
 			<property name="difficulty" value="easy" />
 			<property name="completiontype" value="TurnIn" />

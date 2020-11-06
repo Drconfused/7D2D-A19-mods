@@ -1,0 +1,209 @@
+<DrsA19TraderOpenQuests>
+	<!--  -->
+	<!-- Statements -->
+	<!-- Don't want to remove the currentjobs to increase compatability to other mods so use the jobshave to make a new heading 
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave']">
+		<response_entry id="Tier_Jobs" />
+		<response_entry id="Treasure_Jobs" />
+		<response_entry id="Animal_Killer" />
+		<response_entry id="Zombie_Hunter" />
+		<response_entry id="nevermind" />
+	</insertAfter>
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='currentjobs']">
+		<statement id="Tier_Jobs" text="dialog_trader_statement_currentjobs" >
+			<response_entry id="Tier_1" />
+			<response_entry id="Tier_2" />
+			<response_entry id="Tier_3" />
+			<response_entry id="Tier_4" />
+			<response_entry id="Tier_5" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Tier_1" text="dialog_trader_statement_Tier_1" nextstatementid="start" >
+			<quest_entry id="tier1_clear"/>
+			<quest_entry id="tier1_fetch"/>
+			<quest_entry id="tier1_buried_supplies"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Tier_2" text="dialog_trader_statement_Tier_2" nextstatementid="start" >
+			<quest_entry id="tier2_clear"/>
+			<quest_entry id="tier2_fetch"/>
+			<quest_entry id="tier2_fetch_clear"/>
+			<quest_entry id="tier2_buried_supplies"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Tier_3" text="dialog_trader_statement_Tier_3" nextstatementid="start" >
+			<quest_entry id="tier3_clear"/>
+			<quest_entry id="tier3_fetch"/>
+			<quest_entry id="tier3_fetch_clear"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Tier_4" text="dialog_trader_statement_Tier_4" nextstatementid="start" >
+			<quest_entry id="tier4_clear"/>
+			<quest_entry id="tier4_fetch_clear"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Tier_5" text="dialog_trader_statement_Tier_5" nextstatementid="start" >
+			<quest_entry id="tier5_clear"/>
+			<quest_entry id="tier5_fetch_clear"/>
+			<response_entry id="nevermind" />
+		</statement>
+
+	</insertAfter>
+	-->
+	<!-- Responses 
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/response[@id='specialjobshave']">
+		<response id="Tier_Jobs" text="dialog_trader_response_Tier_Jobs" nextstatementid="Tier_Jobs" />
+		<response id="Tier_1" text="dialog_trader_response_Tier_1" nextstatementid="Tier_1" />
+		<response id="Tier_2" text="dialog_trader_response_Tier_2" nextstatementid="Tier_2" />
+		<response id="Tier_3" text="dialog_trader_response_Tier_3" nextstatementid="Tier_3" />
+		<response id="Tier_4" text="dialog_trader_response_Tier_4" nextstatementid="Tier_4" />
+		<response id="Tier_5" text="dialog_trader_response_Tier_5" nextstatementid="Tier_5" />
+		<response id="Treasure_Jobs" text="dialog_trader_response_Treasure_Jobs" nextstatementid="Treasure_Jobs" />
+		<response id="Animal_Killer" text="dialog_trader_response_Animal_Killer" nextstatementid="Animal_Killer" />
+		<response id="Zombie_Hunter" text="dialog_trader_response_Zombie_Hunter" nextstatementid="Zombie_Hunter" />
+	</insertAfter>
+
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='currentjobs']">
+
+		<statement id="Trader_Jobs" text="dialog_trader_statement_currentjobs" >
+			<response_entry id="Buried_Treasure" />
+			<response_entry id="Clear_POI" />
+			<response_entry id="Fetch_Package" />
+			<response_entry id="Fetch_Clear" />
+			<response_entry id="Trade_Route" />
+			<response_entry id="nevermind" />
+		</statement>
+-->
+
+	<!-- Buried_Treasure Quests 
+tier1_buried_supplies
+tier2_buried_supplies
+-->
+	<!-- Clear_POI Quests 
+tier1_clear
+tier2_clear
+tier3_clear
+tier4_clear
+tier5_clear
+-->
+	<!-- Fetch_Package Quests 
+tier1_fetch
+tier2_fetch
+tier3_fetch
+tier4_fetch
+tier5_fetch
+-->
+	<!-- Fetch_Clear POI Quests 
+tier2_fetch_clear
+tier3_fetch_clear
+tier4_fetch_clear
+tier5_fetch_clear
+-->
+	<!-- Trade_Route Quests 
+tier2_nexttrader
+tier3_nexttrader
+tier4_nexttrader
+tier5_nexttrader
+-->
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave']">
+		<response_entry id="Trader_Jobs" />
+		<response_entry id="nevermind" />
+	</insertAfter>
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='currentjobs']">
+		<statement id="Trader_Jobs" text="dialog_trader_statement_currentjobs" >
+			<response_entry id="Buried_Treasure" />
+			<response_entry id="Clear_POI" />
+			<response_entry id="Fetch_Package" />
+			<response_entry id="Fetch_Clear" />
+			<response_entry id="Trade_Route" />
+			<response_entry id="Treasure_Jobs" />
+			<response_entry id="Animal_Killer" />
+			<response_entry id="Zombie_Hunter" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Buried_Treasure" text="dialog_trader_statement_Buried_Treasure" nextstatementid="start" >
+			<quest_entry id="tier1_buried_supplies"/>
+			<quest_entry id="tier2_buried_supplies"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Clear_POI" text="dialog_trader_statement_Clear_POI" nextstatementid="start" >
+			<quest_entry id="tier1_clear"/>
+			<quest_entry id="tier2_clear"/>
+			<quest_entry id="tier3_clear"/>
+			<quest_entry id="tier4_clear"/>
+			<quest_entry id="tier5_clear"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Fetch_Package" text="dialog_trader_statement_Fetch_Package" nextstatementid="start" >
+			<quest_entry id="tier1_fetch"/>
+			<quest_entry id="tier2_fetch"/>
+			<quest_entry id="tier3_fetch"/>
+			<quest_entry id="tier4_fetch"/>
+			<quest_entry id="tier5_fetch"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Fetch_Clear" text="dialog_trader_statement_Fetch_Clear" nextstatementid="start" >
+			<quest_entry id="tier2_fetch_clear"/>
+			<quest_entry id="tier3_fetch_clear"/>
+			<quest_entry id="tier4_fetch_clear"/>
+			<quest_entry id="tier5_fetch_clear"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Trade_Route" text="dialog_trader_statement_Trade_Route" nextstatementid="start" >
+			<quest_entry id="tier2_nexttrader"/>
+			<quest_entry id="tier3_nexttrader"/>
+			<quest_entry id="tier4_nexttrader"/>
+			<quest_entry id="tier5_nexttrader"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Treasure_Jobs" text="dialog_trader_statement_Treasure_Jobs" nextstatementid="start" >
+			<quest_entry id="treasure_taylor"/>
+			<quest_entry id="treasure_nickole"/>
+			<quest_entry id="treasure_stephan"/>
+			<quest_entry id="treasure_jennifer"/>
+			<quest_entry id="treasure_claude"/>
+			<quest_entry id="treasure_sarah"/>
+			<quest_entry id="treasure_raphael"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Animal_Killer" text="dialog_trader_statement_Animal_Killer" nextstatementid="start" >
+			<quest_entry id="challenge_dogdaysareover"/>
+			<quest_entry id="challenge_buythefarm"/>
+			<quest_entry id="challenge_dontfeedthebears"/>
+			<quest_entry id="challenge_killthewabbit"/>
+			<quest_entry id="challenge_nailsomechicks"/>
+			<quest_entry id="challenge_thatlldopig"/>
+			<quest_entry id="challenge_stagparty"/>
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="Zombie_Hunter" text="dialog_trader_statement_Zombie_Hunter" nextstatementid="start" >
+			<quest_entry id="challenge_blitzdefense"/>
+			<quest_entry id="challenge_cableguysnevermadeit"/>
+			<quest_entry id="challenge_dishonorabledischarge"/>
+			<quest_entry id="challenge_givemeaz"/>
+			<quest_entry id="challenge_imalumberjackandimokay"/>
+			<quest_entry id="challenge_itsybitsyspider"/>
+			<quest_entry id="challenge_ladykiller"/>
+			<quest_entry id="challenge_nurseyoubacktohealth"/>
+			<quest_entry id="challenge_silenceofthelambs"/>
+			<quest_entry id="challenge_starvingtourists"/>
+			<quest_entry id="challenge_maneater"/>
+			<quest_entry id="challenge_yournothingspecial"/>
+			<response_entry id="nevermind" />
+		</statement>
+	</insertAfter>
+
+	<!-- Responses -->
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/response[@id='specialjobshave']">
+		<response id="Trader_Jobs" text="dialog_trader_response_Trader_Jobs" nextstatementid="Trader_Jobs" />
+		<response id="Buried_Treasure" text="dialog_trader_response_Buried_Treasure" nextstatementid="Buried_Treasure" />
+		<response id="Clear_POI" text="dialog_trader_response_Clear_POI" nextstatementid="Clear_POI" />
+		<response id="Fetch_Package" text="dialog_trader_response_Fetch_Package" nextstatementid="Fetch_Package" />
+		<response id="Fetch_Clear" text="dialog_trader_response_Fetch_Clear" nextstatementid="Fetch_Clear" />
+		<response id="Trade_Route" text="dialog_trader_response_Trade_Route" nextstatementid="Trade_Route" />
+		<response id="Treasure_Jobs" text="dialog_trader_response_Treasure_Jobs" nextstatementid="Treasure_Jobs" />
+		<response id="Animal_Killer" text="dialog_trader_response_Animal_Killer" nextstatementid="Animal_Killer" />
+		<response id="Zombie_Hunter" text="dialog_trader_response_Zombie_Hunter" nextstatementid="Zombie_Hunter" />
+	</insertAfter>
+
+</DrsA19TraderOpenQuests>

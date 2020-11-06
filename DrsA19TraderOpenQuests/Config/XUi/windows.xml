@@ -1,0 +1,5 @@
+<DrsA19TraderMaterialTrade>
+<!--	Need to increase the rows for the Trader dialog statement and response offer from 6 to more	-->
+<set xpath="/windows/window[@name='windowResponses']/grid[@name='items']/@rows">9</set>
+
+</DrsA19TraderMaterialTrade>

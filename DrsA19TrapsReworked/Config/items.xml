@@ -1,0 +1,6 @@
+<DrsA19TrapsReworked>
+	<!-- Add the upgrade item to the Allowed_upgrade_items list on the relevent tools -->
+	<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,ammoGasCan,modMeleeSerratedBlade</append>
+	<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,ammoGasCan,modMeleeSerratedBlade</append>
+	<append xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,ammoGasCan,modMeleeSerratedBlade</append>
+</DrsA19TrapsReworked>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19TraderOpenQuests" />
+		<Description value="Makes all the quests normally locked freely able to be chosen." />
+		<Author value="Drconfused" />
+		<Version value="a19-Dr001" />
+		<Website value="" />
+	</ModInfo>
+</xml>

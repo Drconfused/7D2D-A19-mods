@@ -1,0 +1,21 @@
+Key,English
+DIALOGS
+STATEMENTS
+dialog_trader_statement_Buried_Treasure,Buried treasure jobs.
+dialog_trader_statement_Clear_POI,POI clear jobs.
+dialog_trader_statement_Fetch_Package,Fetch package jobs.
+dialog_trader_statement_Fetch_Clear,Fetch and clear jobs.
+dialog_trader_statement_Trade_Route,Trade route jobs.
+dialog_trader_statement_Treasure_Jobs,You want to hunt for treasure?
+dialog_trader_statement_Animal_Killer,Lets hunt some animals!
+dialog_trader_statement_Zombie_Hunter,I hear there are different types of zombies out there.
+RESPONSES
+dialog_trader_response_Trader_Jobs,Vanilla Jobs
+dialog_trader_response_Buried_Treasure,Buried treasure jobs
+dialog_trader_response_Clear_POI,POI clear jobs
+dialog_trader_response_Fetch_Package,Fetch package jobs
+dialog_trader_response_Fetch_Clear,Fetch and clear jobs
+dialog_trader_response_Trade_Route,Trade route jobs
+dialog_trader_response_Treasure_Jobs,Treasure Hunting
+dialog_trader_response_Animal_Killer,Animal Hunter
+dialog_trader_response_Zombie_Hunter,Zombie Killer

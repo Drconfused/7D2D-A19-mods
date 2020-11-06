@@ -166,9 +166,13 @@ materialTrades
 ----------------------------------------------------------
 Changelog
 ----------------------------------------------------------
+002
+	-Tracked down the issue with the Wood and Iron bars not showing up properly in the menu, required to have the response_key set in the Localization.txt but it was not.
+
 
 001
-	-
+	-Added the base for my previos material trades mod but rather than making it a recipe based workorder it is now in the Trader menu.
+	-added wood and iron bars to the material trades
 
 
 	

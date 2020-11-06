@@ -1,0 +1,23 @@
+<DrsA19TrapsReworked>
+
+	<!--	BARBED WIRE 					-->
+	<append xpath="/recipes">
+		<recipe name="barbedWireSheet" count="1">
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		
+	<recipe name="woodLogSpike1" count="1">
+		<ingredient name="resourceWood" count="15"/>
+	</recipe>
+
+	<recipe name="scrapIronLogSpike4" count="1">
+		<ingredient name="resourceScrapIron" count="45"/>
+	</recipe>
+
+	<recipe name="trapSpikesNew" count="1">
+		<ingredient name="resourceWood" count="15"/>
+	</recipe>
+
+	</append>
+
+</DrsA19TrapsReworked>

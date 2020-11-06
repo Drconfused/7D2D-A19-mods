@@ -33,6 +33,10 @@ trade_materials_resourceForgedIron,Forged Iron
 trade_materials_resourceForgedSteel,Forged Steel
 trade_blocks_FlagstoneBlock,Flagstone Block
 trade_blocks_rebarFrameBlock,Rebar Frame Block
+trade_bars_woodBars,Wood Bars
+trade_bars_woodBarsCentered,Centered Wood Bars
+trade_bars_ironBars,Iron Bars
+trade_bars_ironBarsCentered,Centered Iron Bars
 trade_materials_statement,Get the materials and we can make the trade.
 quest_MaterialTrader_completion,Looks about right. You're sure capable. Here are the goods.
 quest_MaterialTrader1_Cobblestone,25 Cobblestone

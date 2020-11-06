@@ -1,37 +1,7 @@
 <DrsA19TraderMaterialTrade>
 <!-- 	materialTrades
 Setting up Trader to handle material trade quests where players can turn in materials for other materials and resources.
-	25_materials
-		quest_MaterialTrader1_Cobblestone
-		quest_MaterialTrader1_ConcreteMix
-		quest_MaterialTrader1_Cement
-		quest_MaterialTrader1_resourceForgedIron
-		quest_MaterialTrader1_resourceForgedSteel
-	100_materials
-		quest_MaterialTrader2_Cobblestone
-		quest_MaterialTrader2_ConcreteMix
-		quest_MaterialTrader2_Cement
-		quest_MaterialTrader2_resourceForgedIron
-		quest_MaterialTrader2_resourceForgedSteel
-	500_materials
-		quest_MaterialTrader3_Cobblestone
-		quest_MaterialTrader3_ConcreteMix
-		quest_MaterialTrader3_Cement
-		quest_MaterialTrader3_resourceForgedIron
-		quest_MaterialTrader3_resourceForgedSteel
-	1000_materials
-		quest_MaterialTrader4_Cobblestone
-		quest_MaterialTrader4_ConcreteMix
-		quest_MaterialTrader4_Cement
-		quest_MaterialTrader4_resourceForgedIron
-		quest_MaterialTrader4_resourceForgedSteel
-	25_blocks
-	100_blocks
-	500_blocks
-	1000_blocks
-		flagstone
-		wetconcrete
-		rebar
+
 -->
 	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave']">
 		<response_entry id="materialTrades" />
