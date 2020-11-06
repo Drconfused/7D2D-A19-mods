@@ -1,0 +1,209 @@
+<DrsA19LootBoxes>
+	<!-- compared to A18 version
+	figure that in A18 the abundance of loot obtained in a handful of quick runs would soon find the player having everything needed to sustain indefinitely so for balance sake I lowered probability of finding a loot box. The empty box went from a 58% to 80% chance leaving 20% of the boxes as lootable.-->
+	<!-- Percentage for quality bundles
+		Loot Box A = 1%
+		Loot Box B = 7%
+		Loot Box C = 12%
+	-->
+
+	<!--	BROWN BOXES	-->
+	<append xpath="/blockplaceholders">
+		<!--	brown boxes base	-->
+		<placeholder name="palletBrownBoxesBase">
+			<block name="palletBrownBoxesBaseLooted" prob=".8"/>
+			<block name="palletBrownBoxesBaseA" prob=".01"/>
+			<block name="palletBrownBoxesBaseB" prob=".07"/>
+			<block name="palletBrownBoxesBaseC" prob=".12"/>
+		</placeholder>
+		<!--	brown boxes tile	-->
+		<placeholder name="palletBrownBoxesTile">
+			<block name="palletBrownBoxesTileLooted" prob=".8"/>
+			<block name="palletBrownBoxesTileA" prob=".01"/>
+			<block name="palletBrownBoxesTileB" prob=".07"/>
+			<block name="palletBrownBoxesTileC" prob=".12"/>
+		</placeholder>
+		<!--	brown boxes top	-->
+		<placeholder name="palletBrownBoxesTop">
+			<block name="palletBrownBoxesTopLooted" prob=".8"/>
+			<block name="palletBrownBoxesTopA" prob=".01"/>
+			<block name="palletBrownBoxesTopB" prob=".07"/>
+			<block name="palletBrownBoxesTopC" prob=".12"/>
+		</placeholder>
+		<!--	brown boxes loose	-->
+		<placeholder name="palletBrownBoxesLoose">
+			<block name="palletBrownBoxesLooseLooted" prob=".8"/>
+			<block name="palletBrownBoxesLooseA" prob=".01"/>
+			<block name="palletBrownBoxesLooseB" prob=".07"/>
+			<block name="palletBrownBoxesLooseC" prob=".12"/>
+		</placeholder>
+	</append>
+
+	<!--	WHITE BAGS	-->
+	<append xpath="/blockplaceholders">
+		<!--	white Bags base	-->
+		<placeholder name="palletWhiteBagsBase">
+			<block name="palletWhiteBagsBaseA" prob=".15"/>
+			<block name="palletWhiteBagsBaseB" prob=".30"/>
+			<block name="palletWhiteBagsBaseC" prob=".55"/>
+		</placeholder>
+		<!--	white sacks tile	-->
+		<placeholder name="palletWhiteBagsTile">
+			<block name="palletWhiteBagsTileA" prob=".15"/>
+			<block name="palletWhiteBagsTileeB" prob=".30"/>
+			<block name="palletWhiteBagsTileC" prob=".55"/>
+		</placeholder>
+		<!--	white sacks top	-->
+		<placeholder name="palletWhiteBagsTop">
+			<block name="palletWhiteBagsTopA" prob=".15"/>
+			<block name="palletWhiteBagsTopB" prob=".30"/>
+			<block name="palletWhiteBagsTopC" prob=".55"/>
+		</placeholder>
+		<!--	white sacks partial 1	-->
+		<placeholder name="palletWhiteBagsPartial1">
+			<block name="palletWhiteBagsPartial1A" prob=".15"/>
+			<block name="palletWhiteBagsPartial1B" prob=".30"/>
+			<block name="palletWhiteBagsPartial1C" prob=".55"/>
+		</placeholder>
+		<!--	white sacks partial 2	-->
+		<placeholder name="palletWhiteBagsPartial2">
+			<block name="palletWhiteBagsPartial2A" prob=".15"/>
+			<block name="palletWhiteBagsPartial2B" prob=".30"/>
+			<block name="palletWhiteBagsPartial2C" prob=".55"/>
+		</placeholder>
+		<!--	white sacks loose	-->
+		<placeholder name="palletWhiteBagsLoose">
+			<block name="palletWhiteBagsLooseA" prob=".15"/>
+			<block name="palletWhiteBagsLooseB" prob=".30"/>
+			<block name="palletWhiteBagsLooseC" prob=".55"/>
+		</placeholder>
+	</append>
+
+	<!-- 	BLUE TARP 	-->
+	<append xpath="/blockplaceholders">
+		<!-- 	blue tarp base 	-->
+		<placeholder name="palletBlueTarpBase">
+			<block name="palletBlueTarpBaseA" prob=".15"/>
+			<block name="palletBlueTarpBaseB" prob=".30"/>
+			<block name="palletBlueTarpBaseC" prob=".55"/>
+		</placeholder>
+		<!-- 	blue tarp tile 	-->
+		<placeholder name="palletBlueTarpTile">
+			<block name="palletBlueTarpTileA" prob=".15"/>
+			<block name="palletBlueTarpTileB" prob=".30"/>
+			<block name="palletBlueTarpTileC" prob=".55"/>
+		</placeholder>
+	</append>
+
+	<!--	BRICK 	-->
+	<append xpath="/blockplaceholders">
+		<!-- 	brick base 	-->
+		<placeholder name="palletBricksBase">
+			<block name="palletBricksBaseA" prob=".15"/>
+			<block name="palletBricksBaseB" prob=".30"/>
+			<block name="palletBricksBaseC" prob=".55"/>
+		</placeholder>
+		<!-- 	brick tile 	-->
+		<placeholder name="palletBricksTile">
+			<block name="palletBricksTileA" prob=".15"/>
+			<block name="palletBricksTileB" prob=".30"/>
+			<block name="palletBricksTileC" prob=".55"/>
+		</placeholder>
+		<!-- 	brick top 	-->
+		<placeholder name="palletBricksTop">
+			<block name="palletBricksTopA" prob=".15"/>
+			<block name="palletBricksTopB" prob=".30"/>
+			<block name="palletBricksTopC" prob=".55"/>
+		</placeholder>
+		<!-- 	brick partial1 	-->
+		<placeholder name="palletBricksPartial1">
+			<block name="palletBricksPartial1A" prob=".15"/>
+			<block name="palletBricksPartial1B" prob=".30"/>
+			<block name="palletBricksPartial1C" prob=".55"/>
+		</placeholder>
+		<!-- 	brick partial2 	-->
+		<placeholder name="palletBricksPartial2">
+			<block name="palletBricksPartial2A" prob=".15"/>
+			<block name="palletBricksPartial2B" prob=".30"/>
+			<block name="palletBricksPartial2C" prob=".55"/>
+		</placeholder>
+		<!-- 	brick loose 	-->
+		<placeholder name="palletBricksLoose">
+			<block name="palletBricksLooseA" prob=".15"/>
+			<block name="palletBricksLooseB" prob=".30"/>
+			<block name="palletBricksLooseC" prob=".55"/>
+		</placeholder>
+	</append>
+
+	<!-- Medical Piles -->
+	<append xpath="/blockplaceholders">
+		<!-- 	Medical Pile Small 
+		<placeholder name="cntMedicalPileSmall">
+			<block name="cntMedicalPileSmallA" prob=".1"/>
+		</placeholder>
+-->
+		<!-- 	Medical Pile Medium 
+		<placeholder name="cntMedicalPileMedium">
+			<block name="cntMedicalPileMediumA" prob=".1"/>
+		</placeholder>
+-->
+		<!-- 	Medical Large 
+		<placeholder name="cntMedicalPileLarge">
+			<block name="cntMedicalPileLargeA" prob=".1"/>
+		</placeholder>
+-->
+		<!-- 	Medical Pile A -->
+		<placeholder name="cntMedicalPilePileA">
+			<block name="drsMedicalPileSmall" prob=".9"/>
+			<block name="drsMedicalPileMedium" prob=".1"/>
+		</placeholder>
+
+		<!--	Medical Pile B -->
+		<placeholder name="cntMedicalPilePileB">
+			<block name="drsMedicalPileLarge" prob=".6"/>
+			<block name="drsMedicalPileMedium" prob=".4"/>
+		</placeholder>
+	</append>
+	
+	<!-- AMMO PILES -->
+	<append xpath="/blockplaceholders">
+	<!-- 	Ammo Pile Small cntAmmoPileSmall lootBoxAmmoC-->
+		<placeholder name="cntAmmoPileSmall">
+			<block name="drsAmmoPileSmall"/>
+		</placeholder>
+	<!-- 	Ammo Pile Medium cntAmmoPileMedium lootBoxAmmoB-->
+		<placeholder name="cntAmmoPileMedium">
+			<block name="drsAmmoPileMedium"/>
+		</placeholder>
+	<!-- 	Ammo Pile Large cntAmmoPileLarge lootBoxAmmoA-->
+		<placeholder name="cntAmmoPileLarge">
+			<block name="drsAmmoPileLarge"/>
+		</placeholder>
+	</append>
+	
+	<!-- FOOD PILES -->
+	<append xpath="/blockplaceholders">
+	<!-- 	Food Pile Small -->
+		<placeholder name="cntFoodPileSmall">
+			<block name="drsFoodPileSmall"/>
+		</placeholder>
+	<!-- 	Food Pile Medium -->
+		<placeholder name="cntFoodPileMedium">
+			<block name="drsFoodPileMedium"/>
+		</placeholder>
+	<!-- 	Food Pile Large -->
+		<placeholder name="cntFoodPileLarge">
+			<block name="drsFoodPileLarge"/>
+		</placeholder>
+	</append>
+	<!-- WEAPON BAGS -->
+	<append xpath="/blockplaceholders">
+	<!-- 	Weapon Bag Small -->
+	<!-- 	Weapon Bags Large -->
+	</append>
+	<!--	SUITCASE 	-->
+	<!--	BRICK 	-->
+	<!--	BRICK 	-->
+	<!--	BRICK 	-->
+	<!--	BRICK 	-->
+</DrsA19LootBoxes>

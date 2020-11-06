@@ -1,0 +1,5 @@
+<DrsA19OilGas>
+	<!-- 		perkAdvancedEngineering		-->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@tags">,Oil_Extractor</append>
+
+</DrsA19OilGas>

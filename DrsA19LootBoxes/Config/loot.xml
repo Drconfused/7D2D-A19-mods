@@ -1,0 +1,473 @@
+<DrsA19LootBoxes>
+
+	<!--	CONSTRUCTION LOOT	-->
+	<append xpath="/lootcontainers">
+		<!--
+		<item name="resourceLockPick" count="1,4" prob="0.2"/>
+		<item name="resourceRepairKit" count="1,4"/>
+		<item name="armorMilitarySetParts" count="1,4" prob="0.5"/>
+		<item name="armorSteelSetParts" count="1,4" prob="0.5"/>
+	-->
+		<!-- 		Materials 	-->
+		<lootgroup name="constructionLootC_materials" count="1,2">
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceClayLump" count="10,30"/>
+			<item name="resourceCobblestones" count="10,30"/>
+			<item name="resourceCrushedSand" count="10,30"/>
+			<item name="resourceDoorKnob" count="10,30"/>
+			<item name="resourceMetalPipe" count="5,15"/>
+			<item name="resourceNail" count="10,30"/>
+			<item name="resourcePaint" count="10,30"/>
+			<item name="resourcePaper" count="10,30"/>
+			<item name="resourceRockSmall" count="10,30"/>
+			<item name="resourceScrapBrass" count="10,30"/>
+			<item name="resourceScrapIron" count="10,30"/>
+			<item name="resourceScrapLead" count="10,30"/>
+			<item name="resourceScrapPolymers" count="10,30"/>
+			<item name="resourceWood" count="10,30"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_materials" count="2,3">
+			<item name="resourceForgedIron" count="5,10"/>
+			<item name="resourceConcreteMix" count="15,45"/>
+			<item name="resourceDuctTape" count="2,5"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_materials" count="3,5">
+			<item name="resourceForgedSteel" count="5,10"/>
+			<item name="resourceForgedIron" count="5,10"/>
+			<item group="constructionLootB_materials" count="1,3"/>
+			<item group="constructionLootC_materials" count="2,3"/>
+			<item name="resourceDuctTape" count="5,10"/>
+			<item name="resourceElectricParts" count="5,10"/>
+			<item name="resourceRockSmall" count="100,300"/>
+			<item name="resourceWood" count="100,300"/>
+		</lootgroup>
+
+		<!-- 		Doors Hatches 	-->
+		<lootgroup name="constructionLootC_doors" count="1,2">
+			<item name="secureDoorWooden" count="1,2" prob=".3"/>
+			<item name="woodHatch1_v1" count="1,2" prob=".3"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_doors" count="1,2">
+			<item name="ironDoor1_v1" count="1,2" prob=".3"/>
+			<item name="scrapHatch_v1" count="1,2" prob=".3"/>
+			<item name="resourceForgedIron" count="3,10"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_doors">
+			<item name="vaultDoor01" count="1,2" prob=".3"/>
+			<item name="vaultHatch_v1" count="1,2" prob=".3"/>
+			<item name="vaultDoor03_Powered" prob=".01"/>
+			<item name="vaultHatch_v3_Powered" prob=".01"/>
+			<item name="garageDoorIndustrial_Powered" prob=".01"/>
+			<item name="garageDoorMetal_v1Powered" prob=".01"/>
+			<item name="metalReinforcedWoodDrawBridgePowered" prob=".005"/>
+			<item group="constructionLootA_materials"/>
+			<item group="constructionLootB_materials"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+
+		<!-- 		Furniture and Decorations 	-->
+		<lootgroup name="constructionLootC_furniture">
+			<item name="cntWoodFurnitureBlockVariantHelper" count="1,5"/>
+			<item name="woodSignBlockVariantHelper" count="1,10"/>
+			<item name="sectionalLeatherCouchSofaBlockVariantHelper" count="1,5"/>
+			<item name="sectionalPlaidCouchSofaBlockVariantHelper" count="1,5"/>
+			<item group="decorativeBlocks" count="1,2"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_furniture">
+			<item name="sinksToiletsBlockVariantHelper" count="1,5"/>
+			<item name="metalSignLetterNumberBlockVariantHelper" count="1,10"/>
+			<item group="decorativeBlocks" count="1,4"/>
+			<item group="constructionLootC_furniture" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_furniture">
+			<item name="metalFurnitureBlockVariantHelper" count="1,5"/>
+			<item group="constructionLootB_furniture" count="1,2"/>
+			<item group="constructionLootA_materials"/>
+			<item group="constructionLootB_materials" count="1,2"/>
+			<item group="constructionLootC_materials" count="2,4"/>
+			<item group="empty"/>
+		</lootgroup>
+
+		<!-- 		Bars 	-->
+		<lootgroup name="constructionLootC_bars">
+			<item name="woodBars" count="10,25"/>
+			<item name="woodBarsCentered" count="10,25"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_bars">
+			<item name="ironBars" count="10,30"/>
+			<item name="ironBarsCentered" count="10,30"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_bars">
+			<item name="steelBars" count="50,100"/>
+			<item name="steelBarsCentered" count="50,100"/>
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+
+		<!-- 		Blocks 	-->
+		<lootgroup name="constructionLootC_blocks">
+			<item name="awningBlockVariantHelper" count="10,25"/>
+			<item name="pipeSmallBlockVariantHelper" count="10,25"/>
+			<item name="sandbagBlockVariantHelper" count="10,25"/>
+			<item name="glassBlockVariantHelper" count="10,25"/>
+			<item name="woodCatwalkBlockVariantHelper" count="10,25"/>
+			<item name="woodFenceRailingTrellisSheetBlockVariantHelper" count="10,25"/>
+			<item name="woodFrameBlockVariantHelper" count="10,25"/>
+			<item group="constructionLootC_furniture"/>
+			<item group="constructionLootC_bars"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_blocks">
+			<item name="brickBlockVariantHelper" count="10,50"/>
+			<item name="pipeLargeBlockVariantHelper" count="10,50"/>
+			<item name="flagstoneBlockVariantHelper" count="10,50"/>	
+			<item name="metalFenceRailingTrellisSheetBlockVariantHelper" count="10,50"/>
+			<item name="rebarFrameBlockVariantHelper" count="10,50"/>
+			<item name="scrapIronFrameBlockVariantHelper" count="10,50"/>
+			<item group="constructionLootB_furniture"/>
+			<item group="constructionLootC_blocks" count="1,2"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_blocks">
+			<item name="pouredConcreteBlockVariantHelper" count="10,50"/>
+			<item name="glassBulletproofBlockVariantHelper" count="10,50"/>
+			<item name="metalTrussingIBeamBlockVariantHelper" count="10,25"/>
+			<item group="constructionLootA_furniture"/>
+			<item group="constructionLootC_blocks" count="2,4"/>
+			<item group="constructionLootB_blocks" count="1,2"/>
+			<item group="constructionLootC_materials" count="2,4"/>
+			<item group="constructionLootB_materials" count="1,2"/>
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+
+		<!-- 		Traps 	-->
+		<lootgroup name="constructionLootC_traps">
+			<item name="trapSpikesWoodDmg0" count="5,10"/>
+			<item name="barbedFence" count="5,10"/>
+			<item name="barbedWireSheet" count="5,10"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_traps">
+			<item name="trapSpikesIronDmg0" count="5,10"/>
+			<item name="electricfencepost" count="1,5" prob="0.1"/>
+			<item name="dartTrap" prob="0.1"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_traps">
+			<item name="bladeTrap" prob="0.3"/>
+			<item name="autoTurret" prob="0.3"/>
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+
+		<!-- 		Tools 	-->
+		<lootgroup name="constructionLootC_tools">
+			<item name="resourceRepairKit" count="1,2"/>
+			<item name="meleeToolPaintTool" prob="0.1"/>
+			<item group="groupToolsT0" prob=".1"/>
+			<item group="workbenchLoot" prob=".1"/>
+			<item group="groupToolsTiered" prob=".1"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_tools">
+			<item name="resourceRepairKit" count="1,4"/>
+			<item name="meleeToolWireTool" prob="0.1"/>
+			<item group="workstationToolsScaled" prob=".1"/>
+			<item group="workbenchLoot" prob=".1"/>
+			<item group="groupToolsT1" prob=".1"/>
+			<item group="groupToolsT2" prob=".05"/>
+			<item group="groupToolsTiered" prob=".1"/>
+			<item group="schematicsToolsCommon" prob=".1"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_tools">
+			<item group="groupToolsT2" prob=".1"/>
+			<item group="groupToolsT3" prob=".05"/>
+			<item group="schematicsToolsRare" prob=".1"/>
+			<item group="workingStiffsBox" prob=".1"/>
+			<item group="groupRareToolsTiered" prob=".1"/>
+			<item group="toolParts" prob=".1"/>
+			<item group="constructionLootA_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+
+		<!-- 		Electric Construction 	-->
+		<lootgroup name="constructionLoot_light">
+			<item name="ceilingLight01_player" prob="0.3"/>
+			<item name="industrialLight01_player" prob="0.3"/>
+			<item name="industrialLight02_player" prob="0.3"/>
+			<item name="lanternLight_player" prob="0.3"/>
+			<item name="spotlightPlayer" prob="0.3"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootC_electric">
+			<item name="electricwirerelay" prob="0.3" count="1,3"/>
+			<item name="electrictimerrelay" prob="0.3" count="1,3"/>
+			<item group="electricalDevices" prob="1.0"/>
+			<item group="constructionLoot_light"/>
+			<item group="constructionLootC_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB_electric">
+			<item name="batterybank" prob="0.1"/>
+			<item name="generatorbank" prob="0.1"/>
+			<item group="constructionLootC_electric"/>
+			<item group="electricalDevices" prob="1.0"/>
+			<item group="constructionLoot_light"/>
+			<item group="constructionLootC_materials" count="1,2"/>
+			<item group="constructionLootB_materials"/>
+			<item group="empty"/>
+		</lootgroup>
+		<lootgroup name="constructionLootA_electric">
+			<item name="solarbank" prob="0.3"/>
+			<item name="solarCell" prob="0.3" count="1,6"/>
+			<item name="batterybank" prob="0.3"/>
+			<item name="generatorbank" prob="0.3"/>
+			<item group="electricalDevices" count="1,3" prob="1.0"/>
+			<item group="constructionLootC_electric" count="1,3"/>
+			<item group="constructionLootB_electric" count="1,3"/>
+			<item group="constructionLoot_light" count="1,3"/>
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+
+		<!-- INcomplete -->
+		<lootgroup name="constructionLootA">
+			<item group="constructionLootA_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLootB">
+			<item group="constructionLootC_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLootC">
+			<item group="constructionLootC_materials"/>
+		</lootgroup>
+		<lootgroup name="constructionLoot">
+			<item name="lootBoxConstructionC" prob=".6"/>
+			<item name="lootBoxConstructionB" prob=".3"/>
+			<item name="lootBoxConstructionA" prob=".1"/>
+		</lootgroup>
+	</append>
+
+	<!--	AMMO LOOT			-->
+	<append xpath="/lootcontainers">
+		<lootgroup name="ammoLootBase" count="all">
+			<item name="resourceBulletCasing" count="10,30"/>
+			<item name="resourceGunPowder" count="10,30"/>
+			<item name="resourceBulletTip" count="10,30"/>
+		</lootgroup>
+		<lootgroup name="ammoLootC" count="1,3">
+			<item name="resourceBulletCasing" count="10,30"/>
+			<item name="resourceGunPowder" count="10,30"/>
+			<item name="resourceBulletTip" count="10,30"/>
+			<item name="resourceBuckshot" count="10,30"/>
+			<item name="ammoArrowStone" count="10,30"/>
+			<item name="ammoArrowIron" count="10,30"/>
+			<item group="ammoLootBase"/>
+		</lootgroup>
+		<lootgroup name="ammoLootB" count="1,3">
+			<item name="ammo9mmBulletBall" count="50,100"/>
+			<item name="ammo762mmBulletBall" count="50,100"/>
+			<item name="ammoShotgunShell" count="50,100"/>
+			<item name="ammo44MagnumBulletBall" count="50,100"/>
+			<item group="ammoLootC" count="3,8"/>
+		</lootgroup>
+		<lootgroup name="ammoLootA" count="2,5">
+			<item name="ammoBundle762mmBulletHP" count="1,2"/>
+			<item name="ammoBundle762mmBulletAP" count="1,2"/>
+			<item name="ammoBundle9mmBulletHP" count="1,2"/>
+			<item name="ammoBundle9mmBulletAP" count="1,2"/>
+			<item name="ammoBundle44MagnumBulletHP" count="1,2"/>
+			<item name="ammoBundle44MagnumBulletAP" count="1,2"/>
+			<item name="ammoBundleShotgunBreachingSlug" count="1,2"/>
+			<item name="ammoBundleJunkTurretAP" count="1,2"/>
+			<item group="ammoLootB" count="3,5"/>
+			<item group="ammoLootC" count="5,15"/>
+		</lootgroup>
+		<lootgroup name="ammoLoot">
+			<item name="lootBoxAmmoC" prob=".5"/>
+			<item name="lootBoxAmmoB" prob=".4"/>
+			<item name="lootBoxAmmoA" prob=".1"/>
+		</lootgroup>
+	</append>
+	
+	<!--	MEDICAL LOOT		-->
+	<!-- Add pain killers schematic to loot -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+			<item name="medicalPainKillersSchematic"/>
+	</append>
+	<append xpath="/lootcontainers" >
+		<lootgroup name="questMedicDrugs" count="1,3">
+			<item name="drugAntibiotics" count="1,3" prob="0.5"/>
+			<item name="drugFortBites" count="1,3"/>
+			<item name="drugHealthBar"/>
+			<item name="drugHerbalAntibiotics" count="1,3"/>
+			<item name="drugPainkillers" count="1,3"/>
+			<item name="drugRecog" count="1,3"/>
+			<item name="drugSteroids" count="1,3"/>
+			<item name="drugVitamins" count="1,2" prob="0.5"/>
+			<item name="medicalAloeCream" count="4,10" prob="0.5"/>
+			<item group="empty" prob="0.01"/>
+		</lootgroup>
+		<lootgroup name="questMedicItems" count="1,3">
+			<item name="toolBeaker" count="1" prob="0.01"/>
+			<item name="medicalPainKillersSchematic" count="1" prob="0.001"/>
+			<item name="candle" count="1,4"/>
+			<item name="modArmorCoolingMesh" count="1"/>
+			<item name="modArmorInsulatedLiner" count="1"/>
+			<item name="bookGreatHeistAdrenalineFall"/>
+			<item name="bookFiremansAlmanacPrevention"/>
+			<item name="bookLuckyLooterMedical"/>
+			<item name="bookWasteTreasuresCloth"/>
+			<item name="bookWasteTreasuresHoney"/>
+			<item name="bookWasteTreasuresWater"/>
+			<item name="bookBarBrawling5AdrenalineHealing"/>
+			<item group="empty" prob="0.01"/>
+		</lootgroup>
+		<lootgroup name="questMedicHollistic" count="1,3">
+			<item name="drinkJarGoldenRodTea" count="1,4"/>
+			<item name="drinkJarGrainAlcohol" count="1,4"/>
+			<item name="drinkJarRedTea" count="1,4"/>
+			<item name="drinkJarPureMineralWater" count="1,2"/>
+			<item name="drinkYuccaJuiceSmoothie" count="1,2"/>
+			<item name="foodHoney" count="2,4" prob="0.4"/>
+			<item name="resourceCropChrysanthemumPlant" count="10,30" prob="0.5"/>
+			<item name="resourceCropGoldenrodPlant" count="10,30" prob="0.5"/>
+			<item group="questMedicItems"/>
+			<item group="empty" prob="0.01"/>
+		</lootgroup>
+		<lootgroup name="questBandageCast" count="1,3">
+			<item name="medicalBandage" count="2,10"/>
+			<item name="medicalFirstAidBandage" count="2,5"/>
+			<item name="medicalFirstAidKit" count="2,3" prob="1.0" />
+			<item name="medicalPlasterCast" count="1,3" prob="0.1"/>	
+			<item name="medicalSplint" count="1,3" prob="0.1"/>
+		</lootgroup>
+		<lootgroup name="questMedicKit" count="all">
+			<item group="questBandageCast"/>
+			<item group="questMedicHollistic"/>
+			<item group="questMedicDrugs"/>
+			<item group="questMedicItems" prob="0.1"/>
+		</lootgroup>
+	</append>
+
+	<!--	FOOD LOOT			-->
+	<append xpath="/lootcontainers" >
+		<lootgroup name="questFoodLoot" count="3,6">
+			<item group="cannedfood" count="3,6" prob="10"/>
+			<item group="rottenFood" count="2,6"/>
+			<item group="rareFoodDrink" count="1,3" prob=".1"/>
+			<item group="farmingCookingRecipesCommon" prob=".3"/>
+			<item group="farmingCookingRecipesRare" prob=".1"/>
+			<item group="farmCrops" count="3,6"/>
+			<item group="seeds" count="2,6"/>
+		</lootgroup>
+	</append>
+
+	<!--	MIXED LOOT			-->
+	<append xpath="/lootcontainers" >
+		<lootgroup name="mixedLootC">
+			<item name="lootBoxMedicine"/>
+			<item name="lootBoxFoodC"/>
+			<item name="lootBoxFoodB"/>
+			<item name="lootBoxFoodA"/>
+			<item group="foodCandy"/>
+			<item group="drsModsT1"/>
+			<item group="drsModsSchemT1"/>
+			<item name="oldCash" count="10,100"/>
+		</lootgroup>
+		<lootgroup name="mixedLootB" count="2,3">
+			<item group="mixedLootC" count="1,3"/>
+			<item group="workingStiffsBox"/>
+			<item group="drsModsT2"/>
+			<item group="drsModsSchemT2"/>
+		</lootgroup>
+		<lootgroup name="mixedLootA" count="all">
+			<item group="mixedLootC" count="2,6"/>
+			<item group="mixedLootB" count="1,3"/>
+			<item group="drsModsT3"/>
+		</lootgroup>
+		<lootgroup name="mixedLoot">
+			<item group="mixedLootC" count="1,3" prob=".06"/>
+			<item group="mixedLootB" count="1,3" prob=".03"/>
+			<item group="mixedLootA" count="1,3" prob=".01"/>
+		</lootgroup>
+	</append>
+
+	<!--	TRADER REWARD LOOT	-->
+	<append xpath="/lootcontainers">
+		<lootgroup name="traderRewardLootcont" count="1,2">
+			<item name="lootBoxMedicine" prob=".1"/>
+			<item name="lootBoxFoodC" prob=".1"/>
+			<item name="lootBoxFoodB" prob=".08"/>
+			<item name="lootBoxFoodA" prob=".02"/>
+			<item group="constructionLoot"/>
+			<item group="ammoLoot"/>
+			<item group="perkBooks"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootA" count="all">
+			<item group="traderRewardLootcont" count="2,4"/>
+			<item name="resourceRepairKit" count="2,4"/>
+			<item group="perkBooks"/>
+			<item name="casinoCoin" count="100,1000"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootB" count="1,2">
+			<item group="traderRewardLootA" prob=".01"/>
+			<item group="traderRewardLootcont" prob=".6"/>
+			<item name="casinoCoin" count="30,500"/>
+			<item name="resourceRepairKit" count="2,4" prob=".75"/>
+		</lootgroup>
+		<lootgroup name="traderRewardLootC" count="1,2">
+			<item group="traderRewardLootA" prob=".001"/>
+			<item group="traderRewardLootB" prob=".01"/>
+			<item group="traderRewardLootcont" prob=".1"/>
+			<item name="casinoCoin" count="10,300"/>
+		</lootgroup>
+	</append>
+
+	<!--	LOOT BOXES			-->
+	<append xpath="/lootcontainers">
+		<lootgroup name="lootBoxA" count="1,2">
+			<item name="lootBoxConstructionA"/>			
+			<item group="ammoLootA"/>
+		</lootgroup>
+		<lootgroup name="lootBoxB" count="1,2">
+			<item name="lootBoxConstructionB"/>			
+			<item group="ammoLootB"/>
+		</lootgroup>
+		<lootgroup name="lootBoxC" count="1,2">
+			<item name="lootBoxConstructionC"/>			
+			<item group="ammoLootC"/>
+		</lootgroup>
+	</append>
+
+
+	<!-- Grills now can contain coal -->
+	<append xpath="/lootcontainers/lootgroup[@name='grills']">
+		<item name="resourceCoal" count="3,15" prob="1"/>
+	</append>
+
+</DrsA19LootBoxes>

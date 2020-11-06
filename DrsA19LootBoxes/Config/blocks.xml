@@ -1,0 +1,433 @@
+<DrsA19LootBoxes>
+	<!-- 	CARD BOARD BOX LOOT SYSTEM 	-->
+	<append xpath="/blocks">
+		<!-- 	brown boxes base, full 	-->
+		<block name="palletBrownBoxesBaseA">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
+		</block>
+		<block name="palletBrownBoxesBaseB">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
+		</block>
+		<block name="palletBrownBoxesBaseC">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
+		</block>
+		<block name="palletBrownBoxesBaseLooted">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+		</block>
+
+		<!-- 	brown boxes tile, full 	-->
+		<block name="palletBrownBoxesTileA">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTileB">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTileC">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTileLooted">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+		</block>	
+
+		<!-- 	brown boxes top, 1/3 	-->	
+		<block name="palletBrownBoxesTopA">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTopB">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTopC">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
+		</block>
+		<block name="palletBrownBoxesTopLooted">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+		</block>
+
+		<!-- 	brown boxes loose, full 	-->		
+		<block name="palletBrownBoxesLooseA">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+			<property name="CanPickup" value="true" param1="lootBox_A"/>
+			<drop event="Destroy" name="lootBox_A" count="1"/>
+		</block>
+		<block name="palletBrownBoxesLooseB">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+			<property name="CanPickup" value="true" param1="lootBox_B"/>
+			<drop event="Destroy" name="lootBox_B" count="1"/>
+		</block>
+		<block name="palletBrownBoxesLooseC">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+			<property name="CanPickup" value="true" param1="lootBox_C"/>
+			<drop event="Destroy" name="lootBox_C" count="1"/>
+		</block>
+		<block name="palletBrownBoxesLooseLooted">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+		</block>
+	</append>
+
+	<!-- 	WHITE BAG LOOT SYSTEM	-->
+	<append xpath="/blocks">
+		<!--	white bags base	-->
+		<block name="palletWhiteBagsBaseA">
+			<property name="Extends" value="palletWhiteBagsBase"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsBaseB">
+			<property name="Extends" value="palletWhiteBagsBase"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsBaseC">
+			<property name="Extends" value="palletWhiteBagsBase"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+
+		<!--	white sacks tile	-->
+		<block name="palletWhiteBagsTileA">
+			<property name="Extends" value="palletWhiteBagsTile"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsTileeB">
+			<property name="Extends" value="palletWhiteBagsTile"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsTileC">
+			<property name="Extends" value="palletWhiteBagsTile"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+
+		<!--	white sacks top	-->
+		<block name="palletWhiteBagsTopA">
+			<property name="Extends" value="palletWhiteBagsTop"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsTopB">
+			<property name="Extends" value="palletWhiteBagsTop"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsTopC">
+			<property name="Extends" value="palletWhiteBagsTop"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+
+		<!--	white sacks partial 1	-->
+		<block name="palletWhiteBagsPartial1A">
+			<property name="Extends" value="palletWhiteBagsPartial1"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsPartial1B">
+			<property name="Extends" value="palletWhiteBagsPartial1"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsPartial1C">
+			<property name="Extends" value="palletWhiteBagsPartial1"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+
+		<!--	white sacks partial 2	-->
+		<block name="palletWhiteBagsPartial2A">
+			<property name="Extends" value="palletWhiteBagsPartial2"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsPartial2B">
+			<property name="Extends" value="palletWhiteBagsPartial2"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsPartial2C">
+			<property name="Extends" value="palletWhiteBagsPartial2"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+
+		<!--	white sacks	loose	-->
+		<block name="palletWhiteBagsLooseA">
+			<property name="Extends" value="palletWhiteBagsLoose"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateA"/>
+			<drop event="Destroy" name="CementLootCrateA" count="1"/>
+		</block>
+		<block name="palletWhiteBagsLooseB">
+			<property name="Extends" value="palletWhiteBagsLoose"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateB"/>
+			<drop event="Destroy" name="CementLootCrateB" count="1"/>
+		</block>
+		<block name="palletWhiteBagsLooseC">
+			<property name="Extends" value="palletWhiteBagsLoose"/>
+			<property name="CanPickup" value="true" param1="CementLootCrateC"/>
+			<drop event="Destroy" name="CementLootCrateC" count="1"/>
+		</block>
+	</append>
+
+	<!-- 	BLUE TARP LOOT SYSTEM 	-->
+	<append xpath="/blocks">
+		<!-- 	blue tarps base 	-->
+		<block name="palletBlueTarpBaseA">
+			<property name="Extends" value="palletBlueTarpBase"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootA"/>
+			<drop event="Destroy" name="BlueTarpLootA" count="1"/>
+		</block>
+		<block name="palletBlueTarpBaseB">
+			<property name="Extends" value="palletBlueTarpBase"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootB"/>
+			<drop event="Destroy" name="BlueTarpLootB" count="1"/>
+		</block>
+		<block name="palletBlueTarpBaseC">
+			<property name="Extends" value="palletBlueTarpBase"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootC"/>
+			<drop event="Destroy" name="BlueTarpLootC" count="1"/>
+		</block>
+
+		<!-- 	blue tarps tile 	-->
+		<block name="palletBlueTarpTileA">
+			<property name="Extends" value="palletBlueTarpTile"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootA"/>
+			<drop event="Destroy" name="BlueTarpLootA" count="1"/>
+		</block>
+		<block name="palletBlueTarpTileB">
+			<property name="Extends" value="palletBlueTarpTile"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootB"/>
+			<drop event="Destroy" name="BlueTarpLootB" count="1"/>
+		</block>
+		<block name="palletBlueTarpTileC">
+			<property name="Extends" value="palletBlueTarpTile"/>
+			<property name="CanPickup" value="true" param1="BlueTarpLootC"/>
+			<drop event="Destroy" name="BlueTarpLootC" count="1"/>
+		</block>
+	</append>
+
+	<!-- 	BRICK PALLET LOOT SYSTEM 	-->
+	<append xpath="/blocks">
+		<!-- 	brick base 	-->
+		<block name="palletBricksBaseA">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksBaseB">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksBaseC">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+		<!-- 	brick tile 	-->
+		<block name="palletBricksTileA">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksTileB">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksTileC">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+		<!-- 	brick top 	-->
+		<block name="palletBricksTopA">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksTopB">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksTopC">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+		<!-- 	brick partial1 	-->
+		<block name="palletBricksPartial1A">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksPartial1B">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksPartial1C">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+		<!-- 	brick partial2 	-->
+		<block name="palletBricksPartial2A">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksPartial2B">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksPartial2C">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+		<!-- 	brick loose 	-->
+		<block name="palletBricksLooseA">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootA"/>
+			<drop event="Destroy" name="palletBrickLootA" count="1"/>
+		</block>
+		<block name="palletBricksLooseB">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootB"/>
+			<drop event="Destroy" name="palletBrickLootB" count="1"/>
+		</block>
+		<block name="palletBricksLooseC">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CanPickup" value="true" param1="palletBrickLootC"/>
+			<drop event="Destroy" name="palletBrickLootC" count="1"/>
+		</block>
+
+	</append>
+
+
+	<!-- Ammo Piles -->
+	<append xpath="/blocks">
+	<!-- 	Ammo Pile Small cntAmmoPileSmall -->
+		<block name="drsAmmoPileSmall">
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="Material" value="Mtrash"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_SmallPrefab.prefab"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="true" param1="lootBoxAmmoC"/>
+			<drop event="Destroy" name="lootBoxAmmoC" count="1"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="FilterTags" value="floot,ftrash"/>
+		</block>	
+	<!-- 	Ammo Pile Medium cntAmmoPileMedium -->
+		<block name="drsAmmoPileMedium">
+			<property name="Extends" value="drsAmmoPileSmall"/>
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_MediumPrefab.prefab"/>
+			<property name="CanPickup" value="true" param1="lootBoxAmmoB"/>
+			<drop event="Destroy" name="lootBoxAmmoB" count="1"/>
+		</block>				
+	<!-- 	Ammo Pile Large cntAmmoPileLarge -->
+		<block name="drsAmmoPileLarge">
+			<property name="Extends" value="drsAmmoPileSmall"/>
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_LargePrefab.prefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
+			<property name="CanPickup" value="true" param1="lootBoxAmmoA"/>
+			<drop event="Destroy" name="lootBoxAmmoA" count="1"/>
+		</block>		
+	</append>
+
+	<!-- Food Piles -->
+	<!-- 	Food Pile Small cntFoodPileSmall-->
+	<append xpath="/blocks">
+		<block name="drsFoodPileSmall">
+			<property name="Extends" value="drsAmmoPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileSmallPrefab.prefab"/>
+			<property name="DescriptionKey" value="drsLootPileGroupDesc"/>
+			<property name="CanPickup" value="true" param1="lootBoxFood3"/>
+			<drop event="Destroy" name="lootBoxFood3" count="1"/>
+		</block>
+	<!-- 	Food Pile Medium -->
+		<block name="drsFoodPileMedium">
+			<property name="Extends" value="drsAmmoPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileMediumPrefab.prefab"/>
+			<property name="CanPickup" value="true" param1="lootBoxFood2"/>
+			<drop event="Destroy" name="lootBoxFood2" count="1"/>
+		</block>
+	<!-- 	Food Pile Large -->
+		<block name="drsFoodPileLarge">
+			<property name="Extends" value="drsAmmoPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileLargePrefab.prefab"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="CanPickup" value="true" param1="lootBoxFood1"/>
+			<drop event="Destroy" name="lootBoxFood1" count="1"/>
+		</block>
+	</append>
+	
+		<!-- 	Medical Pile Small -->
+	<append xpath="/blocks">
+		<block name="drsMedicalPileSmall">
+			<property name="CustomIcon" value="drsMedicalPileSmall"/>
+			<property name="Material" value="Mtrash"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_APrefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="true" param1="lootBoxMedicineC"/>
+			<drop event="Destroy" name="lootBoxMedicineC" count="1"/>
+			<property name="FilterTags" value="floot"/>
+		</block>
+		<!-- 	Medical Pile Medium -->
+		<block name="drsMedicalPileMedium">
+			<property name="Extends" value="drsMedicalPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
+			<property name="CanPickup" value="true" param1="lootBoxMedicineB"/>
+			<drop event="Destroy" name="lootBoxMedicineB" count="1"/>
+		</block>
+		<!-- 	Medical Pile Large -->
+		<block name="drsMedicalPileLarge">
+			<property name="Extends" value="drsMedicalPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
+			<property name="CanPickup" value="true" param1="lootBoxMedicineA"/>
+			<drop event="Destroy" name="lootBoxMedicineA" count="1"/>
+		</block>
+	</append>
+
+	
+
+	
+	<!-- Weapon Bags -->
+	<!-- 	Weapon Bag Small -->
+	<!-- 	Weapon Bags Large -->
+</DrsA19LootBoxes>

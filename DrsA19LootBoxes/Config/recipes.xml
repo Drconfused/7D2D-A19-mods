@@ -1,0 +1,13 @@
+<DrsA19LootBoxes>
+	<!-- 
+		
+	 -->
+	<append xpath="/recipes">
+		<recipe name="drugPainkillers" count="1" tags="learnable,chemStationCrafting" craft_area="chemistryStation" craft_time="30">
+			<ingredient name="resourceCropGoldenrodPlant" count="2" />
+			<ingredient name="resourceCropChrysanthemumPlant" count="2" />
+			<ingredient name="resourcePotassiumNitratePowder" count="2" />
+			<ingredient name="drinkJarCoffee" count="1" />
+		</recipe>
+	</append>
+</DrsA19LootBoxes>

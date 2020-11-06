@@ -1,0 +1,5 @@
+<DrsA19LootBoxes>
+	<append xpath="/progression/perks[@min_level='0']/perk[@name='perkPhysician']/effect_group">
+			<passive_effect name="RecipeTagUnlocked"  operation="base_set"  level="3,5"  value="1"  tags="drugPainkillers"/>
+	</append>
+</DrsA19LootBoxes>

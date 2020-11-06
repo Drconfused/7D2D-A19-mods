@@ -1,0 +1,4 @@
+Key,English
+BLOCKS
+Oil_Extractor,Oil Extractor
+Oil_ExtractorDesc,"Place in a location that has an open 2 block high area and is terrain, a burning barrel will appear on top when it is ready to loot which takes around 30 minutes to an hour."

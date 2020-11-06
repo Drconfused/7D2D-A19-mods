@@ -1,0 +1,9 @@
+<DrsA19Restart>
+	<!-- 	Set max level to 999	-->
+	<set xpath="/progression/level/@max_level">999</set>
+
+	<!-- 	PERK CHANGES 		-->
+	<!--		perks per level	-->
+	<set xpath="/progression/level/@skill_points_per_level">2</set>
+
+</DrsA19Restart>

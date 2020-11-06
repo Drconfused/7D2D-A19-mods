@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19LootBoxes" />
+		<Description value="Converts the cardboard boxes, white bag pallets, blue tarp pallets to a loot box system." />
+		<Author value="Drconfused" />
+		<Version value="a19-Dr004" />
+		<Website value="" />
+	</ModInfo>
+</xml>

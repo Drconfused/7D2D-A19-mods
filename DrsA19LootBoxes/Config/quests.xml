@@ -1,0 +1,363 @@
+<DrsA19LootBoxes>
+
+	<!--	TRADER REWARD LOOT SYSTEM	-->
+	<append xpath="/quests">
+		<quest id="Drs_Reward_Loot" repeatable="true">
+			<property name="name" value="Trader Loot Box" />
+			<property name="subtitle" value="Trader Loot Box" />
+			<property name="description" value="Loot box reward from the Trader." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for various rewards from the Trader." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="traderRewardLootC,traderRewardLootB,traderRewardLootA" value="1" />
+			<reward type="LootItem" id="ammoLoot" value="1" />
+			<reward type="LootItem" id="mixedLootC" value="1" />
+			<reward type="LootItem" id="ammoLootBase" value="1" />
+		</quest>
+		<quest id="Drs_Reward_LootB" repeatable="true">
+			<property name="name" value="Trader Loot Box B" />
+			<property name="subtitle" value="Trader Loot Box B" />
+			<property name="description" value="Loot box reward from the Trader." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for various rewards from the Trader.\nSecond tier trader loot box." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="traderRewardLootB" value="3" />
+			<reward type="LootItem" id="mixedLootB" value="3" />
+			<reward type="LootItem" id="ammoLootBase" value="3" />
+		</quest>
+		<quest id="Drs_Reward_LootA" repeatable="true">
+			<property name="name" value="Trader Loot Box A" />
+			<property name="subtitle" value="Trader Loot Box A" />
+			<property name="description" value="Loot box reward from the Trader." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for various rewards from the Trader.\nHighest tier trader loot box." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="traderRewardLootA" value="6" />
+			<reward type="LootItem" id="mixedLootA" value="6" />
+			<reward type="LootItem" id="ammoLootBase" value="6" />
+		</quest>
+	</append>
+
+	<!-- 	Add Trader Reward loot box to existing tier quests -->
+	<append xpath="/quests/quest[contains(@id,'tier1')]">
+		<reward type="Item" id="lootBoxTraderReward" value="1" />
+	</append>
+	<append xpath="/quests/quest[contains(@id,'tier2')]">
+		<reward type="Item" id="lootBoxTraderReward" value="2" />
+	</append>
+	<append xpath="/quests/quest[contains(@id,'tier3')]">
+		<reward type="Item" id="lootBoxTraderReward" value="3" />
+	</append>
+	<append xpath="/quests/quest[contains(@id,'tier4')]">
+		<reward type="Item" id="lootBoxTraderReward" value="4" />
+	</append>
+	<append xpath="/quests/quest[contains(@id,'tier5')]">
+		<reward type="Item" id="lootBoxTraderReward" value="5" />
+	</append>
+	<append xpath="/quests/quest[contains(@id,'tier6')]">
+		<reward type="Item" id="lootBoxTraderReward" value="6" />
+	</append>
+
+	<!--	CONSTRUCTION LOOT SYSTEM	-->
+	<append xpath="/quests">
+		<!--	Construction Grade A	-->
+		<quest id="loot_BaseConstructor_Box1" repeatable="true">
+			<property name="name_key" value="lootBoxConstructionA" />
+			<property name="subtitle_key" value="lootBoxConstructionA" />
+			<property name="description_key" value="Loot box containing construction related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for construction related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="constructionLootA_materials" value="6" />
+			<reward type="LootItem" id="constructionLootA_doors,constructionLootA_tools,constructionLootA_electric" value="6" />
+			<reward type="LootItem" id="constructionLootA_blocks" value="6" />
+		</quest>
+
+		<!--	Construction Grade B	-->
+		<quest id="loot_BaseConstructor_Box2" repeatable="true">
+			<property name="name_key" value="lootBoxConstructionB" />
+			<property name="subtitle_key" value="lootBoxConstructionB" />
+			<property name="description_key" value="Loot box containing construction related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for construction related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="constructionLootB_materials" value="4" />
+			<reward type="LootItem" id="constructionLootB_doors,constructionLootB_bars,constructionLootB_tools,constructionLootB_electric" value="4" />
+			<reward type="LootItem" id="constructionLootB_blocks" value="4" />
+		</quest>
+
+		<!--	Construction Grade C	-->
+		<quest id="loot_BaseConstructor_Box3" repeatable="true">
+			<property name="name_key" value="lootBoxConstructionC" />
+			<property name="subtitle_key" value="lootBoxConstructionC" />
+			<property name="description_key" value="Loot box containing construction related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for construction related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="constructionLootC_materials" value="1" />
+			<reward type="LootItem" id="constructionLootC_doors,constructionLootC_bars,constructionLootC_tools,constructionLootC_electric" value="1" />
+			<reward type="LootItem" id="constructionLootC_blocks" value="1" />
+		</quest>
+	</append>
+
+	<!--	AMMO LOOT	-->
+	<append xpath="/quests">
+		<!--	Ammo Grade A	108-->
+		<quest id="loot_Killer_Box1" repeatable="true">
+			<property name="name_key" value="lootBoxAmmoA" />
+			<property name="subtitle_key" value="lootBoxAmmoA" />
+			<property name="description_key" value="Loot box containing ammo related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for ammo related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="ammoLootA" value="16"/>
+			<reward type="LootItem" id="groupAmmoAdvanced" value="16" />
+			<reward type="LootItem" id="groupAmmoAdvancedGunslinger" value="16" />
+			<reward type="LootItem" id="treasureAmmo" value="16" />
+			<reward type="LootItem" id="groupQuestAmmo" value="16"/>	
+		</quest>
+		<!--	Ammo Grade B	-->
+		<quest id="loot_Killer_Box2" repeatable="true">
+			<property name="name_key" value="lootBoxAmmoB" />
+			<property name="subtitle_key" value="lootBoxAmmoB" />
+			<property name="description_key" value="Loot box containing ammo related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for various rewards from the Trader." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="ammoLootB,ammoLoot" value="1" />
+			<reward type="Item" id="ammo9mmBulletBall,ammo762mmBulletBall,ammoShotgunShell" value="20-40" />
+			<reward type="LootItem" id="groupAmmoAdvanced,groupAmmoAdvancedGunslinger,treasureAmmo" value="4" />
+		</quest>
+		<!--	Ammo Grade C	-->
+		<quest id="loot_Killer_Box3" repeatable="true">
+			<property name="name_key" value="lootBoxAmmoC" />
+			<property name="subtitle_key" value="lootBoxAmmoC" />
+			<property name="description_key" value="Loot box containing basic ammo crafting related resources." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for various rewards from the Trader." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="ammoLootC" value="11" />
+			<reward type="Item" id="resourceBulletCasing" value="5-30" />
+			<reward type="Item" id="resourceGunPowder" value="5-30" />
+			<reward type="Item" id="resourceBulletTip,resourceBuckshot,resourcePaper" value="5-30" />
+		</quest>
+	</append>
+	
+		<!--	MIXED LOOT BOXES	-->
+	<append xpath="/quests">
+		<quest id="loot_BoxA" repeatable="true">
+			<property name="name" value="Loot Box A" />
+			<property name="subtitle" value="Loot Box A" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="lootBoxA" value="6" />
+		</quest>
+		<quest id="loot_BoxB" repeatable="true">
+			<property name="name" value="Loot Box B" />
+			<property name="subtitle" value="Loot Box B" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items.." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="lootBoxB" value="6" />
+		</quest>
+		<quest id="loot_BoxC" repeatable="true">
+			<property name="name" value="Loot Box C" />
+			<property name="subtitle" value="Loot Box C" />
+			<property name="description" value="What loot are you going to get?" />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box to obtain various items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="lootBoxC" value="6" />
+		</quest>
+	</append>
+	
+	<!--	MEDICINE LOOT	-->
+	<append xpath="/quests">
+		<quest id="loot_FirstAid_Kit" repeatable="true">
+			<property name="name" value="First Aid Loot Box" />
+			<property name="subtitle" value="First Aid Loot Box" />
+			<property name="description" value="Loot box containing medical related items." />
+			<property name="icon" value="ui_game_symbol_medical" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for medical related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="questBandageCast" value="3" />
+			<reward type="LootItem" id="questMedicHollistic,questMedicItems" value="3" />
+			<reward type="LootItem" id="questMedicDrugs" value="3" />
+		</quest>
+	<!--	MEDICINE LOOT A	-->
+		<quest id="loot_Medic_A" repeatable="true">
+			<property name="name" value="Medical Loot A" />
+			<property name="subtitle" value="Medical Loot A grade" />
+			<property name="description" value="Best of the medical loot boxes." />
+			<property name="icon" value="ui_game_symbol_medical" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for medical related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="questBandageCast,rareMedicine" value="6" />
+			<reward type="LootItem" id="questMedicHollistic" value="6" />
+			<reward type="LootItem" id="questMedicItems" value="6" />
+			<reward type="LootItem" id="questMedicDrugs" value="6" />
+			<reward type="LootItem" id="labEquipment,chemistryStationLoot,groupQuestMedical" value="6" />
+		</quest>
+	<!--	MEDICINE LOOT B	-->
+		<quest id="loot_Medic_B" repeatable="true">
+			<property name="name" value="Medical Loot B" />
+			<property name="subtitle" value="Medical Loot B grade" />
+			<property name="description" value="Mid grade medical loot boxes." />
+			<property name="icon" value="ui_game_symbol_medical" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for medical related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="questBandageCast,medicine" value="3" />
+			<reward type="LootItem" id="questMedicHollistic,questMedicItems" value="3" />
+			<reward type="LootItem" id="questMedicDrugs,medicine" value="3" />
+		</quest>
+	<!--	MEDICINE LOOT C	-->
+		<quest id="loot_Medic_C" repeatable="true">
+			<property name="name" value="Medical Loot C" />
+			<property name="subtitle" value="Medical Loot C grade" />
+			<property name="description" value="Low grade medical loot boxes." />
+			<property name="icon" value="ui_game_symbol_medical" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for medical related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="questBandageCast,survivalMedical" value="1" />
+			<reward type="LootItem" id="questMedicHollistic" value="1" />
+			<reward type="LootItem" id="questMedicDrugs" value="1" />
+		</quest>
+	<!-- Blood Case -->
+		<quest id="loot_BloodCase" repeatable="true">
+			<property name="name_key" value="loot_BloodCase" />
+			<property name="subtitle_key" value="loot_BloodCase" />
+			<property name="description_key" value="Loot box containing blood." />
+			<property name="icon" value="ui_game_symbol_medical" />
+			<property name="category_key" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="Open the loot box for random amount of bags of blood." />
+			<property name="shareable" value="false" />
+
+			<reward type="Item" id="medicalBloodBag" count="2-20"/>
+		</quest>
+	</append>
+
+	<!--	FOOD LOOT	-->
+	<append xpath="/quests">
+		<quest id="loot_Food_Box1" repeatable="true">
+			<property name="name" value="Food Loot Box A" />
+			<property name="subtitle" value="Food Loot Box" />
+			<property name="description" value="Loot box containing food related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for food related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="farmingCookingRecipesRare" value="16" />
+			<reward type="LootItem" id="cannedfood,coldfood" value="6" />
+			<reward type="LootItem" id="foodCandy" value="6" />
+			<reward type="Item" id="foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast" value="3-10" />
+			<reward type="LootItem" id="drinks,beverages,rareFoodDrink" value="6" />
+			<reward type="Item" id="drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir" value="1-3"/>
+		</quest>
+		<quest id="loot_Food_Box2" repeatable="true">
+			<property name="name" value="Food Loot Box B" />
+			<property name="subtitle" value="Food Loot Box" />
+			<property name="description" value="Loot box containing food related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for food related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="questFoodLoot,farmingCookingRecipesCommon,farmingCookingRecipesRare" value="5" />
+			<reward type="Item" id="foodChiliDog,foodHoboStew,foodFishTacos,foodShamChowder" value="1-4" />
+			<reward type="Item" id="foodCanChili,foodCanTuna,foodCanSham,foodCanChicken,foodCanBeef,foodCanLamb" value="3-8" />
+			<reward type="Item" id="rottenFood,foodShamSandwich,foodMoldyBread,foodHoney" value="2-8" />
+			<reward type="Item" id="drinkJarBoiledWater,drinkJarCoffee,drinkJarGoldenRodTea,drinkJarRedTea,drinkYuccaJuiceSmoothie" value="2-6"/>
+		</quest>
+		<quest id="loot_Food_Box3" repeatable="true">
+			<property name="name" value="Food Loot Box C" />
+			<property name="subtitle" value="Food Loot Box" />
+			<property name="description" value="Loot box containing food related items." />
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="category" value="reward" />
+			<property name="difficulty" value="easy" />
+			<property name="offer" value="Open the loot box for food related items." />
+			<property name="shareable" value="false" />
+
+			<reward type="LootItem" id="farmingCookingRecipesCommon,seeds,farmCrops,empty" value="3" />
+			<reward type="Item" id="foodBaconAndEggs,foodMeatStew,foodSteakAndPotato,foodVegetableStew" value="1-2" />
+			<reward type="Item" id="foodBakedPotato,foodBoiledMeat,foodCharredMeat,foodCornOnTheCob,foodEggBoiled,foodGrilledMeat,foodPumpkinBread,foodCornBread" value="1-2"/>
+			<reward type="Item" id="foodCanMiso,foodCanStock,foodCanSoup,foodCanPasta,foodCanDogfood,foodCanCatfood,foodCanPears,foodCanPeas" value="1-4" />
+			<reward type="Item" id="rottenFood,foodShamSandwich,foodMoldyBread" value="1-4" />
+			<reward type="Item" id="drinkJarBoiledWater,drinkJarCoffee,drinkJarGoldenRodTea,drinkJarRedTea" value="1-3"/>
+		</quest>
+	</append>
+
+	<!-- Medical Piles -->
+	<!-- 	Medical Pile Small -->
+	<!-- 	Medical Pile Medium -->
+	<!-- 	Medical Large -->
+	<!-- 	Medical Pile A -->
+	<!--	Medical Pile B -->
+
+
+
+	<!-- Food Piles -->
+	<!-- 	Food Pile Small -->
+	<!-- 	Food Pile Medium -->
+	<!-- 	Food Pile Large -->
+
+	<!-- Weapon Bags -->
+	<!-- 	Weapon Bag Small -->
+	<!-- 	Weapon Bags Large -->
+	<!-- Book Piles		-->
+</DrsA19LootBoxes>

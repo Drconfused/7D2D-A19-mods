@@ -1,0 +1,316 @@
+<DrsA19LootBoxes>
+	<!-- 	LOOT BOX SYSTEM -->
+	<append xpath="/items" >
+		<!--	Trader Reward Loot	-->
+		<item name="lootBoxTraderReward">
+			<property name="Extends" value="questMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="ffb300"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_Loot"/>
+			</property>
+		</item>
+		<item name="lootBoxTraderRewardB">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="00ff2b"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_LootB"/>
+			</property>
+		</item>
+		<item name="lootBoxTraderRewardC">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_Construction_UnCrate"/>
+			<property name="CustomIconTint" value="b032ea"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Drs_Reward_LootC"/>
+			</property>
+		</item>
+
+
+		<!--	Construction Grade A	-->
+		<item name="lootBoxConstructionA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box1"/>
+			</property>
+		</item>
+		<!--	Construction Grade B	-->
+		<item name="lootBoxConstructionB">
+			<property name="Extends" value="lootBoxConstructionA"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property name="CustomIconTint" value="00ff2b"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box2"/>
+			</property>
+		</item>
+		<!--	Construction Grade C	-->
+		<item name="lootBoxConstructionC">
+			<property name="Extends" value="lootBoxConstructionA"/>
+			<property name="CustomIcon" value="Drs_ConstructorLoot_Uncrate"/>
+			<property name="CustomIconTint" value="b032ea"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BaseConstructor_Box3"/>
+			</property>
+		</item>
+
+
+		<!--	Ammo Grade A	-->
+		<item name="lootBoxAmmoA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsAmmoPileLarge"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box1"/>
+			</property>
+		</item>
+		<!--	Ammo Grade B	-->
+		<item name="lootBoxAmmoB">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsAmmoPileMedium"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box2"/>
+			</property>
+		</item>
+		<!--	Ammo Grade C	-->
+		<item name="lootBoxAmmoC">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsAmmoPileSmall"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Killer_Box3"/>
+			</property>
+		</item>
+
+		<!--	Medicine Loot	-->
+		<item name="lootBoxMedicine">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_FirstAid_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_FirstAid_Kit"/>
+			</property>
+		</item>
+		<item name="lootBoxBlood">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="Drs_BloodCase_Uncrate"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BloodCase"/>
+			</property>
+		</item>
+	<!-- Medical Piles -->
+	<!-- 	Medical Pile Small -->
+		<item name="lootBoxMedicineC">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsMedicLootPileSmall"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Medic_C"/>
+			</property>
+		</item>	
+	
+	<!-- 	Medical Pile Medium -->
+		<item name="lootBoxMedicineB">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsMedicLootPileMedium"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Medic_B"/>
+			</property>
+		</item>	
+		
+	<!-- 	Medical Large -->
+		<item name="lootBoxMedicineA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsMedicLootPileLarge"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Medic_A"/>
+			</property>
+		</item>
+
+		<!--	Food Loot	-->
+		<item name="lootBoxFoodA">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsFoodPileSmall"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Food_Box1"/>
+			</property>
+		</item>
+		<item name="lootBoxFoodB">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsFoodPileMedium"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Food_Box2"/>
+			</property>
+		</item>
+		<item name="lootBoxFoodC">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="drsFoodPileLarge"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_Food_Box3"/>
+			</property>
+		</item>
+
+		<!--		Loot Box A	-->
+		<item name="lootBox_A">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxA"/>
+			</property>
+		</item>
+		<!--		Loot Box B	-->
+		<item name="lootBox_B">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxB"/>
+			</property>
+		</item>
+		<!--		Loot Box C	-->
+		<item name="lootBox_C">
+			<property name="Extends" value="lootBoxTraderReward"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="loot_BoxC"/>
+			</property>
+		</item>
+
+	</append>
+	
+	<!-- 	BUNDLED LOOT SYSTEM -->
+	<append xpath="/items" >	
+		<item name="DrsBundleMaster">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntSuitcase"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="recipe_unlocked"/>
+				<property name="Create_item" value="ammoGasCan,ammo9mmBulletBall,medicalFirstAidBandage,meleeToolTorch,drinkJarBoiledWater,foodCanChili,modGunScopeSmall,meleeWpnBladeT1HuntingKnife,modMeleeSerratedBlade,vehicleBicyclePlaceable"/>
+				<property name="Create_item_count" value="1000,500,10,2,5,5,1,1,1,1"/>
+			</property>	
+		</item>
+	</append>
+	<!-- 	WHITE BAG LOOT SYSTEM	-->
+	<append xpath="/items" >
+		<item name="CementLootCrateA">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix"/>
+				<property name="Create_item_count" value="300"/>
+			</property>	
+		</item>
+		<item name="CementLootCrateB">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix,resourceCement,resourceCrushedSand,resourceRockSmall"/>
+				<property name="Create_item_count" value="75,100,100,100"/>
+			</property>
+		</item>	
+		<item name="CementLootCrateC">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletWhiteBagsBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCement,resourceCrushedSand,resourceRockSmall"/>
+				<property name="Create_item_count" value="75,75,75"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- 	BLUE TARP LOOT SYSTEM 	-->
+	<append xpath="/items" >
+		<item name="BlueTarpLootA">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones"/>
+				<property name="Create_item_count" value="300"/>
+			</property>
+		</item>
+		<item name="BlueTarpLootB">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones,resourceClayLump,resourceRockSmall"/>
+				<property name="Create_item_count" value="100,100,100"/>
+			</property>
+		</item>
+		<item name="BlueTarpLootC">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBlueTarpBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceClayLump,resourceRockSmall"/>
+				<property name="Create_item_count" value="100,100"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- 	BRICK PALLET LOOT SYSTEM 	-->
+	<append xpath="/items" >
+		<item name="palletBrickLootA">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="pouredConcreteBlockVariantHelper"/>
+				<property name="Create_item_count" value="75"/>
+			</property>
+		</item>
+		<item name="palletBrickLootB">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="brickBlockVariantHelper"/>
+				<property name="Create_item_count" value="50"/>
+			</property>
+		</item>
+		<item name="palletBrickLootC">
+			<property name="Extends" value="DrsBundleMaster"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property class="Action0">
+				<property name="Create_item" value="flagstoneBlockVariantHelper"/>
+				<property name="Create_item_count" value="50"/>
+			</property>
+		</item>
+	</append>
+
+	<!-- Change stack counts -->
+	<set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">15</set>
+	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">10</set>
+
+	<!-- Medical additions -->
+	<append xpath="/items">
+		<item name="medicalPainKillersSchematic">
+			<property name="Extends" value="schematicNoQualityMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="CustomIcon" value="drugPainkillers" />
+			<property name="Unlocks" value="drugPainkillers" />
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugPainkillers" operation="set" value="1" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50" />
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items/item[@name='drugPainkillers']">
+		<property name="UnlockedBy" value="perkPhysician,medicalPainKillersSchematic" />
+	</append>
+
+
+
+	<!-- Weapon Bags -->
+	<!-- 	Weapon Bag Small -->
+	<!-- 	Weapon Bags Large -->
+</DrsA19LootBoxes>

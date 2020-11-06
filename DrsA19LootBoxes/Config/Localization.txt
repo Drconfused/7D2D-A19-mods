@@ -1,0 +1,29 @@
+Key,English
+ITEMS
+lootBoxTraderReward,Trader Loot Box
+lootBoxConstructionA,Construction Loot Box A
+lootBoxConstructionADesc,"Open for construction related loot.\nThe A version is the most likely to contain the best loot."
+lootBoxConstructionB,Construction Loot Box B
+lootBoxConstructionBDesc,"Open for construction related loot.\nThe B version contains better loot than the C version."
+lootBoxConstructionC,Construction Loot Box C
+lootBoxConstructionCDesc,"Open for construction related loot.\nThe C version contains early game quality loot."
+lootBoxAmmoA,Ammo Loot Box A
+lootBoxAmmoADesc,"Loot box A is the most likely to contain the best quality and quantity of ammo."
+lootBoxAmmoB,Ammo Loot Box B
+lootBoxAmmoBDesc,"Loot box B has a good variety of ammo and a descent quantity."
+lootBoxAmmoC,Ammo Loot Box C
+lootBoxAmmoCDesc,"Getting set for the apocolypse!\nStock up and defend those bases!These loot boxes will save you in a pinch."
+medicalPainKillersSchematic,Pain Killers Schematic
+lootBoxMedicine,Medicine Loot Box
+lootBoxMedicineDesc,Open to recieve random medical related items.
+lootBoxBlood,Box of Blood
+lootBoxBloodDesc,Open to recieve a random amount of bags of blood.
+lootBoxFoodA,Food Loot Box A
+lootBoxFoodADesc,The best of the food loot boxes.
+lootBoxFoodB,Food Loot Box B
+lootBoxFoodBDesc,Medium grade food loot box.
+lootBoxFoodC,Food Loot Box C
+lootBoxFoodCDesc,A basic loot box of food.
+QUESTS
+
+
